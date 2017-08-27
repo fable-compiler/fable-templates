@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+
+nuget Fable.Core prerelease
+nuget Fable.Import.Browser prerelease
+
+# This prevents downloading System.XXX
+# packages to packages folder
+nuget NetStandard.Library storage:none
