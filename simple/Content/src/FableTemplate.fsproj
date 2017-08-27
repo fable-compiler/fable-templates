@@ -4,7 +4,6 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="App.fs" />
-    <DotNetCliToolReference Include="dotnet-fable" Version="1.2.0-beta-*" />
   </ItemGroup>
   <Import Project="..\.paket\Paket.Restore.targets" />
 </Project>

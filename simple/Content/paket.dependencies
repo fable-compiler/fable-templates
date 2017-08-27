@@ -1,5 +1,6 @@
 source https://nuget.org/api/v2
 
+clitool dotnet-fable prerelease storage:none
 nuget Fable.Core prerelease
 nuget Fable.Import.Browser prerelease
 
