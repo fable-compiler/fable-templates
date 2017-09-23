@@ -5,6 +5,9 @@
     "command": "dotnet",
     "runner": "terminal",
     "args": [],
+    "options": {
+        "cwd": "${workspaceRoot}/src"
+    },
     "tasks": [
         {
             "taskName": "Start",
