@@ -1,0 +1,37 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    //NOTES
+    //The ctrl+shift+b default build task runs 'watch electron' below
+    //F5 will run whatever is current debug config in dropdown menu from debug view (ctrl+shift+d); see launch.json for configurations
+    //The default test task runs 'launch electron' below; this is convenient for debugging inside electron
+    //To bind test task to keyboard shortcut do the following: File -> Preferences -> Keyboard Shortcuts -> type 'run test task' -> click plus -> type ctrl shift t
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "process",
+            "command": "yarn",
+            "args": [
+                "start"
+            ],
+            "taskName": "watch electron",
+            "isBackground": true,
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        },
+        {
+            "type": "process",
+            "command": "yarn",
+            "args": [
+                "launch"
+            ],
+            "taskName": "launch electron",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        }
+    ]
+}

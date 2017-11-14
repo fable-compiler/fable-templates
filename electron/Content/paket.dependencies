@@ -1,0 +1,8 @@
+source https://nuget.org/api/v2
+storage:none
+
+clitool dotnet-fable
+nuget Fable.Core
+nuget Fable.Import.Browser
+nuget Fable.Import.Electron
+nuget Fable.Import.Node
