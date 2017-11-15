@@ -70,10 +70,12 @@ Any modification you do to the F# code will be reflected in the web page after s
 
 - **webpack.config.js**: is the configuration file for Webpack. It allows you to set many things: like the path of the bundle, the port for the development server or [Babel](https://babeljs.io/) options. See [Webpack website](https://webpack.js.org) for more info.
 
+> Make sure to resolve all the paths [as well as Babel options](https://github.com/fable-compiler/fable-templates/blob/2be64f11850867023e0313ef8d465359c79a7b9a/simple/Content/webpack.config.js#L9) to make sure all the files referenced by Fable will be found by Babel/Webpack.
+
 ### F# source files
 
 The template only contains two F# source files: the project (.fsproj) and a source file (.fs) in `src` folder.
 
 ## Where to go from here
 
-Check more [Fable samples](https://github.com/fable-compiler/samples-browser), use another template like `Fable.Template.Elmish.React` or clone the [fable-suave-scaffold](https://github.com/fable-compiler/fable-suave-scaffold).
+Check more [Fable samples](https://github.com/fable-compiler/samples-browser), use another template like `Fable.Template.Elmish.React` or `SAFE.Template`, and check the [awesome-fable](https://github.com/kunjee17/awesome-fable#-awesome-fable) for a curated list of resources provided by the community.
