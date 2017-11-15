@@ -43,6 +43,12 @@ If you are using VS Code + [Ionide](http://ionide.io/), you can also use the key
 
 Any modification you do to the F# code will be reflected in the web page after saving. When you want to output the JS code to disk, run `dotnet fable yarn-build` and you'll get a minified JS bundle in the `public` folder.
 
+## JS Output
+
+This template uses [babel-preset-env](http://babeljs.io/env) to output JS code whose syntax is compatible with a wide range of browsers. Currently it's set to support browsers with at least 1% of market share. To change this (for example, if you don't need to support IE), [replace this line](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/webpack.config.js#L13) with a query understood by [browserl.ist](http://browserl.ist/?q=%3E+1%25).
+
+To replace objects and APIs that may be missing in old browsers, the `index.html` file [submits a request](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/public/index.html#L8) to [cdn.polyfill.io](https://polyfill.io/v2/docs/) that tailors the polyfill according to the user's browser.
+
 ## Project structure
 
 ### Paket
@@ -70,7 +76,7 @@ Any modification you do to the F# code will be reflected in the web page after s
 
 - **webpack.config.js**: is the configuration file for Webpack. It allows you to set many things: like the path of the bundle, the port for the development server or [Babel](https://babeljs.io/) options. See [Webpack website](https://webpack.js.org) for more info.
 
-> Make sure to resolve all the paths [as well as Babel options](https://github.com/fable-compiler/fable-templates/blob/2be64f11850867023e0313ef8d465359c79a7b9a/simple/Content/webpack.config.js#L9) to make sure all the files referenced by Fable will be found by Babel/Webpack.
+> Make sure to resolve all the paths [as well as Babel options](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/webpack.config.js#L9) to make sure all the files referenced by Fable will be found by Babel/Webpack.
 
 ### F# source files
 
