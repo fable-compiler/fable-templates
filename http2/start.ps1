@@ -1,0 +1,1 @@
+node dist/App.js
