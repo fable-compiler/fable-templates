@@ -1,0 +1,1 @@
+nuget pack .\ctaggart.templates.nuspec
