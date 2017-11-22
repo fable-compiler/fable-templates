@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>ctaggart.templates</id>
+    <version>0.1.5</version>
+    <authors>Cameron Taggart</authors>
+    <owners>Cameron Taggart</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ctaggart/templates/blob/master/LICENSE</licenseUrl>
+    <projectUrl>https://github.com/ctaggart/templates</projectUrl>
+    <description>my dotnet templates</description>
+    <tags>template fsharp fable http2</tags>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <repository url="https://github.com/ctaggart/templates.git" />
+    <dependencies>
+      <group targetFramework=".NETStandard2.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file target="Content" src="http2/**" exclude="http2/dist/**;http2/node_modules/**;http2/paket-files/**;http2/*.pem" />
+  </files>
+</package>
