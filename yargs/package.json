@@ -1,0 +1,28 @@
+{
+  "name": "App",
+  "version": "0.0.0",
+  "description": "My awesome App",
+  "main": "./dist/App.js",
+  "files": [
+    "dist/"
+  ],
+  "scripts": {
+    "build": "fable-splitter -c splitter.config.js",
+    "watch": "fable-splitter -c splitter.config.js -w"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "@types/node": "^8.0.53",
+    "@types/yargs": "^8.0.2",
+    "babel-core": "6.26.0",
+    "babel-plugin-shebang": "^0.0.0",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "cross-env": "^5.1.1",
+    "fable-splitter": "0.1.20",
+    "fable-utils": "1.0.6"
+  },
+  "dependencies": {
+    "yargs": "^10.0.3"
+  }
+}

@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ctaggart.templates</id>
-    <version>0.1.5</version>
+    <version>0.2.0</version>
     <authors>Cameron Taggart</authors>
     <owners>Cameron Taggart</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -20,5 +20,6 @@
   </metadata>
   <files>
     <file target="Content" src="http2/**" exclude="http2/dist/**;http2/node_modules/**;http2/paket-files/**;http2/*.pem" />
+    <file target="Content" src="yargs/**" exclude="yargs/dist/**;yargs/node_modules/**;yargs/paket-files/**" />
   </files>
 </package>

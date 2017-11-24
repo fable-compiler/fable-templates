@@ -1,14 +1,14 @@
 {
   "author": "Cameron Taggart",
-  "classifications": [ "Web" ],
-  "name": "HTTP/2",
+  "classifications": [ "Console" ],
+  "name": "Yargs",
   "tags": {
     "language": "F#",
     "type": "project"
   },
-  "groupIdentity": "ctaggart.templates.http2",
-  "identity": "ctaggart.templates.http2",
-  "shortName": "http2",
+  "groupIdentity": "ctaggart.templates.yargs",
+  "identity": "ctaggart.templates.yargs",
+  "shortName": "yargs",
   "sourceName": "ProjectName",
   // This allows using the `-n` option to create a new directory
   "preferNameDirectory": true
