@@ -1,0 +1,39 @@
+{
+    "name": "extension",
+    "displayName": "Extension",
+    "description": "",
+    "version": "0.0.1",
+    "publisher": "thepublisher",
+    "engines": {
+        "vscode": "^1.12.0"
+    },
+    "categories": [
+        "Other"
+    ],
+    "activationEvents": [
+        "onCommand:extension.sayHello"
+    ],
+    "main": "./out/src/extension",
+    "contributes": {
+        "commands": [{
+            "command": "extension.sayHello",
+            "title": "Hello World"
+        }]
+    },
+    "scripts": {
+        "build": "fable-splitter --config splitter.config.js",
+        "clean": "rm -rf bin && rm -rf node_modules && rm -rf obj && rm -rf out && rm -rf packages"
+    },
+    "devDependencies": {
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.6.1",
+        "babel-preset-es2015": "^6.24.1",
+        "babel-runtime": "^6.23.0",
+        "fable-import-vscode": "0.1.0-narumi-2",
+        "vscode": "^1.1.0"
+    },
+    "dependencies": {
+        "babel-core": "^6.26.0",
+        "fable-splitter": "^0.1.20"
+    }
+}
