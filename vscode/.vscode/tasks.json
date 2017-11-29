@@ -18,21 +18,26 @@
     },
     "tasks": [
         {
-            "label": "fetch-npm",
-            "command": "yarn",
-            "args": ["install"]
+            "label": "yarn",
+            "command": "yarn"
         },
         {
-            "label": "fetch-dotnet",
+            "label": "restore",
+            "dependsOn": "yarn",
             "command": "dotnet",
-            "dependsOn": "fetch-npm",
-            "args": ["restore", "-v", "d"]
+            "args": ["restore"],
+            "options": {
+                "cwd": "${workspaceRoot}/src"
+            }
         },
         {
             "label": "build",
+            "dependsOn": "restore",
             "command": "dotnet",
-            "dependsOn": "fetch-dotnet",
-            "args": ["fable", "npm-run", "build"],
+            "args": ["fable", "yarn-build"],
+            "options": {
+                "cwd": "${workspaceFolder}/src"
+            },
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -40,8 +45,8 @@
         },
         {
             "label": "clean",
-            "command": "npm",
-            "args": ["run", "clean"]
+            "command": "yarn",
+            "args": ["clean"]
         }
     ]
 }

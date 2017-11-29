@@ -1,14 +1,13 @@
 module Extension
 
-open Fable.Core
-open Fable.Core.JsInterop
-open Fable.Import.vscode
-open System
+open VSCode.Vscode
 
 let activate(context : ExtensionContext) =
+    printfn "Congratulations, your extension is now active!"
 
-  let sayHello () = window.showInformationMessage("Hello, World!") |> ignore
-
-  let disposable = commands.registerCommand("extension.sayHello", sayHello |> unbox<Func<obj,obj>>)
-  
-  context.subscriptions.Add(disposable)
+    commands.registerCommand("extension.sayHello", fun _ ->
+        window.showInformationMessage("Hello, World from F#!", ResizeArray []) |> ignore
+        printfn "Let's log something to the console here too."
+        None
+    )
+    |> context.subscriptions.Add

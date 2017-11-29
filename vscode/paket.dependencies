@@ -1,7 +1,7 @@
 source https://nuget.org/api/v2
+storage:none
 
 clitool dotnet-fable
-nuget FSharp.Core
 nuget Fable.Core
 
 # Add here other Fable libraries like Fable.PowerPack
