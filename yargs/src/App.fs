@@ -6,23 +6,24 @@ module App
 
 open Yargs
 open Fable.Core
+open Fable.Core.JsInterop
 open System.Text.RegularExpressions
 
 let argv =
     yargs
         .usage("Usage: $0 <command> [options]")
-        .command(U2.Case1 "count", "Count the lines in a file")
+        .command(!^"count", "Count the lines in a file")
         .example("$0 count -f foo.js", "count the lines in the given file")
-        .alias("f", U2.Case1 "file")
+        .alias("f", !^"file")
         .nargs("f", 1.)
-        .describe(U2.Case1 "f", "Load a file")
-        .demandOption(U2.Case1 "f", "Please specify a file.")
+        .describe(!^"f", "Load a file")
+        .demandOption(!^"f", "Please specify a file.")
         .help("h")
-        .alias("h", U2.Case1 "help")
+        .alias("h", !^"help")
         .epilog("copyright 2015")
         .argv
 
-let s = Node.fs.createReadStream(PathLike.ofString(argv.["file"].Value :?> string))
+let s = Node.fs.createReadStream(Node.Fs.PathLike.ofString(argv.["file"].Value :?> string))
 
 let mutable lines = 1
 

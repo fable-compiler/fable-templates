@@ -1,0 +1,15 @@
+{
+  "author": "Cameron Taggart",
+  "classifications": [ "Extension" ],
+  "name": "VS Code",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "groupIdentity": "ctaggart.templates.vscode",
+  "identity": "ctaggart.templates.vscode",
+  "shortName": "vscode",
+  "sourceName": "ProjectName",
+  // This allows using the `-n` option to create a new directory
+  "preferNameDirectory": true
+}

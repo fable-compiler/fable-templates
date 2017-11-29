@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ctaggart.templates</id>
-    <version>0.2.0</version>
+    <version>0.3.0-b8</version>
     <authors>Cameron Taggart</authors>
     <owners>Cameron Taggart</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -19,7 +19,8 @@
     </dependencies>
   </metadata>
   <files>
-    <file target="Content" src="http2/**" exclude="http2/dist/**;http2/node_modules/**;http2/paket-files/**;http2/*.pem" />
-    <file target="Content" src="yargs/**" exclude="yargs/dist/**;yargs/node_modules/**;yargs/paket-files/**" />
+    <file target="Content" src="http2/**" exclude="http2/dist/**;http2/node_modules/**;http2/paket-files/**;http2/*.pem;http2/*.log" />
+    <file target="Content" src="yargs/**" exclude="yargs/dist/**;yargs/node_modules/**;yargs/paket-files/**;yargs/*.log" />
+    <file target="Content" src="vscode/**" exclude="vscode/out/**;vscode/bin/**;vscode/obj/**;vscode/node_modules/**;vscode/paket-files/**;vscode/*.log;vscode/packages/**;vscode/src/bin/**;vscode/src/obj/**" />
   </files>
 </package>

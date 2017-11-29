@@ -2681,9 +2681,9 @@ trim-right@^1.0.1:
   version "1.0.1"
   resolved "https://registry.yarnpkg.com/trim-right/-/trim-right-1.0.1.tgz#cb2e1203067e0c8de1f614094b9fe45704ea6003"
 
-ts2fable@^0.5.0-build.148:
-  version "0.5.0-build.148"
-  resolved "https://registry.yarnpkg.com/ts2fable/-/ts2fable-0.5.0-build.148.tgz#1b5c629943944decef90fb38142cd2c66629629c"
+ts2fable@^0.5.2:
+  version "0.5.2"
+  resolved "https://registry.yarnpkg.com/ts2fable/-/ts2fable-0.5.2.tgz#5ce59214757c50b1d45c404f602287483eea4589"
   dependencies:
     typescript "2.6.1"
     yargs "^10.0.3"

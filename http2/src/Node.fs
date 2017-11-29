@@ -1,4 +1,4 @@
-// ts2fable 0.4.0
+// ts2fable 0.5.2
 module rec Node
 open System
 open Fable.Core
@@ -15,42 +15,42 @@ let [<Global>] ``module``: NodeModule = jsNative
 let [<Global>] exports: obj option = jsNative
 let [<Global>] SlowBuffer: obj = jsNative
 let [<Global>] Buffer: obj = jsNative
-let [<Import("*","setTimeout")>] setTimeout: setTimeout.IExports = jsNative
-let [<Import("*","setImmediate")>] setImmediate: setImmediate.IExports = jsNative
-let [<Import("*","NodeJS")>] NodeJS: NodeJS.IExports = jsNative
-let [<Import("*","buffer")>] buffer: buffer.IExports = jsNative
-let [<Import("*","querystring")>] querystring: querystring.IExports = jsNative
-let [<Import("*","events")>] events: events.IExports = jsNative
-let [<Import("*","http")>] http: http.IExports = jsNative
-let [<Import("*","cluster")>] cluster: cluster.IExports = jsNative
-let [<Import("*","zlib")>] zlib: zlib.IExports = jsNative
-let [<Import("*","os")>] os: os.IExports = jsNative
-let [<Import("*","https")>] https: https.IExports = jsNative
-let [<Import("*","punycode")>] punycode: punycode.IExports = jsNative
-let [<Import("*","repl")>] repl: repl.IExports = jsNative
-let [<Import("*","readline")>] readline: readline.IExports = jsNative
-let [<Import("*","vm")>] vm: vm.IExports = jsNative
-let [<Import("*","child_process")>] child_process: child_process.IExports = jsNative
-let [<Import("*","url")>] url: url.IExports = jsNative
-let [<Import("*","dns")>] dns: dns.IExports = jsNative
-let [<Import("*","net")>] net: net.IExports = jsNative
-let [<Import("*","dgram")>] dgram: dgram.IExports = jsNative
-let [<Import("*","fs")>] fs: fs.IExports = jsNative
-let [<Import("*","path")>] path: path.IExports = jsNative
-let [<Import("*","string_decoder")>] string_decoder: string_decoder.IExports = jsNative
-let [<Import("*","tls")>] tls: tls.IExports = jsNative
-let [<Import("*","crypto")>] crypto: crypto.IExports = jsNative
-let [<Import("*","stream")>] stream: stream.IExports = jsNative
-let [<Import("*","util")>] util: util.IExports = jsNative
-let [<Import("*","assert")>] ``assert``: assert_.IExports = jsNative
-let [<Import("*","tty")>] tty: tty.IExports = jsNative
-let [<Import("*","domain")>] domain: domain.IExports = jsNative
-let [<Import("*","constants")>] constants: constants.IExports = jsNative
-let [<Import("*","v8")>] v8: v8.IExports = jsNative
-let [<Import("*","timers")>] timers: timers.IExports = jsNative
-let [<Import("*","_debugger")>] _debugger: _debugger.IExports = jsNative
-let [<Import("*","async_hooks")>] async_hooks: async_hooks.IExports = jsNative
-let [<Import("*","http2")>] http2: http2.IExports = jsNative
+// let [<Import("*","setTimeout")>] setTimeout: SetTimeout.IExports = jsNative
+// let [<Import("*","setImmediate")>] setImmediate: SetImmediate.IExports = jsNative
+// let [<Import("*","NodeJS")>] nodeJS: NodeJS.IExports = jsNative
+let [<Import("*","buffer")>] buffer: Buffer.IExports = jsNative
+let [<Import("*","querystring")>] querystring: Querystring.IExports = jsNative
+let [<Import("*","events")>] events: Events.IExports = jsNative
+let [<Import("*","http")>] http: Http.IExports = jsNative
+let [<Import("*","cluster")>] cluster: Cluster.IExports = jsNative
+let [<Import("*","zlib")>] zlib: Zlib.IExports = jsNative
+let [<Import("*","os")>] os: Os.IExports = jsNative
+let [<Import("*","https")>] https: Https.IExports = jsNative
+let [<Import("*","punycode")>] punycode: Punycode.IExports = jsNative
+let [<Import("*","repl")>] repl: Repl.IExports = jsNative
+let [<Import("*","readline")>] readline: Readline.IExports = jsNative
+let [<Import("*","vm")>] vm: Vm.IExports = jsNative
+let [<Import("*","child_process")>] child_process: Child_process.IExports = jsNative
+let [<Import("*","url")>] url: Url.IExports = jsNative
+let [<Import("*","dns")>] dns: Dns.IExports = jsNative
+let [<Import("*","net")>] net: Net.IExports = jsNative
+let [<Import("*","dgram")>] dgram: Dgram.IExports = jsNative
+let [<Import("*","fs")>] fs: Fs.IExports = jsNative
+let [<Import("*","path")>] path: Path.IExports = jsNative
+let [<Import("*","string_decoder")>] string_decoder: String_decoder.IExports = jsNative
+let [<Import("*","tls")>] tls: Tls.IExports = jsNative
+let [<Import("*","crypto")>] crypto: Crypto.IExports = jsNative
+let [<Import("*","stream")>] stream: Stream.IExports = jsNative
+let [<Import("*","util")>] util: Util.IExports = jsNative
+let [<Import("*","assert")>] ``assert``: Assert.IExports = jsNative
+let [<Import("*","tty")>] tty: Tty.IExports = jsNative
+let [<Import("*","domain")>] domain: Domain.IExports = jsNative
+let [<Import("*","constants")>] constants: Constants.IExports = jsNative
+let [<Import("*","v8")>] v8: V8.IExports = jsNative
+let [<Import("*","timers")>] timers: Timers.IExports = jsNative
+// let [<Import("*","_debugger")>] _debugger: _debugger.IExports = jsNative
+let [<Import("*","async_hooks")>] async_hooks: Async_hooks.IExports = jsNative
+let [<Import("*","http2")>] http2: Http2.IExports = jsNative
 
 type [<AllowNullLiteral>] IExports =
     abstract setTimeout: callback: (ResizeArray<obj option> -> unit) * ms: float * [<ParamArray>] args: ResizeArray<obj option> -> NodeJS.Timer
@@ -106,13 +106,13 @@ type [<AllowNullLiteral>] SymbolConstructor =
     /// for-of statement.
     abstract iterator: Symbol
 
-module setTimeout =
+module SetTimeout =
 
     type [<AllowNullLiteral>] IExports =
         abstract __promisify__: ms: float -> Promise<unit>
         abstract __promisify__: ms: float * value: 'T -> Promise<'T>
 
-module setImmediate =
+module SetImmediate =
 
     type [<AllowNullLiteral>] IExports =
         abstract __promisify__: unit -> Promise<unit>
@@ -215,11 +215,14 @@ module NodeJS =
         abstract pause: unit -> ReadableStream
         abstract resume: unit -> ReadableStream
         abstract isPaused: unit -> bool
-        abstract pipe: destination: 'T * ?options: obj -> 'T
+        abstract pipe: destination: 'T * ?options: ReadableStreamPipeOptions -> 'T
         abstract unpipe: ?destination: 'T -> ReadableStream
         abstract unshift: chunk: string -> unit
         abstract unshift: chunk: Buffer -> unit
         abstract wrap: oldStream: ReadableStream -> ReadableStream
+
+    type [<AllowNullLiteral>] ReadableStreamPipeOptions =
+        abstract ``end``: bool option with get, set
 
     type [<AllowNullLiteral>] WritableStream =
         inherit EventEmitter
@@ -397,6 +400,7 @@ module NodeJS =
         abstract cwd: unit -> string
         abstract emitWarning: warning: U2<string, Error> * ?name: string * ?ctor: Function -> unit
         abstract env: ProcessEnv with get, set
+        abstract exit: ?code: float -> obj
         abstract exitCode: float with get, set
         abstract getgid: unit -> float
         abstract setgid: id: U2<float, string> -> unit
@@ -661,14 +665,14 @@ type [<AllowNullLiteral>] NodeBuffer =
     abstract keys: unit -> IterableIterator<float>
     abstract values: unit -> IterableIterator<float>
 
-module buffer =
+module Buffer =
 
     type [<AllowNullLiteral>] IExports =
-        abstract INSPECT_MAX_BYTES: float with get, set
-        abstract BuffType: obj with get, set
-        abstract SlowBuffType: obj with get, set
+        abstract INSPECT_MAX_BYTES: float
+        abstract BuffType: obj
+        abstract SlowBuffType: obj
 
-module querystring =
+module Querystring =
 
     type [<AllowNullLiteral>] IExports =
         abstract stringify: obj: 'T * ?sep: string * ?eq: string * ?options: StringifyOptions -> string
@@ -684,7 +688,7 @@ module querystring =
         abstract maxKeys: float option with get, set
         abstract decodeURIComponent: Function option with get, set
 
-module events =
+module Events =
 
     type [<AllowNullLiteral>] IExports =
         abstract ``internal``: internalStatic
@@ -717,8 +721,8 @@ module events =
         [<Emit "new $0($1...)">] abstract Create: unit -> EventEmitter
         abstract listenerCount: emitter: EventEmitter * ``event``: U2<string, Symbol> -> float
 
-module http =
-    type URL = url.URL
+module Http =
+    type URL = Url.URL
 
     type [<AllowNullLiteral>] IExports =
         abstract Server: ServerStatic
@@ -729,13 +733,13 @@ module http =
         abstract IncomingMessage: IncomingMessageStatic
         abstract ClientResponse: ClientResponseStatic
         abstract Agent: AgentStatic
-        abstract METHODS: ResizeArray<string> with get, set
-        abstract STATUS_CODES: obj with get, set
+        abstract METHODS: ResizeArray<string>
+        abstract STATUS_CODES: obj
         abstract createServer: ?requestListener: (IncomingMessage -> ServerResponse -> unit) -> Server
         abstract createClient: ?port: float * ?host: string -> obj option
         abstract request: options: U3<RequestOptions, string, URL> * ?callback: (IncomingMessage -> unit) -> ClientRequest
         abstract get: options: U3<RequestOptions, string, URL> * ?callback: (IncomingMessage -> unit) -> ClientRequest
-        abstract globalAgent: Agent with get, set
+        abstract globalAgent: Agent
 
     type [<AllowNullLiteral>] IncomingHttpHeaders =
         abstract accept: string option with get, set
@@ -799,10 +803,10 @@ module http =
         abstract agent: U2<Agent, bool> option with get, set
         abstract _defaultAgent: Agent option with get, set
         abstract timeout: float option with get, set
-        abstract createConnection: (ClientRequestArgs -> (Error -> net.Socket -> unit) -> net.Socket) option with get, set
+        abstract createConnection: (ClientRequestArgs -> (Error -> Net.Socket -> unit) -> Net.Socket) option with get, set
 
     type [<AllowNullLiteral>] Server =
-        inherit net.Server
+        inherit Net.Server
         abstract setTimeout: ?msecs: float * ?callback: (unit -> unit) -> Server
         abstract setTimeout: callback: (unit -> unit) -> Server
         abstract maxHeadersCount: float with get, set
@@ -814,13 +818,13 @@ module http =
 
     type [<AllowNullLiteral>] ServerRequest =
         inherit IncomingMessage
-        abstract connection: net.Socket with get, set
+        abstract connection: Net.Socket with get, set
 
     type [<AllowNullLiteral>] ServerRequestStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> ServerRequest
 
     type [<AllowNullLiteral>] OutgoingMessage =
-        inherit stream.Writable
+        inherit Stream.Writable
         abstract upgrading: bool with get, set
         abstract chunkedEncoding: bool with get, set
         abstract shouldKeepAlive: bool with get, set
@@ -828,7 +832,7 @@ module http =
         abstract sendDate: bool with get, set
         abstract finished: bool with get, set
         abstract headersSent: bool with get, set
-        abstract connection: net.Socket with get, set
+        abstract connection: Net.Socket with get, set
         abstract setTimeout: msecs: float * ?callback: (unit -> unit) -> OutgoingMessage
         abstract destroy: error: Error -> unit
         abstract setHeader: name: string * value: U3<float, string, ResizeArray<string>> -> unit
@@ -847,8 +851,8 @@ module http =
         inherit OutgoingMessage
         abstract statusCode: float with get, set
         abstract statusMessage: string with get, set
-        abstract assignSocket: socket: net.Socket -> unit
-        abstract detachSocket: socket: net.Socket -> unit
+        abstract assignSocket: socket: Net.Socket -> unit
+        abstract detachSocket: socket: Net.Socket -> unit
         abstract writeContinue: ?callback: (unit -> unit) -> unit
         abstract writeHead: statusCode: float * ?reasonPhrase: string * ?headers: OutgoingHttpHeaders -> unit
         abstract writeHead: statusCode: float * ?headers: OutgoingHttpHeaders -> unit
@@ -858,11 +862,11 @@ module http =
 
     type [<AllowNullLiteral>] ClientRequest =
         inherit OutgoingMessage
-        abstract connection: net.Socket with get, set
-        abstract socket: net.Socket with get, set
+        abstract connection: Net.Socket with get, set
+        abstract socket: Net.Socket with get, set
         abstract aborted: float with get, set
         abstract abort: unit -> unit
-        abstract onSocket: socket: net.Socket -> unit
+        abstract onSocket: socket: Net.Socket -> unit
         abstract setTimeout: timeout: float * ?callback: (unit -> unit) -> ClientRequest
         abstract setNoDelay: ?noDelay: bool -> unit
         abstract setSocketKeepAlive: ?enable: bool * ?initialDelay: float -> unit
@@ -871,11 +875,11 @@ module http =
         [<Emit "new $0($1...)">] abstract Create: url: U3<string, URL, ClientRequestArgs> * ?cb: (IncomingMessage -> unit) -> ClientRequest
 
     type [<AllowNullLiteral>] IncomingMessage =
-        inherit stream.Readable
+        inherit Stream.Readable
         abstract httpVersion: string with get, set
         abstract httpVersionMajor: float with get, set
         abstract httpVersionMinor: float with get, set
-        abstract connection: net.Socket with get, set
+        abstract connection: Net.Socket with get, set
         abstract headers: IncomingHttpHeaders with get, set
         abstract rawHeaders: ResizeArray<string> with get, set
         abstract trailers: obj with get, set
@@ -889,11 +893,11 @@ module http =
         abstract statusCode: float option with get, set
         /// Only valid for response obtained from http.ClientRequest.
         abstract statusMessage: string option with get, set
-        abstract socket: net.Socket with get, set
+        abstract socket: Net.Socket with get, set
         abstract destroy: ?error: Error -> unit
 
     type [<AllowNullLiteral>] IncomingMessageStatic =
-        [<Emit "new $0($1...)">] abstract Create: socket: net.Socket -> IncomingMessage
+        [<Emit "new $0($1...)">] abstract Create: socket: Net.Socket -> IncomingMessage
 
     type [<AllowNullLiteral>] ClientResponse =
         inherit IncomingMessage
@@ -928,19 +932,19 @@ module http =
     type [<AllowNullLiteral>] RequestOptions =
         inherit ClientRequestArgs
 
-module cluster =
-    module child = child_process
+module Cluster =
+    module Child = Child_process
 
     type [<AllowNullLiteral>] IExports =
         abstract Worker: WorkerStatic
         abstract disconnect: ?callback: Function -> unit
         abstract fork: ?env: obj option -> Worker
-        abstract isMaster: bool with get, set
-        abstract isWorker: bool with get, set
-        abstract settings: ClusterSettings with get, set
+        abstract isMaster: bool
+        abstract isWorker: bool
+        abstract settings: ClusterSettings
         abstract setupMaster: ?settings: ClusterSetupMasterSettings -> unit
-        abstract worker: Worker with get, set
-        abstract workers: obj with get, set
+        abstract worker: Worker
+        abstract workers: obj
         /// events.EventEmitter
         ///    1. disconnect
         ///    2. exit
@@ -954,7 +958,7 @@ module cluster =
         [<Emit "$0.addListener('exit',$1)">] abstract addListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.addListener('fork',$1)">] abstract addListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.addListener('listening',$1)">] abstract addListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.addListener('online',$1)">] abstract addListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.addListener('setup',$1)">] abstract addListener_setup: listener: (obj option -> unit) -> Cluster
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
@@ -962,7 +966,7 @@ module cluster =
         [<Emit "$0.emit('exit',$1,$2,$3)">] abstract emit_exit: worker: Worker * code: float * signal: string -> bool
         [<Emit "$0.emit('fork',$1)">] abstract emit_fork: worker: Worker -> bool
         [<Emit "$0.emit('listening',$1,$2)">] abstract emit_listening: worker: Worker * address: Address -> bool
-        [<Emit "$0.emit('message',$1,$2,$3)">] abstract emit_message: worker: Worker * message: obj option * handle: U2<net.Socket, net.Server> -> bool
+        [<Emit "$0.emit('message',$1,$2,$3)">] abstract emit_message: worker: Worker * message: obj option * handle: U2<Net.Socket, Net.Server> -> bool
         [<Emit "$0.emit('online',$1)">] abstract emit_online: worker: Worker -> bool
         [<Emit "$0.emit('setup',$1)">] abstract emit_setup: settings: obj option -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -970,7 +974,7 @@ module cluster =
         [<Emit "$0.on('exit',$1)">] abstract on_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.on('fork',$1)">] abstract on_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.on('listening',$1)">] abstract on_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.on('online',$1)">] abstract on_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.on('setup',$1)">] abstract on_setup: listener: (obj option -> unit) -> Cluster
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -978,7 +982,7 @@ module cluster =
         [<Emit "$0.once('exit',$1)">] abstract once_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.once('fork',$1)">] abstract once_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.once('listening',$1)">] abstract once_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.once('online',$1)">] abstract once_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.once('setup',$1)">] abstract once_setup: listener: (obj option -> unit) -> Cluster
         abstract removeListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -992,7 +996,7 @@ module cluster =
         [<Emit "$0.prependListener('exit',$1)">] abstract prependListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.prependListener('fork',$1)">] abstract prependListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependListener('listening',$1)">] abstract prependListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.prependListener('online',$1)">] abstract prependListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependListener('setup',$1)">] abstract prependListener_setup: listener: (obj option -> unit) -> Cluster
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -1000,7 +1004,7 @@ module cluster =
         [<Emit "$0.prependOnceListener('exit',$1)">] abstract prependOnceListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('fork',$1)">] abstract prependOnceListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('listening',$1)">] abstract prependOnceListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('online',$1)">] abstract prependOnceListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('setup',$1)">] abstract prependOnceListener_setup: listener: (obj option -> unit) -> Cluster
         abstract eventNames: unit -> ResizeArray<string>
@@ -1026,9 +1030,9 @@ module cluster =
         abstract addressType: U3<float, string, string> with get, set
 
     type [<AllowNullLiteral>] Worker =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract id: string with get, set
-        abstract ``process``: child.ChildProcess with get, set
+        abstract ``process``: Child.ChildProcess with get, set
         abstract suicide: bool with get, set
         abstract send: message: obj option * ?sendHandle: obj option * ?callback: (Error -> unit) -> bool
         abstract kill: ?signal: string -> unit
@@ -1049,49 +1053,49 @@ module cluster =
         [<Emit "$0.addListener('error',$1)">] abstract addListener_error: listener: (Error -> unit) -> Worker
         [<Emit "$0.addListener('exit',$1)">] abstract addListener_exit: listener: (float -> string -> unit) -> Worker
         [<Emit "$0.addListener('listening',$1)">] abstract addListener_listening: listener: (Address -> unit) -> Worker
-        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> Worker
+        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> Worker
         [<Emit "$0.addListener('online',$1)">] abstract addListener_online: listener: (unit -> unit) -> Worker
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
         [<Emit "$0.emit('disconnect')">] abstract emit_disconnect: unit -> bool
         [<Emit "$0.emit('error',$1)">] abstract emit_error: error: Error -> bool
         [<Emit "$0.emit('exit',$1,$2)">] abstract emit_exit: code: float * signal: string -> bool
         [<Emit "$0.emit('listening',$1)">] abstract emit_listening: address: Address -> bool
-        [<Emit "$0.emit('message',$1,$2)">] abstract emit_message: message: obj option * handle: U2<net.Socket, net.Server> -> bool
+        [<Emit "$0.emit('message',$1,$2)">] abstract emit_message: message: obj option * handle: U2<Net.Socket, Net.Server> -> bool
         [<Emit "$0.emit('online')">] abstract emit_online: unit -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Worker
         [<Emit "$0.on('disconnect',$1)">] abstract on_disconnect: listener: (unit -> unit) -> Worker
         [<Emit "$0.on('error',$1)">] abstract on_error: listener: (Error -> unit) -> Worker
         [<Emit "$0.on('exit',$1)">] abstract on_exit: listener: (float -> string -> unit) -> Worker
         [<Emit "$0.on('listening',$1)">] abstract on_listening: listener: (Address -> unit) -> Worker
-        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> Worker
+        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> Worker
         [<Emit "$0.on('online',$1)">] abstract on_online: listener: (unit -> unit) -> Worker
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Worker
         [<Emit "$0.once('disconnect',$1)">] abstract once_disconnect: listener: (unit -> unit) -> Worker
         [<Emit "$0.once('error',$1)">] abstract once_error: listener: (Error -> unit) -> Worker
         [<Emit "$0.once('exit',$1)">] abstract once_exit: listener: (float -> string -> unit) -> Worker
         [<Emit "$0.once('listening',$1)">] abstract once_listening: listener: (Address -> unit) -> Worker
-        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> Worker
+        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> Worker
         [<Emit "$0.once('online',$1)">] abstract once_online: listener: (unit -> unit) -> Worker
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Worker
         [<Emit "$0.prependListener('disconnect',$1)">] abstract prependListener_disconnect: listener: (unit -> unit) -> Worker
         [<Emit "$0.prependListener('error',$1)">] abstract prependListener_error: listener: (Error -> unit) -> Worker
         [<Emit "$0.prependListener('exit',$1)">] abstract prependListener_exit: listener: (float -> string -> unit) -> Worker
         [<Emit "$0.prependListener('listening',$1)">] abstract prependListener_listening: listener: (Address -> unit) -> Worker
-        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> Worker
+        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> Worker
         [<Emit "$0.prependListener('online',$1)">] abstract prependListener_online: listener: (unit -> unit) -> Worker
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Worker
         [<Emit "$0.prependOnceListener('disconnect',$1)">] abstract prependOnceListener_disconnect: listener: (unit -> unit) -> Worker
         [<Emit "$0.prependOnceListener('error',$1)">] abstract prependOnceListener_error: listener: (Error -> unit) -> Worker
         [<Emit "$0.prependOnceListener('exit',$1)">] abstract prependOnceListener_exit: listener: (float -> string -> unit) -> Worker
         [<Emit "$0.prependOnceListener('listening',$1)">] abstract prependOnceListener_listening: listener: (Address -> unit) -> Worker
-        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> Worker
+        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> Worker
         [<Emit "$0.prependOnceListener('online',$1)">] abstract prependOnceListener_online: listener: (unit -> unit) -> Worker
 
     type [<AllowNullLiteral>] WorkerStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> Worker
 
     type [<AllowNullLiteral>] Cluster =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract Worker: Worker with get, set
         abstract disconnect: ?callback: Function -> unit
         abstract fork: ?env: obj option -> Worker
@@ -1114,7 +1118,7 @@ module cluster =
         [<Emit "$0.addListener('exit',$1)">] abstract addListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.addListener('fork',$1)">] abstract addListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.addListener('listening',$1)">] abstract addListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.addListener('online',$1)">] abstract addListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.addListener('setup',$1)">] abstract addListener_setup: listener: (obj option -> unit) -> Cluster
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
@@ -1122,7 +1126,7 @@ module cluster =
         [<Emit "$0.emit('exit',$1,$2,$3)">] abstract emit_exit: worker: Worker * code: float * signal: string -> bool
         [<Emit "$0.emit('fork',$1)">] abstract emit_fork: worker: Worker -> bool
         [<Emit "$0.emit('listening',$1,$2)">] abstract emit_listening: worker: Worker * address: Address -> bool
-        [<Emit "$0.emit('message',$1,$2,$3)">] abstract emit_message: worker: Worker * message: obj option * handle: U2<net.Socket, net.Server> -> bool
+        [<Emit "$0.emit('message',$1,$2,$3)">] abstract emit_message: worker: Worker * message: obj option * handle: U2<Net.Socket, Net.Server> -> bool
         [<Emit "$0.emit('online',$1)">] abstract emit_online: worker: Worker -> bool
         [<Emit "$0.emit('setup',$1)">] abstract emit_setup: settings: obj option -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -1130,7 +1134,7 @@ module cluster =
         [<Emit "$0.on('exit',$1)">] abstract on_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.on('fork',$1)">] abstract on_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.on('listening',$1)">] abstract on_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.on('online',$1)">] abstract on_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.on('setup',$1)">] abstract on_setup: listener: (obj option -> unit) -> Cluster
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -1138,7 +1142,7 @@ module cluster =
         [<Emit "$0.once('exit',$1)">] abstract once_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.once('fork',$1)">] abstract once_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.once('listening',$1)">] abstract once_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.once('online',$1)">] abstract once_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.once('setup',$1)">] abstract once_setup: listener: (obj option -> unit) -> Cluster
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -1146,7 +1150,7 @@ module cluster =
         [<Emit "$0.prependListener('exit',$1)">] abstract prependListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.prependListener('fork',$1)">] abstract prependListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependListener('listening',$1)">] abstract prependListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.prependListener('online',$1)">] abstract prependListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependListener('setup',$1)">] abstract prependListener_setup: listener: (obj option -> unit) -> Cluster
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Cluster
@@ -1154,11 +1158,12 @@ module cluster =
         [<Emit "$0.prependOnceListener('exit',$1)">] abstract prependOnceListener_exit: listener: (Worker -> float -> string -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('fork',$1)">] abstract prependOnceListener_fork: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('listening',$1)">] abstract prependOnceListener_listening: listener: (Worker -> Address -> unit) -> Cluster
-        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (Worker -> obj option -> U2<net.Socket, net.Server> -> unit) -> Cluster
+        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (Worker -> obj option -> U2<Net.Socket, Net.Server> -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('online',$1)">] abstract prependOnceListener_online: listener: (Worker -> unit) -> Cluster
         [<Emit "$0.prependOnceListener('setup',$1)">] abstract prependOnceListener_setup: listener: (obj option -> unit) -> Cluster
 
-module zlib =
+module Zlib =
+    let [<Import("constants","zlib")>] constants: Constants.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
         abstract createGzip: ?options: ZlibOptions -> Gzip
@@ -1189,36 +1194,36 @@ module zlib =
         abstract unzip: buf: U2<Buffer, string> * callback: (Error option -> Buffer -> unit) -> unit
         abstract unzip: buf: U2<Buffer, string> * options: ZlibOptions * callback: (Error option -> Buffer -> unit) -> unit
         abstract unzipSync: buf: U2<Buffer, string> * ?options: ZlibOptions -> Buffer
-        abstract Z_NO_FLUSH: float with get, set
-        abstract Z_PARTIAL_FLUSH: float with get, set
-        abstract Z_SYNC_FLUSH: float with get, set
-        abstract Z_FULL_FLUSH: float with get, set
-        abstract Z_FINISH: float with get, set
-        abstract Z_BLOCK: float with get, set
-        abstract Z_TREES: float with get, set
-        abstract Z_OK: float with get, set
-        abstract Z_STREAM_END: float with get, set
-        abstract Z_NEED_DICT: float with get, set
-        abstract Z_ERRNO: float with get, set
-        abstract Z_STREAM_ERROR: float with get, set
-        abstract Z_DATA_ERROR: float with get, set
-        abstract Z_MEM_ERROR: float with get, set
-        abstract Z_BUF_ERROR: float with get, set
-        abstract Z_VERSION_ERROR: float with get, set
-        abstract Z_NO_COMPRESSION: float with get, set
-        abstract Z_BEST_SPEED: float with get, set
-        abstract Z_BEST_COMPRESSION: float with get, set
-        abstract Z_DEFAULT_COMPRESSION: float with get, set
-        abstract Z_FILTERED: float with get, set
-        abstract Z_HUFFMAN_ONLY: float with get, set
-        abstract Z_RLE: float with get, set
-        abstract Z_FIXED: float with get, set
-        abstract Z_DEFAULT_STRATEGY: float with get, set
-        abstract Z_BINARY: float with get, set
-        abstract Z_TEXT: float with get, set
-        abstract Z_ASCII: float with get, set
-        abstract Z_UNKNOWN: float with get, set
-        abstract Z_DEFLATED: float with get, set
+        abstract Z_NO_FLUSH: float
+        abstract Z_PARTIAL_FLUSH: float
+        abstract Z_SYNC_FLUSH: float
+        abstract Z_FULL_FLUSH: float
+        abstract Z_FINISH: float
+        abstract Z_BLOCK: float
+        abstract Z_TREES: float
+        abstract Z_OK: float
+        abstract Z_STREAM_END: float
+        abstract Z_NEED_DICT: float
+        abstract Z_ERRNO: float
+        abstract Z_STREAM_ERROR: float
+        abstract Z_DATA_ERROR: float
+        abstract Z_MEM_ERROR: float
+        abstract Z_BUF_ERROR: float
+        abstract Z_VERSION_ERROR: float
+        abstract Z_NO_COMPRESSION: float
+        abstract Z_BEST_SPEED: float
+        abstract Z_BEST_COMPRESSION: float
+        abstract Z_DEFAULT_COMPRESSION: float
+        abstract Z_FILTERED: float
+        abstract Z_HUFFMAN_ONLY: float
+        abstract Z_RLE: float
+        abstract Z_FIXED: float
+        abstract Z_DEFAULT_STRATEGY: float
+        abstract Z_BINARY: float
+        abstract Z_TEXT: float
+        abstract Z_ASCII: float
+        abstract Z_UNKNOWN: float
+        abstract Z_DEFLATED: float
 
     type [<AllowNullLiteral>] ZlibOptions =
         abstract flush: float option with get, set
@@ -1231,56 +1236,56 @@ module zlib =
         abstract dictionary: obj option option with get, set
 
     type [<AllowNullLiteral>] Gzip =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] Gunzip =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] Deflate =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] Inflate =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] DeflateRaw =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] InflateRaw =
-        inherit stream.Transform
+        inherit Stream.Transform
 
     type [<AllowNullLiteral>] Unzip =
-        inherit stream.Transform
+        inherit Stream.Transform
 
-    module constants =
+    module Constants =
 
         type [<AllowNullLiteral>] IExports =
-            abstract Z_NO_FLUSH: float with get, set
-            abstract Z_PARTIAL_FLUSH: float with get, set
-            abstract Z_SYNC_FLUSH: float with get, set
-            abstract Z_FULL_FLUSH: float with get, set
-            abstract Z_FINISH: float with get, set
-            abstract Z_BLOCK: float with get, set
-            abstract Z_TREES: float with get, set
-            abstract Z_OK: float with get, set
-            abstract Z_STREAM_END: float with get, set
-            abstract Z_NEED_DICT: float with get, set
-            abstract Z_ERRNO: float with get, set
-            abstract Z_STREAM_ERROR: float with get, set
-            abstract Z_DATA_ERROR: float with get, set
-            abstract Z_MEM_ERROR: float with get, set
-            abstract Z_BUF_ERROR: float with get, set
-            abstract Z_VERSION_ERROR: float with get, set
-            abstract Z_NO_COMPRESSION: float with get, set
-            abstract Z_BEST_SPEED: float with get, set
-            abstract Z_BEST_COMPRESSION: float with get, set
-            abstract Z_DEFAULT_COMPRESSION: float with get, set
-            abstract Z_FILTERED: float with get, set
-            abstract Z_HUFFMAN_ONLY: float with get, set
-            abstract Z_RLE: float with get, set
-            abstract Z_FIXED: float with get, set
-            abstract Z_DEFAULT_STRATEGY: float with get, set
+            abstract Z_NO_FLUSH: float
+            abstract Z_PARTIAL_FLUSH: float
+            abstract Z_SYNC_FLUSH: float
+            abstract Z_FULL_FLUSH: float
+            abstract Z_FINISH: float
+            abstract Z_BLOCK: float
+            abstract Z_TREES: float
+            abstract Z_OK: float
+            abstract Z_STREAM_END: float
+            abstract Z_NEED_DICT: float
+            abstract Z_ERRNO: float
+            abstract Z_STREAM_ERROR: float
+            abstract Z_DATA_ERROR: float
+            abstract Z_MEM_ERROR: float
+            abstract Z_BUF_ERROR: float
+            abstract Z_VERSION_ERROR: float
+            abstract Z_NO_COMPRESSION: float
+            abstract Z_BEST_SPEED: float
+            abstract Z_BEST_COMPRESSION: float
+            abstract Z_DEFAULT_COMPRESSION: float
+            abstract Z_FILTERED: float
+            abstract Z_HUFFMAN_ONLY: float
+            abstract Z_RLE: float
+            abstract Z_FIXED: float
+            abstract Z_DEFAULT_STRATEGY: float
 
-module os =
+module Os =
 
     type [<AllowNullLiteral>] IExports =
         abstract hostname: unit -> string
@@ -1293,13 +1298,16 @@ module os =
         abstract release: unit -> string
         abstract networkInterfaces: unit -> obj
         abstract homedir: unit -> string
-        abstract userInfo: ?options: obj -> obj
-        abstract constants: obj with get, set
+        abstract userInfo: ?options: UserInfoOptions -> obj
+        abstract constants: obj
         abstract arch: unit -> string
         abstract platform: unit -> NodeJS.Platform
         abstract tmpdir: unit -> string
-        abstract EOL: string with get, set
+        abstract EOL: string
         abstract endianness: unit -> U2<string, string>
+
+    type [<AllowNullLiteral>] UserInfoOptions =
+        abstract encoding: string with get, set
 
     type [<AllowNullLiteral>] CpuInfo =
         abstract model: string with get, set
@@ -1324,16 +1332,25 @@ module os =
     type NetworkInterfaceInfo =
         U2<NetworkInterfaceInfoIPv4, NetworkInterfaceInfoIPv6>
 
-module https =
-    type URL = url.URL
+    [<RequireQualifiedAccess; CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+    module NetworkInterfaceInfo =
+        let ofNetworkInterfaceInfoIPv4 v: NetworkInterfaceInfo = v |> U2.Case1
+        let isNetworkInterfaceInfoIPv4 (v: NetworkInterfaceInfo) = match v with U2.Case1 _ -> true | _ -> false
+        let asNetworkInterfaceInfoIPv4 (v: NetworkInterfaceInfo) = match v with U2.Case1 o -> Some o | _ -> None
+        let ofNetworkInterfaceInfoIPv6 v: NetworkInterfaceInfo = v |> U2.Case2
+        let isNetworkInterfaceInfoIPv6 (v: NetworkInterfaceInfo) = match v with U2.Case2 _ -> true | _ -> false
+        let asNetworkInterfaceInfoIPv6 (v: NetworkInterfaceInfo) = match v with U2.Case2 o -> Some o | _ -> None
+
+module Https =
+    type URL = Url.URL
 
     type [<AllowNullLiteral>] IExports =
         abstract Agent: AgentStatic
         abstract Server: ServerStatic
-        abstract createServer: options: ServerOptions * ?requestListener: (http.IncomingMessage -> http.ServerResponse -> unit) -> Server
-        abstract request: options: U3<RequestOptions, string, URL> * ?callback: (http.IncomingMessage -> unit) -> http.ClientRequest
-        abstract get: options: U3<RequestOptions, string, URL> * ?callback: (http.IncomingMessage -> unit) -> http.ClientRequest
-        abstract globalAgent: Agent with get, set
+        abstract createServer: options: ServerOptions * ?requestListener: (Http.IncomingMessage -> Http.ServerResponse -> unit) -> Server
+        abstract request: options: U3<RequestOptions, string, URL> * ?callback: (Http.IncomingMessage -> unit) -> Http.ClientRequest
+        abstract get: options: U3<RequestOptions, string, URL> * ?callback: (Http.IncomingMessage -> unit) -> Http.ClientRequest
+        abstract globalAgent: Agent
 
     type [<AllowNullLiteral>] ServerOptions =
         abstract pfx: obj option option with get, set
@@ -1347,10 +1364,10 @@ module https =
         abstract requestCert: bool option with get, set
         abstract rejectUnauthorized: bool option with get, set
         abstract NPNProtocols: obj option option with get, set
-        abstract SNICallback: (string -> (Error option -> tls.SecureContext -> unit) -> unit) option with get, set
+        abstract SNICallback: (string -> (Error option -> Tls.SecureContext -> unit) -> unit) option with get, set
 
     type [<AllowNullLiteral>] RequestOptions =
-        inherit http.RequestOptions
+        inherit Http.RequestOptions
         abstract pfx: obj option option with get, set
         abstract key: obj option option with get, set
         abstract passphrase: string option with get, set
@@ -1362,7 +1379,7 @@ module https =
         abstract servername: string option with get, set
 
     type [<AllowNullLiteral>] AgentOptions =
-        inherit http.AgentOptions
+        inherit Http.AgentOptions
         abstract pfx: obj option option with get, set
         abstract key: obj option option with get, set
         abstract passphrase: string option with get, set
@@ -1375,13 +1392,13 @@ module https =
         abstract maxCachedSessions: float option with get, set
 
     type [<AllowNullLiteral>] Agent =
-        inherit http.Agent
+        inherit Http.Agent
 
     type [<AllowNullLiteral>] AgentStatic =
         [<Emit "new $0($1...)">] abstract Create: ?options: AgentOptions -> Agent
 
     type [<AllowNullLiteral>] Server =
-        inherit tls.Server
+        inherit Tls.Server
         abstract setTimeout: callback: (unit -> unit) -> Server
         abstract setTimeout: ?msecs: float * ?callback: (unit -> unit) -> Server
         abstract timeout: float with get, set
@@ -1390,21 +1407,21 @@ module https =
     type [<AllowNullLiteral>] ServerStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> Server
 
-module punycode =
+module Punycode =
 
     type [<AllowNullLiteral>] IExports =
         abstract decode: string: string -> string
         abstract encode: string: string -> string
         abstract toUnicode: domain: string -> string
         abstract toASCII: domain: string -> string
-        abstract ucs2: ucs2 with get, set
-        abstract version: obj option with get, set
+        abstract ucs2: ucs2
+        abstract version: obj option
 
     type [<AllowNullLiteral>] ucs2 =
         abstract decode: string: string -> ResizeArray<float>
         abstract encode: codePoints: ResizeArray<float> -> string
 
-module repl =
+module Repl =
 
     type [<AllowNullLiteral>] IExports =
         abstract start: ?options: U2<string, ReplOptions> -> REPLServer
@@ -1425,7 +1442,7 @@ module repl =
         abstract breakEvalOnSigint: obj option option with get, set
 
     type [<AllowNullLiteral>] REPLServer =
-        inherit readline.ReadLine
+        inherit Readline.ReadLine
         abstract context: obj option with get, set
         abstract inputStream: NodeJS.ReadableStream with get, set
         abstract outputStream: NodeJS.WritableStream with get, set
@@ -1460,7 +1477,7 @@ module repl =
     type [<AllowNullLiteral>] RecoverableStatic =
         [<Emit "new $0($1...)">] abstract Create: err: Error -> Recoverable
 
-module readline =
+module Readline =
 
     type [<AllowNullLiteral>] IExports =
         abstract createInterface: input: NodeJS.ReadableStream * ?output: NodeJS.WritableStream * ?completer: U2<Completer, AsyncCompleter> * ?terminal: bool -> ReadLine
@@ -1479,7 +1496,7 @@ module readline =
         abstract shift: bool option with get, set
 
     type [<AllowNullLiteral>] ReadLine =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract setPrompt: prompt: string -> unit
         abstract prompt: ?preserveCursor: bool -> unit
         abstract question: query: string * callback: (string -> unit) -> unit
@@ -1560,7 +1577,7 @@ module readline =
         abstract terminal: bool option with get, set
         abstract historySize: float option with get, set
 
-module vm =
+module Vm =
 
     type [<AllowNullLiteral>] IExports =
         abstract Script: ScriptStatic
@@ -1598,7 +1615,9 @@ module vm =
     type [<AllowNullLiteral>] ScriptStatic =
         [<Emit "new $0($1...)">] abstract Create: code: string * ?options: ScriptOptions -> Script
 
-module child_process =
+module Child_process =
+    let [<Import("exec","child_process")>] exec: Exec.IExports = jsNative
+    let [<Import("execFile","child_process")>] execFile: ExecFile.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
         abstract spawn: command: string * ?args: ResizeArray<string> * ?options: SpawnOptions -> ChildProcess
@@ -1645,17 +1664,17 @@ module child_process =
         abstract execFileSync: command: string * ?args: ResizeArray<string> * ?options: ExecFileSyncOptions -> Buffer
 
     type [<AllowNullLiteral>] ChildProcess =
-        inherit events.EventEmitter
-        abstract stdin: stream.Writable with get, set
-        abstract stdout: stream.Readable with get, set
-        abstract stderr: stream.Readable with get, set
-        abstract stdio: stream.Writable * stream.Readable * stream.Readable with get, set
+        inherit Events.EventEmitter
+        abstract stdin: Stream.Writable with get, set
+        abstract stdout: Stream.Readable with get, set
+        abstract stderr: Stream.Readable with get, set
+        abstract stdio: Stream.Writable * Stream.Readable * Stream.Readable with get, set
         abstract killed: bool with get, set
         abstract pid: float with get, set
         abstract kill: ?signal: string -> unit
         abstract send: message: obj option * ?callback: (Error -> unit) -> bool
-        abstract send: message: obj option * ?sendHandle: U2<net.Socket, net.Server> * ?callback: (Error -> unit) -> bool
-        abstract send: message: obj option * ?sendHandle: U2<net.Socket, net.Server> * ?options: MessageOptions * ?callback: (Error -> unit) -> bool
+        abstract send: message: obj option * ?sendHandle: U2<Net.Socket, Net.Server> * ?callback: (Error -> unit) -> bool
+        abstract send: message: obj option * ?sendHandle: U2<Net.Socket, Net.Server> * ?options: MessageOptions * ?callback: (Error -> unit) -> bool
         abstract connected: bool with get, set
         abstract disconnect: unit -> unit
         abstract unref: unit -> unit
@@ -1671,37 +1690,37 @@ module child_process =
         [<Emit "$0.addListener('disconnect',$1)">] abstract addListener_disconnect: listener: (unit -> unit) -> ChildProcess
         [<Emit "$0.addListener('error',$1)">] abstract addListener_error: listener: (Error -> unit) -> ChildProcess
         [<Emit "$0.addListener('exit',$1)">] abstract addListener_exit: listener: (float -> string -> unit) -> ChildProcess
-        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> ChildProcess
+        [<Emit "$0.addListener('message',$1)">] abstract addListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> ChildProcess
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
         [<Emit "$0.emit('close',$1,$2)">] abstract emit_close: code: float * signal: string -> bool
         [<Emit "$0.emit('disconnect')">] abstract emit_disconnect: unit -> bool
         [<Emit "$0.emit('error',$1)">] abstract emit_error: err: Error -> bool
         [<Emit "$0.emit('exit',$1,$2)">] abstract emit_exit: code: float * signal: string -> bool
-        [<Emit "$0.emit('message',$1,$2)">] abstract emit_message: message: obj option * sendHandle: U2<net.Socket, net.Server> -> bool
+        [<Emit "$0.emit('message',$1,$2)">] abstract emit_message: message: obj option * sendHandle: U2<Net.Socket, Net.Server> -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ChildProcess
         [<Emit "$0.on('close',$1)">] abstract on_close: listener: (float -> string -> unit) -> ChildProcess
         [<Emit "$0.on('disconnect',$1)">] abstract on_disconnect: listener: (unit -> unit) -> ChildProcess
         [<Emit "$0.on('error',$1)">] abstract on_error: listener: (Error -> unit) -> ChildProcess
         [<Emit "$0.on('exit',$1)">] abstract on_exit: listener: (float -> string -> unit) -> ChildProcess
-        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> ChildProcess
+        [<Emit "$0.on('message',$1)">] abstract on_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> ChildProcess
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ChildProcess
         [<Emit "$0.once('close',$1)">] abstract once_close: listener: (float -> string -> unit) -> ChildProcess
         [<Emit "$0.once('disconnect',$1)">] abstract once_disconnect: listener: (unit -> unit) -> ChildProcess
         [<Emit "$0.once('error',$1)">] abstract once_error: listener: (Error -> unit) -> ChildProcess
         [<Emit "$0.once('exit',$1)">] abstract once_exit: listener: (float -> string -> unit) -> ChildProcess
-        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> ChildProcess
+        [<Emit "$0.once('message',$1)">] abstract once_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> ChildProcess
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ChildProcess
         [<Emit "$0.prependListener('close',$1)">] abstract prependListener_close: listener: (float -> string -> unit) -> ChildProcess
         [<Emit "$0.prependListener('disconnect',$1)">] abstract prependListener_disconnect: listener: (unit -> unit) -> ChildProcess
         [<Emit "$0.prependListener('error',$1)">] abstract prependListener_error: listener: (Error -> unit) -> ChildProcess
         [<Emit "$0.prependListener('exit',$1)">] abstract prependListener_exit: listener: (float -> string -> unit) -> ChildProcess
-        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> ChildProcess
+        [<Emit "$0.prependListener('message',$1)">] abstract prependListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> ChildProcess
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ChildProcess
         [<Emit "$0.prependOnceListener('close',$1)">] abstract prependOnceListener_close: listener: (float -> string -> unit) -> ChildProcess
         [<Emit "$0.prependOnceListener('disconnect',$1)">] abstract prependOnceListener_disconnect: listener: (unit -> unit) -> ChildProcess
         [<Emit "$0.prependOnceListener('error',$1)">] abstract prependOnceListener_error: listener: (Error -> unit) -> ChildProcess
         [<Emit "$0.prependOnceListener('exit',$1)">] abstract prependOnceListener_exit: listener: (float -> string -> unit) -> ChildProcess
-        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (obj option -> U2<net.Socket, net.Server> -> unit) -> ChildProcess
+        [<Emit "$0.prependOnceListener('message',$1)">] abstract prependOnceListener_message: listener: (obj option -> U2<Net.Socket, Net.Server> -> unit) -> ChildProcess
 
     type [<AllowNullLiteral>] MessageOptions =
         abstract keepOpen: bool option with get, set
@@ -1734,7 +1753,7 @@ module child_process =
         inherit ExecOptions
         abstract encoding: string option with get, set
 
-    module exec =
+    module Exec =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: command: string -> Promise<obj>
@@ -1764,7 +1783,7 @@ module child_process =
         inherit ExecFileOptions
         abstract encoding: string with get, set
 
-    module execFile =
+    module ExecFile =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: file: string -> Promise<obj>
@@ -1863,7 +1882,7 @@ module child_process =
         inherit ExecFileSyncOptions
         abstract encoding: string with get, set
 
-module url =
+module Url =
 
     type [<AllowNullLiteral>] IExports =
         abstract parse: urlStr: string * ?parseQueryString: bool * ?slashesDenoteHost: bool -> Url
@@ -1936,11 +1955,15 @@ module url =
     type [<AllowNullLiteral>] URLStatic =
         [<Emit "new $0($1...)">] abstract Create: input: string * ?``base``: U2<string, URL> -> URL
 
-module dns =
+module Dns =
+    let [<Import("lookup","dns")>] lookup: Lookup.IExports = jsNative
+    let [<Import("resolve","dns")>] resolve: Resolve.IExports = jsNative
+    let [<Import("resolve4","dns")>] resolve4: Resolve4.IExports = jsNative
+    let [<Import("resolve6","dns")>] resolve6: Resolve6.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
-        abstract ADDRCONFIG: float with get, set
-        abstract V4MAPPED: float with get, set
+        abstract ADDRCONFIG: float
+        abstract V4MAPPED: float
         abstract lookup: hostname: string * family: float * callback: (NodeJS.ErrnoException -> string -> float -> unit) -> unit
         abstract lookup: hostname: string * options: LookupOneOptions * callback: (NodeJS.ErrnoException -> string -> float -> unit) -> unit
         abstract lookup: hostname: string * options: LookupAllOptions * callback: (NodeJS.ErrnoException -> ResizeArray<LookupAddress> -> unit) -> unit
@@ -1974,30 +1997,30 @@ module dns =
         abstract resolveTxt: hostname: string * callback: (NodeJS.ErrnoException -> ResizeArray<ResizeArray<string>> -> unit) -> unit
         abstract reverse: ip: string * callback: (NodeJS.ErrnoException -> ResizeArray<string> -> unit) -> unit
         abstract setServers: servers: ResizeArray<string> -> unit
-        abstract NODATA: string with get, set
-        abstract FORMERR: string with get, set
-        abstract SERVFAIL: string with get, set
-        abstract NOTFOUND: string with get, set
-        abstract NOTIMP: string with get, set
-        abstract REFUSED: string with get, set
-        abstract BADQUERY: string with get, set
-        abstract BADNAME: string with get, set
-        abstract BADFAMILY: string with get, set
-        abstract BADRESP: string with get, set
-        abstract CONNREFUSED: string with get, set
-        abstract TIMEOUT: string with get, set
-        abstract EOF: string with get, set
-        abstract FILE: string with get, set
-        abstract NOMEM: string with get, set
-        abstract DESTRUCTION: string with get, set
-        abstract BADSTR: string with get, set
-        abstract BADFLAGS: string with get, set
-        abstract NONAME: string with get, set
-        abstract BADHINTS: string with get, set
-        abstract NOTINITIALIZED: string with get, set
-        abstract LOADIPHLPAPI: string with get, set
-        abstract ADDRGETNETWORKPARAMS: string with get, set
-        abstract CANCELLED: string with get, set
+        abstract NODATA: string
+        abstract FORMERR: string
+        abstract SERVFAIL: string
+        abstract NOTFOUND: string
+        abstract NOTIMP: string
+        abstract REFUSED: string
+        abstract BADQUERY: string
+        abstract BADNAME: string
+        abstract BADFAMILY: string
+        abstract BADRESP: string
+        abstract CONNREFUSED: string
+        abstract TIMEOUT: string
+        abstract EOF: string
+        abstract FILE: string
+        abstract NOMEM: string
+        abstract DESTRUCTION: string
+        abstract BADSTR: string
+        abstract BADFLAGS: string
+        abstract NONAME: string
+        abstract BADHINTS: string
+        abstract NOTINITIALIZED: string
+        abstract LOADIPHLPAPI: string
+        abstract ADDRGETNETWORKPARAMS: string
+        abstract CANCELLED: string
 
     type [<AllowNullLiteral>] LookupOptions =
         abstract family: float option with get, set
@@ -2016,7 +2039,7 @@ module dns =
         abstract address: string with get, set
         abstract family: float with get, set
 
-    module lookup =
+    module Lookup =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: hostname: string * options: LookupAllOptions -> Promise<obj>
@@ -2061,7 +2084,7 @@ module dns =
         abstract port: float with get, set
         abstract name: string with get, set
 
-    module resolve =
+    module Resolve =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: hostname: string * ?rrtype: U5<string, string, string, string, string> -> Promise<ResizeArray<string>>
@@ -2072,27 +2095,27 @@ module dns =
             [<Emit "$0.__promisify__($1,'TXT')">] abstract __promisify___TXT: hostname: string -> Promise<ResizeArray<ResizeArray<string>>>
             abstract __promisify__: hostname: string * ?rrtype: string -> Promise<U6<ResizeArray<string>, ResizeArray<MxRecord>, ResizeArray<NaptrRecord>, SoaRecord, ResizeArray<SrvRecord>, ResizeArray<ResizeArray<string>>>>
 
-    module resolve4 =
+    module Resolve4 =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: hostname: string -> Promise<ResizeArray<string>>
             abstract __promisify__: hostname: string * options: ResolveWithTtlOptions -> Promise<ResizeArray<RecordWithTtl>>
             abstract __promisify__: hostname: string * ?options: ResolveOptions -> Promise<U2<ResizeArray<string>, ResizeArray<RecordWithTtl>>>
 
-    module resolve6 =
+    module Resolve6 =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: hostname: string -> Promise<ResizeArray<string>>
             abstract __promisify__: hostname: string * options: ResolveWithTtlOptions -> Promise<ResizeArray<RecordWithTtl>>
             abstract __promisify__: hostname: string * ?options: ResolveOptions -> Promise<U2<ResizeArray<string>, ResizeArray<RecordWithTtl>>>
 
-module net =
+module Net =
 
     type [<AllowNullLiteral>] IExports =
         abstract Socket: SocketStatic
         abstract Server: ServerStatic
         abstract createServer: ?connectionListener: (Socket -> unit) -> Server
-        abstract createServer: ?options: obj * ?connectionListener: (Socket -> unit) -> Server
+        abstract createServer: ?options: CreateServerOptions * ?connectionListener: (Socket -> unit) -> Server
         abstract connect: options: NetConnectOpts * ?connectionListener: Function -> Socket
         abstract connect: port: float * ?host: string * ?connectionListener: Function -> Socket
         abstract connect: path: string * ?connectionListener: Function -> Socket
@@ -2103,8 +2126,12 @@ module net =
         abstract isIPv4: input: string -> bool
         abstract isIPv6: input: string -> bool
 
+    type [<AllowNullLiteral>] CreateServerOptions =
+        abstract allowHalfOpen: bool option with get, set
+        abstract pauseOnConnect: bool option with get, set
+
     type LookupFunction =
-        (string -> dns.LookupOneOptions -> (NodeJS.ErrnoException option -> string -> float -> unit) -> unit)
+        (string -> Dns.LookupOneOptions -> (NodeJS.ErrnoException option -> string -> float -> unit) -> unit)
 
     type [<AllowNullLiteral>] SocketConstructorOpts =
         abstract fd: float option with get, set
@@ -2127,8 +2154,17 @@ module net =
     type SocketConnectOpts =
         U2<TcpSocketConnectOpts, IpcSocketConnectOpts>
 
+    [<RequireQualifiedAccess; CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+    module SocketConnectOpts =
+        let ofTcpSocketConnectOpts v: SocketConnectOpts = v |> U2.Case1
+        let isTcpSocketConnectOpts (v: SocketConnectOpts) = match v with U2.Case1 _ -> true | _ -> false
+        let asTcpSocketConnectOpts (v: SocketConnectOpts) = match v with U2.Case1 o -> Some o | _ -> None
+        let ofIpcSocketConnectOpts v: SocketConnectOpts = v |> U2.Case2
+        let isIpcSocketConnectOpts (v: SocketConnectOpts) = match v with U2.Case2 _ -> true | _ -> false
+        let asIpcSocketConnectOpts (v: SocketConnectOpts) = match v with U2.Case2 o -> Some o | _ -> None
+
     type [<AllowNullLiteral>] Socket =
-        inherit stream.Duplex
+        inherit Stream.Duplex
         abstract write: buffer: Buffer -> bool
         abstract write: buffer: Buffer * ?cb: Function -> bool
         abstract write: str: string * ?cb: Function -> bool
@@ -2239,7 +2275,7 @@ module net =
         abstract exclusive: bool option with get, set
 
     type [<AllowNullLiteral>] Server =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract listen: ?port: float * ?hostname: string * ?backlog: float * ?listeningListener: Function -> Server
         abstract listen: ?port: float * ?hostname: string * ?listeningListener: Function -> Server
         abstract listen: ?port: float * ?backlog: float * ?listeningListener: Function -> Server
@@ -2295,7 +2331,11 @@ module net =
 
     type [<AllowNullLiteral>] ServerStatic =
         [<Emit "new $0($1...)">] abstract Create: ?connectionListener: (Socket -> unit) -> Server
-        [<Emit "new $0($1...)">] abstract Create: ?options: obj * ?connectionListener: (Socket -> unit) -> Server
+        [<Emit "new $0($1...)">] abstract Create: ?options: ServerStaticOptions * ?connectionListener: (Socket -> unit) -> Server
+
+    type [<AllowNullLiteral>] ServerStaticOptions =
+        abstract allowHalfOpen: bool option with get, set
+        abstract pauseOnConnect: bool option with get, set
 
     type [<AllowNullLiteral>] TcpNetConnectOpts =
         inherit TcpSocketConnectOpts
@@ -2310,7 +2350,16 @@ module net =
     type NetConnectOpts =
         U2<TcpNetConnectOpts, IpcNetConnectOpts>
 
-module dgram =
+    [<RequireQualifiedAccess; CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+    module NetConnectOpts =
+        let ofTcpNetConnectOpts v: NetConnectOpts = v |> U2.Case1
+        let isTcpNetConnectOpts (v: NetConnectOpts) = match v with U2.Case1 _ -> true | _ -> false
+        let asTcpNetConnectOpts (v: NetConnectOpts) = match v with U2.Case1 o -> Some o | _ -> None
+        let ofIpcNetConnectOpts v: NetConnectOpts = v |> U2.Case2
+        let isIpcNetConnectOpts (v: NetConnectOpts) = match v with U2.Case2 _ -> true | _ -> false
+        let asIpcNetConnectOpts (v: NetConnectOpts) = match v with U2.Case2 o -> Some o | _ -> None
+
+module Dgram =
 
     type [<AllowNullLiteral>] IExports =
         abstract createSocket: ``type``: SocketType * ?callback: (Buffer -> RemoteInfo -> unit) -> Socket
@@ -2341,10 +2390,10 @@ module dgram =
         abstract reuseAddr: bool option with get, set
         abstract recvBufferSize: float option with get, set
         abstract sendBufferSize: float option with get, set
-        abstract lookup: (string -> dns.LookupOneOptions -> (NodeJS.ErrnoException -> string -> float -> unit) -> unit) option with get, set
+        abstract lookup: (string -> Dns.LookupOneOptions -> (NodeJS.ErrnoException -> string -> float -> unit) -> unit) option with get, set
 
     type [<AllowNullLiteral>] Socket =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract send: msg: U3<Buffer, String, ResizeArray<obj option>> * port: float * address: string * ?callback: (Error option -> float -> unit) -> unit
         abstract send: msg: U3<Buffer, String, ResizeArray<obj option>> * offset: float * length: float * port: float * address: string * ?callback: (Error option -> float -> unit) -> unit
         abstract bind: ?port: float * ?address: string * ?callback: (unit -> unit) -> unit
@@ -2405,274 +2454,613 @@ module dgram =
     type [<AllowNullLiteral>] SocketStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> Socket
 
-module fs =
-    type URL = url.URL
+module Fs =
+    type URL = Url.URL
+    let [<Import("rename","fs")>] rename: Rename.IExports = jsNative
+    let [<Import("truncate","fs")>] truncate: Truncate.IExports = jsNative
+    let [<Import("ftruncate","fs")>] ftruncate: Ftruncate.IExports = jsNative
+    let [<Import("chown","fs")>] chown: Chown.IExports = jsNative
+    let [<Import("fchown","fs")>] fchown: Fchown.IExports = jsNative
+    let [<Import("lchown","fs")>] lchown: Lchown.IExports = jsNative
+    let [<Import("chmod","fs")>] chmod: Chmod.IExports = jsNative
+    let [<Import("fchmod","fs")>] fchmod: Fchmod.IExports = jsNative
+    let [<Import("lchmod","fs")>] lchmod: Lchmod.IExports = jsNative
+    let [<Import("stat","fs")>] stat: Stat.IExports = jsNative
+    let [<Import("fstat","fs")>] fstat: Fstat.IExports = jsNative
+    let [<Import("lstat","fs")>] lstat: Lstat.IExports = jsNative
+    let [<Import("link","fs")>] link: Link.IExports = jsNative
+    let [<Import("symlink","fs")>] symlink: Symlink.IExports = jsNative
+    let [<Import("readlink","fs")>] readlink: Readlink.IExports = jsNative
+    let [<Import("realpath","fs")>] realpath: Realpath.IExports = jsNative
+    let [<Import("unlink","fs")>] unlink: Unlink.IExports = jsNative
+    let [<Import("rmdir","fs")>] rmdir: Rmdir.IExports = jsNative
+    let [<Import("mkdir","fs")>] mkdir: Mkdir.IExports = jsNative
+    let [<Import("mkdtemp","fs")>] mkdtemp: Mkdtemp.IExports = jsNative
+    let [<Import("readdir","fs")>] readdir: Readdir.IExports = jsNative
+    let [<Import("close","fs")>] close: Close.IExports = jsNative
+    let [<Import("open","fs")>] ``open``: Open.IExports = jsNative
+    let [<Import("utimes","fs")>] utimes: Utimes.IExports = jsNative
+    let [<Import("futimes","fs")>] futimes: Futimes.IExports = jsNative
+    let [<Import("fsync","fs")>] fsync: Fsync.IExports = jsNative
+    let [<Import("write","fs")>] write: Write.IExports = jsNative
+    let [<Import("read","fs")>] read: Read.IExports = jsNative
+    let [<Import("readFile","fs")>] readFile: ReadFile.IExports = jsNative
+    let [<Import("writeFile","fs")>] writeFile: WriteFile.IExports = jsNative
+    let [<Import("appendFile","fs")>] appendFile: AppendFile.IExports = jsNative
+    let [<Import("exists","fs")>] exists: Exists.IExports = jsNative
+    let [<Import("constants","fs")>] constants: Constants.IExports = jsNative
+    let [<Import("access","fs")>] access: Access.IExports = jsNative
+    let [<Import("fdatasync","fs")>] fdatasync: Fdatasync.IExports = jsNative
+    let [<Import("copyFile","fs")>] copyFile: CopyFile.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
         abstract Stats: StatsStatic
         abstract ReadStream: ReadStreamStatic
         abstract WriteStream: WriteStreamStatic
-        /// Asynchronous rename(2) - Change the name or location of a file or directory.
+        /// <summary>Asynchronous rename(2) - Change the name or location of a file or directory.</summary>
+        /// <param name="oldPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
+        /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract rename: oldPath: PathLike * newPath: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous rename(2) - Change the name or location of a file or directory.
+        /// <summary>Synchronous rename(2) - Change the name or location of a file or directory.</summary>
+        /// <param name="oldPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
+        /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract renameSync: oldPath: PathLike * newPath: PathLike -> unit
-        /// Asynchronous truncate(2) - Truncate a file to a specified length.
+        /// <summary>Asynchronous truncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="len">If not specified, defaults to `0`.</param>
         abstract truncate: path: PathLike * len: float option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronous truncate(2) - Truncate a file to a specified length.
+        /// <summary>Asynchronous truncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract truncate: path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous truncate(2) - Truncate a file to a specified length.
+        /// <summary>Synchronous truncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="len">If not specified, defaults to `0`.</param>
         abstract truncateSync: path: PathLike * ?len: float option -> unit
-        /// Asynchronous ftruncate(2) - Truncate a file to a specified length.
+        /// <summary>Asynchronous ftruncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="len">If not specified, defaults to `0`.</param>
         abstract ftruncate: fd: float * len: float option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronous ftruncate(2) - Truncate a file to a specified length.
+        /// <summary>Asynchronous ftruncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract ftruncate: fd: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous ftruncate(2) - Truncate a file to a specified length.
+        /// <summary>Synchronous ftruncate(2) - Truncate a file to a specified length.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="len">If not specified, defaults to `0`.</param>
         abstract ftruncateSync: fd: float * ?len: float option -> unit
-        /// Asynchronous chown(2) - Change ownership of a file.
+        /// <summary>Asynchronous chown(2) - Change ownership of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract chown: path: PathLike * uid: float * gid: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous chown(2) - Change ownership of a file.
+        /// <summary>Synchronous chown(2) - Change ownership of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract chownSync: path: PathLike * uid: float * gid: float -> unit
-        /// Asynchronous fchown(2) - Change ownership of a file.
+        /// <summary>Asynchronous fchown(2) - Change ownership of a file.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fchown: fd: float * uid: float * gid: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous fchown(2) - Change ownership of a file.
+        /// <summary>Synchronous fchown(2) - Change ownership of a file.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fchownSync: fd: float * uid: float * gid: float -> unit
-        /// Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
+        /// <summary>Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract lchown: path: PathLike * uid: float * gid: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
+        /// <summary>Synchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract lchownSync: path: PathLike * uid: float * gid: float -> unit
-        /// Asynchronous chmod(2) - Change permissions of a file.
+        /// <summary>Asynchronous chmod(2) - Change permissions of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract chmod: path: PathLike * mode: U2<string, float> * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous chmod(2) - Change permissions of a file.
+        /// <summary>Synchronous chmod(2) - Change permissions of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract chmodSync: path: PathLike * mode: U2<string, float> -> unit
-        /// Asynchronous fchmod(2) - Change permissions of a file.
+        /// <summary>Asynchronous fchmod(2) - Change permissions of a file.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract fchmod: fd: float * mode: U2<string, float> * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous fchmod(2) - Change permissions of a file.
+        /// <summary>Synchronous fchmod(2) - Change permissions of a file.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract fchmodSync: fd: float * mode: U2<string, float> -> unit
-        /// Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
+        /// <summary>Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract lchmod: path: PathLike * mode: U2<string, float> * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
+        /// <summary>Synchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
         abstract lchmodSync: path: PathLike * mode: U2<string, float> -> unit
-        /// Asynchronous stat(2) - Get file status.
+        /// <summary>Asynchronous stat(2) - Get file status.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract stat: path: PathLike * callback: (NodeJS.ErrnoException -> Stats -> unit) -> unit
-        /// Synchronous stat(2) - Get file status.
+        /// <summary>Synchronous stat(2) - Get file status.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract statSync: path: PathLike -> Stats
-        /// Asynchronous fstat(2) - Get file status.
+        /// <summary>Asynchronous fstat(2) - Get file status.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fstat: fd: float * callback: (NodeJS.ErrnoException -> Stats -> unit) -> unit
-        /// Synchronous fstat(2) - Get file status.
+        /// <summary>Synchronous fstat(2) - Get file status.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fstatSync: fd: float -> Stats
-        /// Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
+        /// <summary>Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract lstat: path: PathLike * callback: (NodeJS.ErrnoException -> Stats -> unit) -> unit
-        /// Synchronous lstat(2) - Get file status. Does not dereference symbolic links.
+        /// <summary>Synchronous lstat(2) - Get file status. Does not dereference symbolic links.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract lstatSync: path: PathLike -> Stats
-        /// Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
+        /// <summary>Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.</summary>
+        /// <param name="existingPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract link: existingPath: PathLike * newPath: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous link(2) - Create a new link (also known as a hard link) to an existing file.
+        /// <summary>Synchronous link(2) - Create a new link (also known as a hard link) to an existing file.</summary>
+        /// <param name="existingPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract linkSync: existingPath: PathLike * newPath: PathLike -> unit
-        /// Asynchronous symlink(2) - Create a new symbolic link to an existing file.
+        /// <summary>Asynchronous symlink(2) - Create a new symbolic link to an existing file.</summary>
+        /// <param name="target">A path to an existing file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="path">A path to the new symlink. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="type">May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
+        /// When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.</param>
         abstract symlink: target: PathLike * path: PathLike * ``type``: string option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronous symlink(2) - Create a new symbolic link to an existing file.
+        /// <summary>Asynchronous symlink(2) - Create a new symbolic link to an existing file.</summary>
+        /// <param name="target">A path to an existing file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="path">A path to the new symlink. If a URL is provided, it must use the `file:` protocol.</param>
         abstract symlink: target: PathLike * path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous symlink(2) - Create a new symbolic link to an existing file.
+        /// <summary>Synchronous symlink(2) - Create a new symbolic link to an existing file.</summary>
+        /// <param name="target">A path to an existing file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="path">A path to the new symlink. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="type">May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
+        /// When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.</param>
         abstract symlinkSync: target: PathLike * path: PathLike * ?``type``: string option -> unit
-        /// Asynchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlink: path: PathLike * options: U2<obj, BufferEncoding> option * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Asynchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlink: path: PathLike * options: U2<obj, string> * callback: (NodeJS.ErrnoException -> Buffer -> unit) -> unit
-        /// Asynchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlink: path: PathLike * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> U2<string, Buffer> -> unit) -> unit
-        /// Asynchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract readlink: path: PathLike * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Synchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Synchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlinkSync: path: PathLike * ?options: U2<obj, BufferEncoding> option -> string
-        /// Synchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Synchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlinkSync: path: PathLike * options: U2<obj, string> -> Buffer
-        /// Synchronous readlink(2) - read value of a symbolic link.
+        /// <summary>Synchronous readlink(2) - read value of a symbolic link.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readlinkSync: path: PathLike * ?options: U2<obj, string> option -> U2<string, Buffer>
-        /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpath: path: PathLike * options: U2<obj, BufferEncoding> option * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpath: path: PathLike * options: U2<obj, string> * callback: (NodeJS.ErrnoException -> Buffer -> unit) -> unit
-        /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpath: path: PathLike * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> U2<string, Buffer> -> unit) -> unit
-        /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract realpath: path: PathLike * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Synchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Synchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpathSync: path: PathLike * ?options: U2<obj, BufferEncoding> option -> string
-        /// Synchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Synchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpathSync: path: PathLike * options: U2<obj, string> -> Buffer
-        /// Synchronous realpath(3) - return the canonicalized absolute pathname.
+        /// <summary>Synchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract realpathSync: path: PathLike * ?options: U2<obj, string> option -> U2<string, Buffer>
-        /// Asynchronous unlink(2) - delete a name and possibly the file it refers to.
+        /// <summary>Asynchronous unlink(2) - delete a name and possibly the file it refers to.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract unlink: path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous unlink(2) - delete a name and possibly the file it refers to.
+        /// <summary>Synchronous unlink(2) - delete a name and possibly the file it refers to.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract unlinkSync: path: PathLike -> unit
-        /// Asynchronous rmdir(2) - delete a directory.
+        /// <summary>Asynchronous rmdir(2) - delete a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract rmdir: path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous rmdir(2) - delete a directory.
+        /// <summary>Synchronous rmdir(2) - delete a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract rmdirSync: path: PathLike -> unit
-        /// Asynchronous mkdir(2) - create a directory.
+        /// <summary>Asynchronous mkdir(2) - create a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.</param>
         abstract mkdir: path: PathLike * mode: U2<float, string> option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronous mkdir(2) - create a directory with a mode of `0o777`.
+        /// <summary>Asynchronous mkdir(2) - create a directory with a mode of `0o777`.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract mkdir: path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous mkdir(2) - create a directory.
+        /// <summary>Synchronous mkdir(2) - create a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.</param>
         abstract mkdirSync: path: PathLike * ?mode: U2<float, string> option -> unit
-        /// Asynchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Asynchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtemp: prefix: string * options: U2<obj, BufferEncoding> option * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Asynchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Asynchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtemp: prefix: string * options: U2<string, obj> * callback: (NodeJS.ErrnoException -> Buffer -> unit) -> unit
-        /// Asynchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Asynchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtemp: prefix: string * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> U2<string, Buffer> -> unit) -> unit
         /// Asynchronously creates a unique temporary directory.
         /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
         abstract mkdtemp: prefix: string * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Synchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Synchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtempSync: prefix: string * ?options: U2<obj, BufferEncoding> option -> string
-        /// Synchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Synchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtempSync: prefix: string * options: U2<obj, string> -> Buffer
-        /// Synchronously creates a unique temporary directory.
-        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+        /// <summary>Synchronously creates a unique temporary directory.
+        /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract mkdtempSync: prefix: string * ?options: U2<obj, string> option -> U2<string, Buffer>
-        /// Asynchronous readdir(3) - read a directory.
+        /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdir: path: PathLike * options: U2<obj, BufferEncoding> option * callback: (NodeJS.ErrnoException -> ResizeArray<string> -> unit) -> unit
-        /// Asynchronous readdir(3) - read a directory.
+        /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdir: path: PathLike * options: U2<obj, string> * callback: (NodeJS.ErrnoException -> ResizeArray<Buffer> -> unit) -> unit
-        /// Asynchronous readdir(3) - read a directory.
+        /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdir: path: PathLike * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> Array<U2<string, Buffer>> -> unit) -> unit
-        /// Asynchronous readdir(3) - read a directory.
+        /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract readdir: path: PathLike * callback: (NodeJS.ErrnoException -> ResizeArray<string> -> unit) -> unit
-        /// Synchronous readdir(3) - read a directory.
+        /// <summary>Synchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdirSync: path: PathLike * ?options: U2<obj, BufferEncoding> option -> ResizeArray<string>
-        /// Synchronous readdir(3) - read a directory.
+        /// <summary>Synchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdirSync: path: PathLike * options: U2<obj, string> -> ResizeArray<Buffer>
-        /// Synchronous readdir(3) - read a directory.
+        /// <summary>Synchronous readdir(3) - read a directory.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
         abstract readdirSync: path: PathLike * ?options: U2<obj, string> option -> Array<U2<string, Buffer>>
-        /// Asynchronous close(2) - close a file descriptor.
+        /// <summary>Asynchronous close(2) - close a file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract close: fd: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous close(2) - close a file descriptor.
+        /// <summary>Synchronous close(2) - close a file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract closeSync: fd: float -> unit
-        /// Asynchronous open(2) - open and possibly create a file.
+        /// <summary>Asynchronous open(2) - open and possibly create a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.</param>
         abstract ``open``: path: PathLike * flags: U2<string, float> * mode: U2<string, float> option * callback: (NodeJS.ErrnoException -> float -> unit) -> unit
-        /// Asynchronous open(2) - open and possibly create a file. If the file is created, its mode will be `0o666`.
+        /// <summary>Asynchronous open(2) - open and possibly create a file. If the file is created, its mode will be `0o666`.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
         abstract ``open``: path: PathLike * flags: U2<string, float> * callback: (NodeJS.ErrnoException -> float -> unit) -> unit
-        /// Synchronous open(2) - open and possibly create a file, returning a file descriptor..
+        /// <summary>Synchronous open(2) - open and possibly create a file, returning a file descriptor..</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.</param>
         abstract openSync: path: PathLike * flags: U2<string, float> * ?mode: U2<string, float> option -> float
-        /// Asynchronously change file timestamps of the file referenced by the supplied path.
+        /// <summary>Asynchronously change file timestamps of the file referenced by the supplied path.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+        /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
         abstract utimes: path: PathLike * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously change file timestamps of the file referenced by the supplied path.
+        /// <summary>Synchronously change file timestamps of the file referenced by the supplied path.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+        /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+        /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
         abstract utimesSync: path: PathLike * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> -> unit
-        /// Asynchronously change file timestamps of the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously change file timestamps of the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+        /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
         abstract futimes: fd: float * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously change file timestamps of the file referenced by the supplied file descriptor.
+        /// <summary>Synchronously change file timestamps of the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+        /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
         abstract futimesSync: fd: float * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> -> unit
-        /// Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
+        /// <summary>Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fsync: fd: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
+        /// <summary>Synchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fsyncSync: fd: float -> unit
-        /// Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="offset">The part of the buffer to be written. If not supplied, defaults to `0`.</param>
+        /// <param name="length">The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.</param>
+        /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
         abstract write: fd: float * buffer: 'TBuffer * offset: float option * length: float option * position: float option * callback: (NodeJS.ErrnoException -> float -> 'TBuffer -> unit) -> unit
-        /// Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="offset">The part of the buffer to be written. If not supplied, defaults to `0`.</param>
+        /// <param name="length">The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.</param>
         abstract write: fd: float * buffer: 'TBuffer * offset: float option * length: float option * callback: (NodeJS.ErrnoException -> float -> 'TBuffer -> unit) -> unit
-        /// Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="offset">The part of the buffer to be written. If not supplied, defaults to `0`.</param>
         abstract write: fd: float * buffer: 'TBuffer * offset: float option * callback: (NodeJS.ErrnoException -> float -> 'TBuffer -> unit) -> unit
-        /// Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract write: fd: float * buffer: 'TBuffer * callback: (NodeJS.ErrnoException -> float -> 'TBuffer -> unit) -> unit
-        /// Asynchronously writes `string` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `string` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="string">A string to write. If something other than a string is supplied it will be coerced to a string.</param>
+        /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
+        /// <param name="encoding">The expected string encoding.</param>
         abstract write: fd: float * string: obj option * position: float option * encoding: string option * callback: (NodeJS.ErrnoException -> float -> string -> unit) -> unit
-        /// Asynchronously writes `string` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `string` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="string">A string to write. If something other than a string is supplied it will be coerced to a string.</param>
+        /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
         abstract write: fd: float * string: obj option * position: float option * callback: (NodeJS.ErrnoException -> float -> string -> unit) -> unit
-        /// Asynchronously writes `string` to the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously writes `string` to the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="string">A string to write. If something other than a string is supplied it will be coerced to a string.</param>
         abstract write: fd: float * string: obj option * callback: (NodeJS.ErrnoException -> float -> string -> unit) -> unit
-        /// Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.
+        /// <summary>Synchronously writes `buffer` to the file referenced by the supplied file descriptor, returning the number of bytes written.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="offset">The part of the buffer to be written. If not supplied, defaults to `0`.</param>
+        /// <param name="length">The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.</param>
+        /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
         abstract writeSync: fd: float * buffer: U2<Buffer, Uint8Array> * ?offset: float option * ?length: float option * ?position: float option -> float
-        /// Synchronously writes `string` to the file referenced by the supplied file descriptor, returning the number of bytes written.
+        /// <summary>Synchronously writes `string` to the file referenced by the supplied file descriptor, returning the number of bytes written.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="string">A string to write. If something other than a string is supplied it will be coerced to a string.</param>
+        /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
+        /// <param name="encoding">The expected string encoding.</param>
         abstract writeSync: fd: float * string: obj option * ?position: float option * ?encoding: string option -> float
-        /// Asynchronously reads data from the file referenced by the supplied file descriptor.
+        /// <summary>Asynchronously reads data from the file referenced by the supplied file descriptor.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="buffer">The buffer that the data will be written to.</param>
+        /// <param name="offset">The offset in the buffer at which to start writing.</param>
+        /// <param name="length">The number of bytes to read.</param>
+        /// <param name="position">The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.</param>
         abstract read: fd: float * buffer: 'TBuffer * offset: float * length: float * position: float option * ?callback: (NodeJS.ErrnoException -> float -> 'TBuffer -> unit) -> unit
-        /// Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.
+        /// <summary>Synchronously reads data from the file referenced by the supplied file descriptor, returning the number of bytes read.</summary>
+        /// <param name="fd">A file descriptor.</param>
+        /// <param name="buffer">The buffer that the data will be written to.</param>
+        /// <param name="offset">The offset in the buffer at which to start writing.</param>
+        /// <param name="length">The number of bytes to read.</param>
+        /// <param name="position">The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.</param>
         abstract readSync: fd: float * buffer: U2<Buffer, Uint8Array> * offset: float * length: float * position: float option -> float
-        /// Asynchronously reads the entire contents of a file.
+        /// <summary>Asynchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">An object that may contain an optional flag.
+        /// If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFile: path: U2<PathLike, float> * options: obj option * callback: (NodeJS.ErrnoException -> Buffer -> unit) -> unit
-        /// Asynchronously reads the entire contents of a file.
+        /// <summary>Asynchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+        /// If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFile: path: U2<PathLike, float> * options: U2<obj, string> * callback: (NodeJS.ErrnoException -> string -> unit) -> unit
-        /// Asynchronously reads the entire contents of a file.
+        /// <summary>Asynchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+        /// If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFile: path: U2<PathLike, float> * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> U2<string, Buffer> -> unit) -> unit
-        /// Asynchronously reads the entire contents of a file.
+        /// <summary>Asynchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
         abstract readFile: path: U2<PathLike, float> * callback: (NodeJS.ErrnoException -> Buffer -> unit) -> unit
-        /// Synchronously reads the entire contents of a file.
+        /// <summary>Synchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">An object that may contain an optional flag. If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFileSync: path: U2<PathLike, float> * ?options: obj option -> Buffer
-        /// Synchronously reads the entire contents of a file.
+        /// <summary>Synchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+        /// If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFileSync: path: U2<PathLike, float> * options: U2<obj, string> -> string
-        /// Synchronously reads the entire contents of a file.
+        /// <summary>Synchronously reads the entire contents of a file.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+        /// If a flag is not provided, it defaults to `'r'`.</param>
         abstract readFileSync: path: U2<PathLike, float> * ?options: U2<obj, string> option -> U2<string, Buffer>
-        /// Asynchronously writes data to a file, replacing the file if it already exists.
+        /// <summary>Asynchronously writes data to a file, replacing the file if it already exists.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+        /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `mode` is not supplied, the default of `0o666` is used.
+        /// If `mode` is a string, it is parsed as an octal integer.
+        /// If `flag` is not supplied, the default of `'w'` is used.</param>
         abstract writeFile: path: U2<PathLike, float> * data: obj option * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronously writes data to a file, replacing the file if it already exists.
+        /// <summary>Asynchronously writes data to a file, replacing the file if it already exists.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
         abstract writeFile: path: U2<PathLike, float> * data: obj option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously writes data to a file, replacing the file if it already exists.
+        /// <summary>Synchronously writes data to a file, replacing the file if it already exists.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+        /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `mode` is not supplied, the default of `0o666` is used.
+        /// If `mode` is a string, it is parsed as an octal integer.
+        /// If `flag` is not supplied, the default of `'w'` is used.</param>
         abstract writeFileSync: path: U2<PathLike, float> * data: obj option * ?options: U2<obj, string> option -> unit
-        /// Asynchronously append data to a file, creating the file if it does not exist.
+        /// <summary>Asynchronously append data to a file, creating the file if it does not exist.</summary>
+        /// <param name="file">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+        /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `mode` is not supplied, the default of `0o666` is used.
+        /// If `mode` is a string, it is parsed as an octal integer.
+        /// If `flag` is not supplied, the default of `'a'` is used.</param>
         abstract appendFile: file: U2<PathLike, float> * data: obj option * options: U2<obj, string> option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronously append data to a file, creating the file if it does not exist.
+        /// <summary>Asynchronously append data to a file, creating the file if it does not exist.</summary>
+        /// <param name="file">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
         abstract appendFile: file: U2<PathLike, float> * data: obj option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously append data to a file, creating the file if it does not exist.
+        /// <summary>Synchronously append data to a file, creating the file if it does not exist.</summary>
+        /// <param name="file">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.
+        /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+        /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+        /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `mode` is not supplied, the default of `0o666` is used.
+        /// If `mode` is a string, it is parsed as an octal integer.
+        /// If `flag` is not supplied, the default of `'a'` is used.</param>
         abstract appendFileSync: file: U2<PathLike, float> * data: obj option * ?options: U2<obj, string> option -> unit
         /// Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
         abstract watchFile: filename: PathLike * options: obj option * listener: (Stats -> Stats -> unit) -> unit
-        /// Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.
+        /// <summary>Watch for changes on `filename`. The callback `listener` will be called each time the file is accessed.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract watchFile: filename: PathLike * listener: (Stats -> Stats -> unit) -> unit
-        /// Stop watching for changes on `filename`.
+        /// <summary>Stop watching for changes on `filename`.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract unwatchFile: filename: PathLike * ?listener: (Stats -> Stats -> unit) -> unit
-        /// Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+        /// <summary>Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
+        /// <param name="options">Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `persistent` is not supplied, the default of `true` is used.
+        /// If `recursive` is not supplied, the default of `false` is used.</param>
         abstract watch: filename: PathLike * options: U2<obj, BufferEncoding> option * ?listener: (string -> string -> unit) -> FSWatcher
-        /// Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+        /// <summary>Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
+        /// <param name="options">Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `persistent` is not supplied, the default of `true` is used.
+        /// If `recursive` is not supplied, the default of `false` is used.</param>
         abstract watch: filename: PathLike * options: U2<obj, string> * ?listener: (string -> Buffer -> unit) -> FSWatcher
-        /// Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+        /// <summary>Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
+        /// <param name="options">Either the encoding for the filename provided to the listener, or an object optionally specifying encoding, persistent, and recursive options.
+        /// If `encoding` is not supplied, the default of `'utf8'` is used.
+        /// If `persistent` is not supplied, the default of `true` is used.
+        /// If `recursive` is not supplied, the default of `false` is used.</param>
         abstract watch: filename: PathLike * options: U2<obj, string> option * ?listener: (string -> U2<string, Buffer> -> unit) -> FSWatcher
-        /// Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.
+        /// <summary>Watch for changes on `filename`, where `filename` is either a file or a directory, returning an `FSWatcher`.</summary>
+        /// <param name="filename">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract watch: filename: PathLike * ?listener: (string -> string -> obj option) -> FSWatcher
-        /// Asynchronously tests whether or not the given path exists by checking with the file system.
+        /// <summary>Asynchronously tests whether or not the given path exists by checking with the file system.</summary>
+        /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract exists: path: PathLike * callback: (bool -> unit) -> unit
-        /// Synchronously tests whether or not the given path exists by checking with the file system.
+        /// <summary>Synchronously tests whether or not the given path exists by checking with the file system.</summary>
+        /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract existsSync: path: PathLike -> bool
-        /// Asynchronously tests a user's permissions for the file specified by path.
+        /// <summary>Asynchronously tests a user's permissions for the file specified by path.</summary>
+        /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract access: path: PathLike * mode: float option * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronously tests a user's permissions for the file specified by path.
+        /// <summary>Asynchronously tests a user's permissions for the file specified by path.</summary>
+        /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract access: path: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously tests a user's permissions for the file specified by path.
+        /// <summary>Synchronously tests a user's permissions for the file specified by path.</summary>
+        /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract accessSync: path: PathLike * ?mode: float -> unit
-        /// Returns a new `ReadStream` object.
+        /// <summary>Returns a new `ReadStream` object.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract createReadStream: path: PathLike * ?options: U2<string, obj> -> ReadStream
-        /// Returns a new `WriteStream` object.
+        /// <summary>Returns a new `WriteStream` object.</summary>
+        /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+        /// URL support is _experimental_.</param>
         abstract createWriteStream: path: PathLike * ?options: U2<string, obj> -> WriteStream
-        /// Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
+        /// <summary>Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fdatasync: fd: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronous fdatasync(2) - synchronize a file's in-core state with storage device.
+        /// <summary>Synchronous fdatasync(2) - synchronize a file's in-core state with storage device.</summary>
+        /// <param name="fd">A file descriptor.</param>
         abstract fdatasyncSync: fd: float -> unit
-        /// Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
+        /// <summary>Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
         /// No arguments other than a possible exception are given to the callback function.
         /// Node.js makes no guarantees about the atomicity of the copy operation.
         /// If an error occurs after the destination file has been opened for writing, Node.js will attempt
-        /// to remove the destination.
+        /// to remove the destination.</summary>
+        /// <param name="src">A path to the source file.</param>
+        /// <param name="dest">A path to the destination file.</param>
         abstract copyFile: src: PathLike * dest: PathLike * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
+        /// <summary>Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
         /// No arguments other than a possible exception are given to the callback function.
         /// Node.js makes no guarantees about the atomicity of the copy operation.
         /// If an error occurs after the destination file has been opened for writing, Node.js will attempt
-        /// to remove the destination.
+        /// to remove the destination.</summary>
+        /// <param name="src">A path to the source file.</param>
+        /// <param name="dest">A path to the destination file.</param>
+        /// <param name="flags">An integer that specifies the behavior of the copy operation. The only supported flag is fs.constants.COPYFILE_EXCL, which causes the copy operation to fail if dest already exists.</param>
         abstract copyFile: src: PathLike * dest: PathLike * flags: float * callback: (NodeJS.ErrnoException -> unit) -> unit
-        /// Synchronously copies src to dest. By default, dest is overwritten if it already exists.
+        /// <summary>Synchronously copies src to dest. By default, dest is overwritten if it already exists.
         /// Node.js makes no guarantees about the atomicity of the copy operation.
         /// If an error occurs after the destination file has been opened for writing, Node.js will attempt
-        /// to remove the destination.
+        /// to remove the destination.</summary>
+        /// <param name="src">A path to the source file.</param>
+        /// <param name="dest">A path to the destination file.</param>
+        /// <param name="flags">An optional integer that specifies the behavior of the copy operation. The only supported flag is fs.constants.COPYFILE_EXCL, which causes the copy operation to fail if dest already exists.</param>
         abstract copyFileSync: src: PathLike * dest: PathLike * ?flags: float -> unit
 
     type PathLike =
         U3<string, Buffer, URL>
+
+    [<RequireQualifiedAccess; CompilationRepresentation(CompilationRepresentationFlags.ModuleSuffix)>]
+    module PathLike =
+        let ofString v: PathLike = v |> U3.Case1
+        let isString (v: PathLike) = match v with U3.Case1 _ -> true | _ -> false
+        let asString (v: PathLike) = match v with U3.Case1 o -> Some o | _ -> None
+        let ofBuffer v: PathLike = v |> U3.Case2
+        let isBuffer (v: PathLike) = match v with U3.Case2 _ -> true | _ -> false
+        let asBuffer (v: PathLike) = match v with U3.Case2 o -> Some o | _ -> None
+        let ofURL v: PathLike = v |> U3.Case3
+        let isURL (v: PathLike) = match v with U3.Case3 _ -> true | _ -> false
+        let asURL (v: PathLike) = match v with U3.Case3 o -> Some o | _ -> None
 
     type [<AllowNullLiteral>] Stats =
         abstract isFile: unit -> bool
@@ -2705,7 +3093,7 @@ module fs =
         [<Emit "new $0($1...)">] abstract Create: unit -> Stats
 
     type [<AllowNullLiteral>] FSWatcher =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract close: unit -> unit
         /// events.EventEmitter
         ///    1. change
@@ -2727,7 +3115,7 @@ module fs =
         [<Emit "$0.prependOnceListener('error',$1)">] abstract prependOnceListener_error: listener: (Error -> unit) -> FSWatcher
 
     type [<AllowNullLiteral>] ReadStream =
-        inherit stream.Readable
+        inherit Stream.Readable
         abstract close: unit -> unit
         abstract destroy: unit -> unit
         abstract bytesRead: float with get, set
@@ -2755,7 +3143,7 @@ module fs =
         [<Emit "new $0($1...)">] abstract Create: unit -> ReadStream
 
     type [<AllowNullLiteral>] WriteStream =
-        inherit stream.Writable
+        inherit Stream.Writable
         abstract close: unit -> unit
         abstract bytesWritten: float with get, set
         abstract path: U2<string, Buffer> with get, set
@@ -2781,319 +3169,443 @@ module fs =
     type [<AllowNullLiteral>] WriteStreamStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> WriteStream
 
-    module rename =
+    module Rename =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous rename(2) - Change the name or location of a file or directory.
+            /// <summary>Asynchronous rename(2) - Change the name or location of a file or directory.</summary>
+            /// <param name="oldPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.</param>
+            /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.</param>
             abstract __promisify__: oldPath: PathLike * newPath: PathLike -> Promise<unit>
 
-    module truncate =
+    module Truncate =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous truncate(2) - Truncate a file to a specified length.
+            /// <summary>Asynchronous truncate(2) - Truncate a file to a specified length.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="len">If not specified, defaults to `0`.</param>
             abstract __promisify__: path: PathLike * ?len: float option -> Promise<unit>
 
-    module ftruncate =
+    module Ftruncate =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous ftruncate(2) - Truncate a file to a specified length.
+            /// <summary>Asynchronous ftruncate(2) - Truncate a file to a specified length.</summary>
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="len">If not specified, defaults to `0`.</param>
             abstract __promisify__: fd: float * ?len: float option -> Promise<unit>
 
-    module chown =
+    module Chown =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous chown(2) - Change ownership of a file.
+            /// <summary>Asynchronous chown(2) - Change ownership of a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike * uid: float * gid: float -> Promise<unit>
 
-    module fchown =
+    module Fchown =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous fchown(2) - Change ownership of a file.
+            /// <summary>Asynchronous fchown(2) - Change ownership of a file.</summary>
+            /// <param name="fd">A file descriptor.</param>
             abstract __promisify__: fd: float * uid: float * gid: float -> Promise<unit>
 
-    module lchown =
+    module Lchown =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.
+            /// <summary>Asynchronous lchown(2) - Change ownership of a file. Does not dereference symbolic links.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike * uid: float * gid: float -> Promise<unit>
 
-    module chmod =
+    module Chmod =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous chmod(2) - Change permissions of a file.
+            /// <summary>Asynchronous chmod(2) - Change permissions of a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
             abstract __promisify__: path: PathLike * mode: U2<string, float> -> Promise<unit>
 
-    module fchmod =
+    module Fchmod =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous fchmod(2) - Change permissions of a file.
+            /// <summary>Asynchronous fchmod(2) - Change permissions of a file.</summary>
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
             abstract __promisify__: fd: float * mode: U2<string, float> -> Promise<unit>
 
-    module lchmod =
+    module Lchmod =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.
+            /// <summary>Asynchronous lchmod(2) - Change permissions of a file. Does not dereference symbolic links.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer.</param>
             abstract __promisify__: path: PathLike * mode: U2<string, float> -> Promise<unit>
 
-    module stat =
+    module Stat =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous stat(2) - Get file status.
+            /// <summary>Asynchronous stat(2) - Get file status.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike -> Promise<Stats>
 
-    module fstat =
+    module Fstat =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous fstat(2) - Get file status.
+            /// <summary>Asynchronous fstat(2) - Get file status.</summary>
+            /// <param name="fd">A file descriptor.</param>
             abstract __promisify__: fd: float -> Promise<Stats>
 
-    module lstat =
+    module Lstat =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.
+            /// <summary>Asynchronous lstat(2) - Get file status. Does not dereference symbolic links.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike -> Promise<Stats>
 
-    module link =
+    module Link =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.
+            /// <summary>Asynchronous link(2) - Create a new link (also known as a hard link) to an existing file.</summary>
+            /// <param name="existingPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="newPath">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract link: existingPath: PathLike * newPath: PathLike -> Promise<unit>
 
-    module symlink =
+    module Symlink =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous symlink(2) - Create a new symbolic link to an existing file.
+            /// <summary>Asynchronous symlink(2) - Create a new symbolic link to an existing file.</summary>
+            /// <param name="target">A path to an existing file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="path">A path to the new symlink. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="type">May be set to `'dir'`, `'file'`, or `'junction'` (default is `'file'`) and is only available on Windows (ignored on other platforms).
+            /// When using `'junction'`, the `target` argument will automatically be normalized to an absolute path.</param>
             abstract __promisify__: target: PathLike * path: PathLike * ?``type``: string option -> Promise<unit>
 
-    module readlink =
+    module Readlink =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous readlink(2) - read value of a symbolic link.
+            /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, BufferEncoding> option -> Promise<string>
-            /// Asynchronous readlink(2) - read value of a symbolic link.
+            /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * options: U2<obj, string> -> Promise<Buffer>
-            /// Asynchronous readlink(2) - read value of a symbolic link.
+            /// <summary>Asynchronous readlink(2) - read value of a symbolic link.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, string> option -> Promise<U2<string, Buffer>>
 
-    module realpath =
+    module Realpath =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+            /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, BufferEncoding> option -> Promise<string>
-            /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+            /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * options: U2<obj, string> -> Promise<Buffer>
-            /// Asynchronous realpath(3) - return the canonicalized absolute pathname.
+            /// <summary>Asynchronous realpath(3) - return the canonicalized absolute pathname.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, string> option -> Promise<U2<string, Buffer>>
 
-    module unlink =
+    module Unlink =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous unlink(2) - delete a name and possibly the file it refers to.
+            /// <summary>Asynchronous unlink(2) - delete a name and possibly the file it refers to.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike -> Promise<unit>
 
-    module rmdir =
+    module Rmdir =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous rmdir(2) - delete a directory.
+            /// <summary>Asynchronous rmdir(2) - delete a directory.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
             abstract __promisify__: path: PathLike -> Promise<unit>
 
-    module mkdir =
+    module Mkdir =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous mkdir(2) - create a directory.
+            /// <summary>Asynchronous mkdir(2) - create a directory.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not specified, defaults to `0o777`.</param>
             abstract __promisify__: path: PathLike * ?mode: U2<float, string> option -> Promise<unit>
 
-    module mkdtemp =
+    module Mkdtemp =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously creates a unique temporary directory.
-            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+            /// <summary>Asynchronously creates a unique temporary directory.
+            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: prefix: string * ?options: U2<obj, BufferEncoding> option -> Promise<string>
-            /// Asynchronously creates a unique temporary directory.
-            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+            /// <summary>Asynchronously creates a unique temporary directory.
+            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: prefix: string * options: U2<obj, string> -> Promise<Buffer>
-            /// Asynchronously creates a unique temporary directory.
-            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.
+            /// <summary>Asynchronously creates a unique temporary directory.
+            /// Generates six random characters to be appended behind a required prefix to create a unique temporary directory.</summary>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: prefix: string * ?options: U2<obj, string> option -> Promise<U2<string, Buffer>>
 
-    module readdir =
+    module Readdir =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous readdir(3) - read a directory.
+            /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, BufferEncoding> option -> Promise<ResizeArray<string>>
-            /// Asynchronous readdir(3) - read a directory.
+            /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * options: U2<string, obj> -> Promise<ResizeArray<Buffer>>
-            /// Asynchronous readdir(3) - read a directory.
+            /// <summary>Asynchronous readdir(3) - read a directory.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="options">The encoding (or an object specifying the encoding), used as the encoding of the result. If not provided, `'utf8'` is used.</param>
             abstract __promisify__: path: PathLike * ?options: U2<obj, string> option -> Promise<Array<U2<string, Buffer>>>
 
-    module close =
+    module Close =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous close(2) - close a file descriptor.
+            /// <summary>Asynchronous close(2) - close a file descriptor.</summary>
+            /// <param name="fd">A file descriptor.</param>
             abstract __promisify__: fd: float -> Promise<unit>
 
-    module open_ =
+    module Open =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous open(2) - open and possibly create a file.
+            /// <summary>Asynchronous open(2) - open and possibly create a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="mode">A file mode. If a string is passed, it is parsed as an octal integer. If not supplied, defaults to `0o666`.</param>
             abstract __promisify__: path: PathLike * flags: U2<string, float> * ?mode: U2<string, float> option -> Promise<float>
 
-    module utimes =
+    module Utimes =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously change file timestamps of the file referenced by the supplied path.
+            /// <summary>Asynchronously change file timestamps of the file referenced by the supplied path.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.</param>
+            /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+            /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
             abstract __promisify__: path: PathLike * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> -> Promise<unit>
 
-    module futimes =
+    module Futimes =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously change file timestamps of the file referenced by the supplied file descriptor.
+            /// <summary>Asynchronously change file timestamps of the file referenced by the supplied file descriptor.</summary>
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="atime">The last access time. If a string is provided, it will be coerced to number.</param>
+            /// <param name="mtime">The last modified time. If a string is provided, it will be coerced to number.</param>
             abstract __promisify__: fd: float * atime: U3<string, float, DateTime> * mtime: U3<string, float, DateTime> -> Promise<unit>
 
-    module fsync =
+    module Fsync =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.
+            /// <summary>Asynchronous fsync(2) - synchronize a file's in-core state with the underlying storage device.</summary>
+            /// <param name="fd">A file descriptor.</param>
             abstract __promisify__: fd: float -> Promise<unit>
 
-    module write =
+    module Write =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.
+            /// <summary>Asynchronously writes `buffer` to the file referenced by the supplied file descriptor.</summary>
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="offset">The part of the buffer to be written. If not supplied, defaults to `0`.</param>
+            /// <param name="length">The number of bytes to write. If not supplied, defaults to `buffer.length - offset`.</param>
+            /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
             abstract __promisify__: fd: float * ?buffer: 'TBuffer * ?offset: float * ?length: float * ?position: float option -> Promise<obj>
-            /// Asynchronously writes `string` to the file referenced by the supplied file descriptor.
+            /// <summary>Asynchronously writes `string` to the file referenced by the supplied file descriptor.</summary>
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="string">A string to write. If something other than a string is supplied it will be coerced to a string.</param>
+            /// <param name="position">The offset from the beginning of the file where this data should be written. If not supplied, defaults to the current position.</param>
+            /// <param name="encoding">The expected string encoding.</param>
             abstract __promisify__: fd: float * string: obj option * ?position: float option * ?encoding: string option -> Promise<obj>
 
-    module read =
+    module Read =
 
         type [<AllowNullLiteral>] IExports =
+            /// <param name="fd">A file descriptor.</param>
+            /// <param name="buffer">The buffer that the data will be written to.</param>
+            /// <param name="offset">The offset in the buffer at which to start writing.</param>
+            /// <param name="length">The number of bytes to read.</param>
+            /// <param name="position">The offset from the beginning of the file from which data should be read. If `null`, data will be read from the current position.</param>
             abstract __promisify__: fd: float * buffer: 'TBuffer * offset: float * length: float * position: float option -> Promise<obj>
 
-    module readFile =
+    module ReadFile =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously reads the entire contents of a file.
+            /// <summary>Asynchronously reads the entire contents of a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+            /// <param name="options">An object that may contain an optional flag.
+            /// If a flag is not provided, it defaults to `'r'`.</param>
             abstract __promisify__: path: U2<PathLike, float> * ?options: obj option -> Promise<Buffer>
-            /// Asynchronously reads the entire contents of a file.
+            /// <summary>Asynchronously reads the entire contents of a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.
+            /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+            /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+            /// If a flag is not provided, it defaults to `'r'`.</param>
             abstract __promisify__: path: U2<PathLike, float> * options: U2<obj, string> -> Promise<string>
-            /// Asynchronously reads the entire contents of a file.
+            /// <summary>Asynchronously reads the entire contents of a file.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.
+            /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+            /// <param name="options">Either the encoding for the result, or an object that contains the encoding and an optional flag.
+            /// If a flag is not provided, it defaults to `'r'`.</param>
             abstract __promisify__: path: U2<PathLike, float> * ?options: U2<obj, string> option -> Promise<U2<string, Buffer>>
 
-    module writeFile =
+    module WriteFile =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously writes data to a file, replacing the file if it already exists.
+            /// <summary>Asynchronously writes data to a file, replacing the file if it already exists.</summary>
+            /// <param name="path">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.
+            /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+            /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+            /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+            /// If `encoding` is not supplied, the default of `'utf8'` is used.
+            /// If `mode` is not supplied, the default of `0o666` is used.
+            /// If `mode` is a string, it is parsed as an octal integer.
+            /// If `flag` is not supplied, the default of `'w'` is used.</param>
             abstract __promisify__: path: U2<PathLike, float> * data: obj option * ?options: U2<obj, string> option -> Promise<unit>
 
-    module appendFile =
+    module AppendFile =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously append data to a file, creating the file if it does not exist.
+            /// <summary>Asynchronously append data to a file, creating the file if it does not exist.</summary>
+            /// <param name="file">A path to a file. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.
+            /// If a file descriptor is provided, the underlying file will _not_ be closed automatically.</param>
+            /// <param name="data">The data to write. If something other than a Buffer or Uint8Array is provided, the value is coerced to a string.</param>
+            /// <param name="options">Either the encoding for the file, or an object optionally specifying the encoding, file mode, and flag.
+            /// If `encoding` is not supplied, the default of `'utf8'` is used.
+            /// If `mode` is not supplied, the default of `0o666` is used.
+            /// If `mode` is a string, it is parsed as an octal integer.
+            /// If `flag` is not supplied, the default of `'a'` is used.</param>
             abstract __promisify__: file: U2<PathLike, float> * data: obj option * ?options: U2<obj, string> option -> Promise<unit>
 
-    module exists =
+    module Exists =
 
         type [<AllowNullLiteral>] IExports =
+            /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.</param>
             abstract __promisify__: path: PathLike -> Promise<bool>
 
-    module constants =
+    module Constants =
 
         type [<AllowNullLiteral>] IExports =
-            abstract F_OK: float with get, set
-            abstract R_OK: float with get, set
-            abstract W_OK: float with get, set
-            abstract X_OK: float with get, set
-            abstract O_RDONLY: float with get, set
-            abstract O_WRONLY: float with get, set
-            abstract O_RDWR: float with get, set
-            abstract O_CREAT: float with get, set
-            abstract O_EXCL: float with get, set
-            abstract O_NOCTTY: float with get, set
-            abstract O_TRUNC: float with get, set
-            abstract O_APPEND: float with get, set
-            abstract O_DIRECTORY: float with get, set
-            abstract O_NOATIME: float with get, set
-            abstract O_NOFOLLOW: float with get, set
-            abstract O_SYNC: float with get, set
-            abstract O_DSYNC: float with get, set
-            abstract O_SYMLINK: float with get, set
-            abstract O_DIRECT: float with get, set
-            abstract O_NONBLOCK: float with get, set
-            abstract S_IFMT: float with get, set
-            abstract S_IFREG: float with get, set
-            abstract S_IFDIR: float with get, set
-            abstract S_IFCHR: float with get, set
-            abstract S_IFBLK: float with get, set
-            abstract S_IFIFO: float with get, set
-            abstract S_IFLNK: float with get, set
-            abstract S_IFSOCK: float with get, set
-            abstract S_IRWXU: float with get, set
-            abstract S_IRUSR: float with get, set
-            abstract S_IWUSR: float with get, set
-            abstract S_IXUSR: float with get, set
-            abstract S_IRWXG: float with get, set
-            abstract S_IRGRP: float with get, set
-            abstract S_IWGRP: float with get, set
-            abstract S_IXGRP: float with get, set
-            abstract S_IRWXO: float with get, set
-            abstract S_IROTH: float with get, set
-            abstract S_IWOTH: float with get, set
-            abstract S_IXOTH: float with get, set
-            abstract COPYFILE_EXCL: float with get, set
+            abstract F_OK: float
+            abstract R_OK: float
+            abstract W_OK: float
+            abstract X_OK: float
+            abstract O_RDONLY: float
+            abstract O_WRONLY: float
+            abstract O_RDWR: float
+            abstract O_CREAT: float
+            abstract O_EXCL: float
+            abstract O_NOCTTY: float
+            abstract O_TRUNC: float
+            abstract O_APPEND: float
+            abstract O_DIRECTORY: float
+            abstract O_NOATIME: float
+            abstract O_NOFOLLOW: float
+            abstract O_SYNC: float
+            abstract O_DSYNC: float
+            abstract O_SYMLINK: float
+            abstract O_DIRECT: float
+            abstract O_NONBLOCK: float
+            abstract S_IFMT: float
+            abstract S_IFREG: float
+            abstract S_IFDIR: float
+            abstract S_IFCHR: float
+            abstract S_IFBLK: float
+            abstract S_IFIFO: float
+            abstract S_IFLNK: float
+            abstract S_IFSOCK: float
+            abstract S_IRWXU: float
+            abstract S_IRUSR: float
+            abstract S_IWUSR: float
+            abstract S_IXUSR: float
+            abstract S_IRWXG: float
+            abstract S_IRGRP: float
+            abstract S_IWGRP: float
+            abstract S_IXGRP: float
+            abstract S_IRWXO: float
+            abstract S_IROTH: float
+            abstract S_IWOTH: float
+            abstract S_IXOTH: float
+            abstract COPYFILE_EXCL: float
 
-    module access =
+    module Access =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously tests a user's permissions for the file specified by path.
+            /// <summary>Asynchronously tests a user's permissions for the file specified by path.</summary>
+            /// <param name="path">A path to a file or directory. If a URL is provided, it must use the `file:` protocol.
+            /// URL support is _experimental_.</param>
             abstract __promisify__: path: PathLike * ?mode: float -> Promise<unit>
 
-    module fdatasync =
+    module Fdatasync =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.
+            /// <summary>Asynchronous fdatasync(2) - synchronize a file's in-core state with storage device.</summary>
+            /// <param name="fd">A file descriptor.</param>
             abstract __promisify__: fd: float -> Promise<unit>
 
-    module copyFile =
+    module CopyFile =
 
         type [<AllowNullLiteral>] IExports =
-            /// Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
+            /// <summary>Asynchronously copies src to dest. By default, dest is overwritten if it already exists.
             /// No arguments other than a possible exception are given to the callback function.
             /// Node.js makes no guarantees about the atomicity of the copy operation.
             /// If an error occurs after the destination file has been opened for writing, Node.js will attempt
-            /// to remove the destination.
+            /// to remove the destination.</summary>
+            /// <param name="src">A path to the source file.</param>
+            /// <param name="flags">An optional integer that specifies the behavior of the copy operation. The only supported flag is fs.constants.COPYFILE_EXCL, which causes the copy operation to fail if dest already exists.</param>
             abstract __promisify__: src: PathLike * dst: PathLike * ?flags: float -> Promise<unit>
 
-module path =
+module Path =
+    let [<Import("posix","path")>] posix: Posix.IExports = jsNative
+    let [<Import("win32","path")>] win32: Win32.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
-        /// Normalize a string path, reducing '..' and '.' parts.
-        /// When multiple slashes are found, they're replaced by a single one; when the path contains a trailing slash, it is preserved. On Windows backslashes are used.
+        /// <summary>Normalize a string path, reducing '..' and '.' parts.
+        /// When multiple slashes are found, they're replaced by a single one; when the path contains a trailing slash, it is preserved. On Windows backslashes are used.</summary>
+        /// <param name="p">string path to normalize.</param>
         abstract normalize: p: string -> string
-        /// Join all arguments together and normalize the resulting path.
-        /// Arguments must be strings. In v0.8, non-string arguments were silently ignored. In v0.10 and up, an exception is thrown.
+        /// <summary>Join all arguments together and normalize the resulting path.
+        /// Arguments must be strings. In v0.8, non-string arguments were silently ignored. In v0.10 and up, an exception is thrown.</summary>
+        /// <param name="paths">paths to join.</param>
         abstract join: [<ParamArray>] paths: ResizeArray<string> -> string
-        /// The right-most parameter is considered {to}.  Other parameters are considered an array of {from}.
+        /// <summary>The right-most parameter is considered {to}.  Other parameters are considered an array of {from}.
         /// 
         /// Starting from leftmost {from} paramter, resolves {to} to an absolute path.
         /// 
-        /// If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.
+        /// If {to} isn't already absolute, {from} arguments are prepended in right to left order, until an absolute path is found. If after using all {from} paths still no absolute path is found, the current working directory is used as well. The resulting path is normalized, and trailing slashes are removed unless the path gets resolved to the root directory.</summary>
+        /// <param name="pathSegments">string paths to join.  Non-string arguments are ignored.</param>
         abstract resolve: [<ParamArray>] pathSegments: ResizeArray<obj option> -> string
-        /// Determines whether {path} is an absolute path. An absolute path will always resolve to the same location, regardless of the working directory.
+        /// <summary>Determines whether {path} is an absolute path. An absolute path will always resolve to the same location, regardless of the working directory.</summary>
+        /// <param name="path">path to test.</param>
         abstract isAbsolute: path: string -> bool
         /// Solve the relative path from {from} to {to}.
         /// At times we have two absolute paths, and we need to derive the relative path from one to the other. This is actually the reverse transform of path.resolve.
         abstract relative: from: string * ``to``: string -> string
-        /// Return the directory name of a path. Similar to the Unix dirname command.
+        /// <summary>Return the directory name of a path. Similar to the Unix dirname command.</summary>
+        /// <param name="p">the path to evaluate.</param>
         abstract dirname: p: string -> string
-        /// Return the last portion of a path. Similar to the Unix basename command.
-        /// Often used to extract the file name from a fully qualified path.
+        /// <summary>Return the last portion of a path. Similar to the Unix basename command.
+        /// Often used to extract the file name from a fully qualified path.</summary>
+        /// <param name="p">the path to evaluate.</param>
+        /// <param name="ext">optionally, an extension to remove from the result.</param>
         abstract basename: p: string * ?ext: string -> string
-        /// Return the extension of the path, from the last '.' to end of string in the last portion of the path.
-        /// If there is no '.' in the last portion of the path or the first character of it is '.', then it returns an empty string
+        /// <summary>Return the extension of the path, from the last '.' to end of string in the last portion of the path.
+        /// If there is no '.' in the last portion of the path or the first character of it is '.', then it returns an empty string</summary>
+        /// <param name="p">the path to evaluate.</param>
         abstract extname: p: string -> string
-        abstract sep: string with get, set
-        abstract delimiter: string with get, set
-        /// Returns an object from a path string - the opposite of format().
+        abstract sep: string
+        abstract delimiter: string
+        /// <summary>Returns an object from a path string - the opposite of format().</summary>
+        /// <param name="pathString">path to evaluate.</param>
         abstract parse: pathString: string -> ParsedPath
         /// Returns a path string from an object - the opposite of parse().
         abstract format: pathObject: FormatInputPathObject -> string
@@ -3123,7 +3635,7 @@ module path =
         /// The file name without extension (if any) such as 'index'
         abstract name: string option with get, set
 
-    module posix =
+    module Posix =
 
         type [<AllowNullLiteral>] IExports =
             abstract normalize: p: string -> string
@@ -3134,12 +3646,12 @@ module path =
             abstract dirname: p: string -> string
             abstract basename: p: string * ?ext: string -> string
             abstract extname: p: string -> string
-            abstract sep: string with get, set
-            abstract delimiter: string with get, set
+            abstract sep: string
+            abstract delimiter: string
             abstract parse: p: string -> ParsedPath
             abstract format: pP: ParsedPath -> string
 
-    module win32 =
+    module Win32 =
 
         type [<AllowNullLiteral>] IExports =
             abstract normalize: p: string -> string
@@ -3150,35 +3662,35 @@ module path =
             abstract dirname: p: string -> string
             abstract basename: p: string * ?ext: string -> string
             abstract extname: p: string -> string
-            abstract sep: string with get, set
-            abstract delimiter: string with get, set
+            abstract sep: string
+            abstract delimiter: string
             abstract parse: p: string -> ParsedPath
             abstract format: pP: ParsedPath -> string
 
-module string_decoder =
+module String_decoder =
 
     type [<AllowNullLiteral>] IExports =
-        abstract StringDecoder: obj with get, set
+        abstract StringDecoder: obj
 
     type [<AllowNullLiteral>] NodeStringDecoder =
         abstract write: buffer: Buffer -> string
         abstract ``end``: ?buffer: Buffer -> string
 
-module tls =
+module Tls =
 
     type [<AllowNullLiteral>] IExports =
-        abstract CLIENT_RENEG_LIMIT: float with get, set
-        abstract CLIENT_RENEG_WINDOW: float with get, set
+        abstract CLIENT_RENEG_LIMIT: float
+        abstract CLIENT_RENEG_WINDOW: float
         abstract TLSSocket: TLSSocketStatic
         abstract Server: ServerStatic
         abstract createServer: options: TlsOptions * ?secureConnectionListener: (TLSSocket -> unit) -> Server
         abstract connect: options: ConnectionOptions * ?secureConnectionListener: (unit -> unit) -> TLSSocket
         abstract connect: port: float * ?host: string * ?options: ConnectionOptions * ?secureConnectListener: (unit -> unit) -> TLSSocket
         abstract connect: port: float * ?options: ConnectionOptions * ?secureConnectListener: (unit -> unit) -> TLSSocket
-        abstract createSecurePair: ?credentials: crypto.Credentials * ?isServer: bool * ?requestCert: bool * ?rejectUnauthorized: bool -> SecurePair
+        abstract createSecurePair: ?credentials: Crypto.Credentials * ?isServer: bool * ?requestCert: bool * ?rejectUnauthorized: bool -> SecurePair
         abstract createSecureContext: details: SecureContextOptions -> SecureContext
         abstract getCiphers: unit -> ResizeArray<string>
-        abstract DEFAULT_ECDH_CURVE: string with get, set
+        abstract DEFAULT_ECDH_CURVE: string
 
     type [<AllowNullLiteral>] Certificate =
         /// Country code.
@@ -3219,7 +3731,7 @@ module tls =
         abstract version: string with get, set
 
     type [<AllowNullLiteral>] TLSSocket =
-        inherit net.Socket
+        inherit Net.Socket
         /// A boolean that is true if the peer certificate was signed by one of the specified CAs, otherwise false.
         abstract authorized: bool with get, set
         /// The reason why the peer's certificate has not been verified.
@@ -3230,11 +3742,12 @@ module tls =
         abstract encrypted: bool with get, set
         /// Returns an object representing the cipher name and the SSL/TLS protocol version of the current connection.
         abstract getCipher: unit -> CipherNameAndProtocol
-        /// Returns an object representing the peer's certificate.
+        /// <summary>Returns an object representing the peer's certificate.
         /// The returned object has some properties corresponding to the field of the certificate.
         /// If detailed argument is true the full chain with issuer property will be returned,
         /// if false only the top certificate without issuer property.
-        /// If the peer does not provide a certificate, it returns null or an empty object.
+        /// If the peer does not provide a certificate, it returns null or an empty object.</summary>
+        /// <param name="detailed">- If true; the full chain with issuer property will be returned.</param>
         abstract getPeerCertificate: detailed: obj -> DetailedPeerCertificate
         abstract getPeerCertificate: ?detailed: obj -> PeerCertificate
         abstract getPeerCertificate: ?detailed: bool -> U2<PeerCertificate, DetailedPeerCertificate>
@@ -3243,17 +3756,22 @@ module tls =
         /// NOTE: Works only with client TLS sockets.
         /// Useful only for debugging, for session reuse provide session option to tls.connect().
         abstract getTLSTicket: unit -> obj option
-        /// Initiate TLS renegotiation process.
+        /// <summary>Initiate TLS renegotiation process.
         /// 
         /// NOTE: Can be used to request peer's certificate after the secure connection has been established.
-        /// ANOTHER NOTE: When running as the server, socket will be destroyed with an error after handshakeTimeout timeout.
+        /// ANOTHER NOTE: When running as the server, socket will be destroyed with an error after handshakeTimeout timeout.</summary>
+        /// <param name="options">- The options may contain the following fields: rejectUnauthorized,
+        /// requestCert (See tls.createServer() for details).</param>
+        /// <param name="callback">- callback(err) will be executed with null as err, once the renegotiation
+        /// is successfully completed.</param>
         abstract renegotiate: options: TlsOptions * callback: (Error option -> unit) -> obj option
-        /// Set maximum TLS fragment size (default and maximum value is: 16384, minimum is: 512).
+        /// <summary>Set maximum TLS fragment size (default and maximum value is: 16384, minimum is: 512).
         /// Smaller fragment size decreases buffering latency on the client: large fragments are buffered by
         /// the TLS layer until the entire fragment is received and its integrity is verified;
         /// large fragments can span multiple roundtrips, and their processing can be delayed due to packet
         /// loss or reordering. However, smaller fragments add extra TLS framing bytes and CPU overhead,
-        /// which may decrease overall server throughput.
+        /// which may decrease overall server throughput.</summary>
+        /// <param name="size">- TLS fragment size (default and maximum value is: 16384, minimum is: 512).</param>
         abstract setMaxSendFragment: size: float -> bool
         /// events.EventEmitter
         /// 1. OCSPResponse
@@ -3279,7 +3797,47 @@ module tls =
 
     type [<AllowNullLiteral>] TLSSocketStatic =
         /// Construct a new tls.TLSSocket object from an existing TCP socket.
-        [<Emit "new $0($1...)">] abstract Create: socket: net.Socket * ?options: obj -> TLSSocket
+        [<Emit "new $0($1...)">] abstract Create: socket: Net.Socket * ?options: TLSSocketStaticOptions -> TLSSocket
+
+    type [<AllowNullLiteral>] TLSSocketStaticOptions =
+        /// An optional TLS context object from tls.createSecureContext()
+        abstract secureContext: SecureContext option with get, set
+        /// If true the TLS socket will be instantiated in server-mode.
+        /// Defaults to false.
+        abstract isServer: bool option with get, set
+        /// An optional net.Server instance.
+        abstract server: Net.Server option with get, set
+        /// If true the server will request a certificate from clients that
+        /// connect and attempt to verify that certificate. Defaults to
+        /// false.
+        abstract requestCert: bool option with get, set
+        /// If true the server will reject any connection which is not
+        /// authorized with the list of supplied CAs. This option only has an
+        /// effect if requestCert is true. Defaults to false.
+        abstract rejectUnauthorized: bool option with get, set
+        /// An array of strings or a Buffer naming possible NPN protocols.
+        /// (Protocols should be ordered by their priority.)
+        abstract NPNProtocols: U2<ResizeArray<string>, Buffer> option with get, set
+        /// An array of strings or a Buffer naming possible ALPN protocols.
+        /// (Protocols should be ordered by their priority.) When the server
+        /// receives both NPN and ALPN extensions from the client, ALPN takes
+        /// precedence over NPN and the server does not send an NPN extension
+        /// to the client.
+        abstract ALPNProtocols: U2<ResizeArray<string>, Buffer> option with get, set
+        /// SNICallback(servername, cb) <Function> A function that will be
+        /// called if the client supports SNI TLS extension. Two arguments
+        /// will be passed when called: servername and cb. SNICallback should
+        /// invoke cb(null, ctx), where ctx is a SecureContext instance.
+        /// (tls.createSecureContext(...) can be used to get a proper
+        /// SecureContext.) If SNICallback wasn't provided the default callback
+        /// with high-level API will be used (see below).
+        abstract SNICallback: (string -> (Error option -> SecureContext -> unit) -> unit) option with get, set
+        /// An optional Buffer instance containing a TLS session.
+        abstract session: Buffer option with get, set
+        /// If true, specifies that the OCSP status request extension will be
+        /// added to the client hello and an 'OCSPResponse' event will be
+        /// emitted on the socket before establishing a secure communication
+        abstract requestOCSP: bool option with get, set
 
     type [<AllowNullLiteral>] TlsOptions =
         abstract host: string option with get, set
@@ -3309,7 +3867,7 @@ module tls =
     type [<AllowNullLiteral>] ConnectionOptions =
         abstract host: string option with get, set
         abstract port: float option with get, set
-        abstract socket: net.Socket option with get, set
+        abstract socket: Net.Socket option with get, set
         abstract pfx: U2<string, Buffer> option with get, set
         abstract key: U4<string, ResizeArray<string>, Buffer, ResizeArray<Buffer>> option with get, set
         abstract passphrase: string option with get, set
@@ -3325,11 +3883,11 @@ module tls =
         abstract secureContext: Object option with get, set
         abstract session: Buffer option with get, set
         abstract minDHSize: float option with get, set
-        abstract lookup: net.LookupFunction option with get, set
+        abstract lookup: Net.LookupFunction option with get, set
 
     type [<AllowNullLiteral>] Server =
-        inherit net.Server
-        abstract addContext: hostName: string * credentials: obj -> unit
+        inherit Net.Server
+        abstract addContext: hostName: string * credentials: ServerAddContextCredentials -> unit
         /// events.EventEmitter
         /// 1. tlsClientError
         /// 2. newSession
@@ -3373,11 +3931,16 @@ module tls =
         [<Emit "$0.prependOnceListener('resumeSession',$1)">] abstract prependOnceListener_resumeSession: listener: (obj option -> (Error -> obj option -> unit) -> unit) -> Server
         [<Emit "$0.prependOnceListener('secureConnection',$1)">] abstract prependOnceListener_secureConnection: listener: (TLSSocket -> unit) -> Server
 
+    type [<AllowNullLiteral>] ServerAddContextCredentials =
+        abstract key: string with get, set
+        abstract cert: string with get, set
+        abstract ca: string with get, set
+
     type [<AllowNullLiteral>] ServerStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> Server
 
     type [<AllowNullLiteral>] ClearTextStream =
-        inherit stream.Duplex
+        inherit Stream.Duplex
         abstract authorized: bool with get, set
         abstract authorizationError: Error with get, set
         abstract getPeerCertificate: unit -> obj option
@@ -3403,11 +3966,11 @@ module tls =
     type [<AllowNullLiteral>] SecureContext =
         abstract context: obj option with get, set
 
-module crypto =
+module Crypto =
 
     type [<AllowNullLiteral>] IExports =
-        abstract Certificate: obj with get, set
-        abstract fips: bool with get, set
+        abstract Certificate: obj
+        abstract fips: bool
         abstract createCredentials: details: CredentialDetails -> Credentials
         abstract createHash: algorithm: string -> Hash
         abstract createHmac: algorithm: string * key: U2<string, Buffer> -> Hmac
@@ -3445,7 +4008,7 @@ module crypto =
         abstract getHashes: unit -> ResizeArray<string>
         abstract createECDH: curve_name: string -> ECDH
         abstract timingSafeEqual: a: Buffer * b: Buffer -> bool
-        abstract DEFAULT_ENCODING: string with get, set
+        abstract DEFAULT_ENCODING: string
 
     type [<AllowNullLiteral>] Certificate =
         abstract exportChallenge: spkac: U2<string, Buffer> -> Buffer
@@ -3585,7 +4148,7 @@ module crypto =
         abstract setPrivateKey: private_key: Buffer -> unit
         abstract setPrivateKey: private_key: string * encoding: HexBase64Latin1Encoding -> unit
 
-module stream =
+module Stream =
 
     type [<AllowNullLiteral>] IExports =
         abstract ``internal``: internalStatic
@@ -3597,8 +4160,11 @@ module stream =
         abstract PassThrough: PassThroughStatic
 
     type [<AllowNullLiteral>] ``internal`` =
-        inherit events.EventEmitter
-        abstract pipe: destination: 'T * ?options: obj -> 'T
+        inherit Events.EventEmitter
+        abstract pipe: destination: 'T * ?options: InternalPipeOptions -> 'T
+
+    type [<AllowNullLiteral>] InternalPipeOptions =
+        abstract ``end``: bool option with get, set
 
     type [<AllowNullLiteral>] internalStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> ``internal``
@@ -3818,7 +4384,8 @@ module stream =
     type [<AllowNullLiteral>] PassThroughStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> PassThrough
 
-module util =
+module Util =
+    let [<Import("promisify","util")>] promisify: Promisify.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
         abstract format: format: obj option * [<ParamArray>] param: ResizeArray<obj option> -> string
@@ -3827,7 +4394,7 @@ module util =
         abstract puts: [<ParamArray>] param: ResizeArray<obj option> -> unit
         abstract print: [<ParamArray>] param: ResizeArray<obj option> -> unit
         abstract log: string: string -> unit
-        abstract inspect: obj with get, set
+        abstract inspect: obj
         abstract isArray: ``object``: obj option -> bool
         abstract isRegExp: ``object``: obj option -> bool
         abstract isDate: ``object``: obj option -> bool
@@ -3882,12 +4449,12 @@ module util =
         inherit Function
         abstract __promisify__: 'TCustom with get, set
 
-    module promisify =
+    module Promisify =
 
         type [<AllowNullLiteral>] IExports =
-            abstract custom: Symbol with get, set
+            abstract custom: Symbol
 
-module assert_ =
+module Assert =
 
     type [<AllowNullLiteral>] IExports =
         abstract ``internal``: value: obj option * ?message: string -> unit
@@ -3923,37 +4490,44 @@ module assert_ =
         abstract generatedMessage: bool with get, set
 
     type [<AllowNullLiteral>] AssertionErrorStatic =
-        [<Emit "new $0($1...)">] abstract Create: ?options: obj -> AssertionError
+        [<Emit "new $0($1...)">] abstract Create: ?options: AssertionErrorStaticOptions -> AssertionError
 
-module tty =
+    type [<AllowNullLiteral>] AssertionErrorStaticOptions =
+        abstract message: string option with get, set
+        abstract actual: obj option option with get, set
+        abstract expected: obj option option with get, set
+        abstract operator: string option with get, set
+        abstract stackStartFunction: Function option with get, set
+
+module Tty =
 
     type [<AllowNullLiteral>] IExports =
         abstract isatty: fd: float -> bool
 
     type [<AllowNullLiteral>] ReadStream =
-        inherit net.Socket
+        inherit Net.Socket
         abstract isRaw: bool with get, set
         abstract setRawMode: mode: bool -> unit
         abstract isTTY: bool with get, set
 
     type [<AllowNullLiteral>] WriteStream =
-        inherit net.Socket
+        inherit Net.Socket
         abstract columns: float with get, set
         abstract rows: float with get, set
         abstract isTTY: bool with get, set
 
-module domain =
+module Domain =
 
     type [<AllowNullLiteral>] IExports =
         abstract Domain: DomainStatic
         abstract create: unit -> Domain
 
     type [<AllowNullLiteral>] Domain =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         inherit NodeJS.Domain
         abstract run: fn: Function -> unit
-        abstract add: emitter: events.EventEmitter -> unit
-        abstract remove: emitter: events.EventEmitter -> unit
+        abstract add: emitter: Events.EventEmitter -> unit
+        abstract remove: emitter: Events.EventEmitter -> unit
         abstract bind: cb: (Error -> obj option -> obj option) -> obj option
         abstract intercept: cb: (obj option -> obj option) -> obj option
         abstract dispose: unit -> unit
@@ -3964,285 +4538,285 @@ module domain =
     type [<AllowNullLiteral>] DomainStatic =
         [<Emit "new $0($1...)">] abstract Create: unit -> Domain
 
-module constants =
+module Constants =
 
     type [<AllowNullLiteral>] IExports =
-        abstract E2BIG: float with get, set
-        abstract EACCES: float with get, set
-        abstract EADDRINUSE: float with get, set
-        abstract EADDRNOTAVAIL: float with get, set
-        abstract EAFNOSUPPORT: float with get, set
-        abstract EAGAIN: float with get, set
-        abstract EALREADY: float with get, set
-        abstract EBADF: float with get, set
-        abstract EBADMSG: float with get, set
-        abstract EBUSY: float with get, set
-        abstract ECANCELED: float with get, set
-        abstract ECHILD: float with get, set
-        abstract ECONNABORTED: float with get, set
-        abstract ECONNREFUSED: float with get, set
-        abstract ECONNRESET: float with get, set
-        abstract EDEADLK: float with get, set
-        abstract EDESTADDRREQ: float with get, set
-        abstract EDOM: float with get, set
-        abstract EEXIST: float with get, set
-        abstract EFAULT: float with get, set
-        abstract EFBIG: float with get, set
-        abstract EHOSTUNREACH: float with get, set
-        abstract EIDRM: float with get, set
-        abstract EILSEQ: float with get, set
-        abstract EINPROGRESS: float with get, set
-        abstract EINTR: float with get, set
-        abstract EINVAL: float with get, set
-        abstract EIO: float with get, set
-        abstract EISCONN: float with get, set
-        abstract EISDIR: float with get, set
-        abstract ELOOP: float with get, set
-        abstract EMFILE: float with get, set
-        abstract EMLINK: float with get, set
-        abstract EMSGSIZE: float with get, set
-        abstract ENAMETOOLONG: float with get, set
-        abstract ENETDOWN: float with get, set
-        abstract ENETRESET: float with get, set
-        abstract ENETUNREACH: float with get, set
-        abstract ENFILE: float with get, set
-        abstract ENOBUFS: float with get, set
-        abstract ENODATA: float with get, set
-        abstract ENODEV: float with get, set
-        abstract ENOENT: float with get, set
-        abstract ENOEXEC: float with get, set
-        abstract ENOLCK: float with get, set
-        abstract ENOLINK: float with get, set
-        abstract ENOMEM: float with get, set
-        abstract ENOMSG: float with get, set
-        abstract ENOPROTOOPT: float with get, set
-        abstract ENOSPC: float with get, set
-        abstract ENOSR: float with get, set
-        abstract ENOSTR: float with get, set
-        abstract ENOSYS: float with get, set
-        abstract ENOTCONN: float with get, set
-        abstract ENOTDIR: float with get, set
-        abstract ENOTEMPTY: float with get, set
-        abstract ENOTSOCK: float with get, set
-        abstract ENOTSUP: float with get, set
-        abstract ENOTTY: float with get, set
-        abstract ENXIO: float with get, set
-        abstract EOPNOTSUPP: float with get, set
-        abstract EOVERFLOW: float with get, set
-        abstract EPERM: float with get, set
-        abstract EPIPE: float with get, set
-        abstract EPROTO: float with get, set
-        abstract EPROTONOSUPPORT: float with get, set
-        abstract EPROTOTYPE: float with get, set
-        abstract ERANGE: float with get, set
-        abstract EROFS: float with get, set
-        abstract ESPIPE: float with get, set
-        abstract ESRCH: float with get, set
-        abstract ETIME: float with get, set
-        abstract ETIMEDOUT: float with get, set
-        abstract ETXTBSY: float with get, set
-        abstract EWOULDBLOCK: float with get, set
-        abstract EXDEV: float with get, set
-        abstract WSAEINTR: float with get, set
-        abstract WSAEBADF: float with get, set
-        abstract WSAEACCES: float with get, set
-        abstract WSAEFAULT: float with get, set
-        abstract WSAEINVAL: float with get, set
-        abstract WSAEMFILE: float with get, set
-        abstract WSAEWOULDBLOCK: float with get, set
-        abstract WSAEINPROGRESS: float with get, set
-        abstract WSAEALREADY: float with get, set
-        abstract WSAENOTSOCK: float with get, set
-        abstract WSAEDESTADDRREQ: float with get, set
-        abstract WSAEMSGSIZE: float with get, set
-        abstract WSAEPROTOTYPE: float with get, set
-        abstract WSAENOPROTOOPT: float with get, set
-        abstract WSAEPROTONOSUPPORT: float with get, set
-        abstract WSAESOCKTNOSUPPORT: float with get, set
-        abstract WSAEOPNOTSUPP: float with get, set
-        abstract WSAEPFNOSUPPORT: float with get, set
-        abstract WSAEAFNOSUPPORT: float with get, set
-        abstract WSAEADDRINUSE: float with get, set
-        abstract WSAEADDRNOTAVAIL: float with get, set
-        abstract WSAENETDOWN: float with get, set
-        abstract WSAENETUNREACH: float with get, set
-        abstract WSAENETRESET: float with get, set
-        abstract WSAECONNABORTED: float with get, set
-        abstract WSAECONNRESET: float with get, set
-        abstract WSAENOBUFS: float with get, set
-        abstract WSAEISCONN: float with get, set
-        abstract WSAENOTCONN: float with get, set
-        abstract WSAESHUTDOWN: float with get, set
-        abstract WSAETOOMANYREFS: float with get, set
-        abstract WSAETIMEDOUT: float with get, set
-        abstract WSAECONNREFUSED: float with get, set
-        abstract WSAELOOP: float with get, set
-        abstract WSAENAMETOOLONG: float with get, set
-        abstract WSAEHOSTDOWN: float with get, set
-        abstract WSAEHOSTUNREACH: float with get, set
-        abstract WSAENOTEMPTY: float with get, set
-        abstract WSAEPROCLIM: float with get, set
-        abstract WSAEUSERS: float with get, set
-        abstract WSAEDQUOT: float with get, set
-        abstract WSAESTALE: float with get, set
-        abstract WSAEREMOTE: float with get, set
-        abstract WSASYSNOTREADY: float with get, set
-        abstract WSAVERNOTSUPPORTED: float with get, set
-        abstract WSANOTINITIALISED: float with get, set
-        abstract WSAEDISCON: float with get, set
-        abstract WSAENOMORE: float with get, set
-        abstract WSAECANCELLED: float with get, set
-        abstract WSAEINVALIDPROCTABLE: float with get, set
-        abstract WSAEINVALIDPROVIDER: float with get, set
-        abstract WSAEPROVIDERFAILEDINIT: float with get, set
-        abstract WSASYSCALLFAILURE: float with get, set
-        abstract WSASERVICE_NOT_FOUND: float with get, set
-        abstract WSATYPE_NOT_FOUND: float with get, set
-        abstract WSA_E_NO_MORE: float with get, set
-        abstract WSA_E_CANCELLED: float with get, set
-        abstract WSAEREFUSED: float with get, set
-        abstract SIGHUP: float with get, set
-        abstract SIGINT: float with get, set
-        abstract SIGILL: float with get, set
-        abstract SIGABRT: float with get, set
-        abstract SIGFPE: float with get, set
-        abstract SIGKILL: float with get, set
-        abstract SIGSEGV: float with get, set
-        abstract SIGTERM: float with get, set
-        abstract SIGBREAK: float with get, set
-        abstract SIGWINCH: float with get, set
-        abstract SSL_OP_ALL: float with get, set
-        abstract SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: float with get, set
-        abstract SSL_OP_CIPHER_SERVER_PREFERENCE: float with get, set
-        abstract SSL_OP_CISCO_ANYCONNECT: float with get, set
-        abstract SSL_OP_COOKIE_EXCHANGE: float with get, set
-        abstract SSL_OP_CRYPTOPRO_TLSEXT_BUG: float with get, set
-        abstract SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: float with get, set
-        abstract SSL_OP_EPHEMERAL_RSA: float with get, set
-        abstract SSL_OP_LEGACY_SERVER_CONNECT: float with get, set
-        abstract SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER: float with get, set
-        abstract SSL_OP_MICROSOFT_SESS_ID_BUG: float with get, set
-        abstract SSL_OP_MSIE_SSLV2_RSA_PADDING: float with get, set
-        abstract SSL_OP_NETSCAPE_CA_DN_BUG: float with get, set
-        abstract SSL_OP_NETSCAPE_CHALLENGE_BUG: float with get, set
-        abstract SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG: float with get, set
-        abstract SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG: float with get, set
-        abstract SSL_OP_NO_COMPRESSION: float with get, set
-        abstract SSL_OP_NO_QUERY_MTU: float with get, set
-        abstract SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: float with get, set
-        abstract SSL_OP_NO_SSLv2: float with get, set
-        abstract SSL_OP_NO_SSLv3: float with get, set
-        abstract SSL_OP_NO_TICKET: float with get, set
-        abstract SSL_OP_NO_TLSv1: float with get, set
-        abstract SSL_OP_NO_TLSv1_1: float with get, set
-        abstract SSL_OP_NO_TLSv1_2: float with get, set
-        abstract SSL_OP_PKCS1_CHECK_1: float with get, set
-        abstract SSL_OP_PKCS1_CHECK_2: float with get, set
-        abstract SSL_OP_SINGLE_DH_USE: float with get, set
-        abstract SSL_OP_SINGLE_ECDH_USE: float with get, set
-        abstract SSL_OP_SSLEAY_080_CLIENT_DH_BUG: float with get, set
-        abstract SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG: float with get, set
-        abstract SSL_OP_TLS_BLOCK_PADDING_BUG: float with get, set
-        abstract SSL_OP_TLS_D5_BUG: float with get, set
-        abstract SSL_OP_TLS_ROLLBACK_BUG: float with get, set
-        abstract ENGINE_METHOD_DSA: float with get, set
-        abstract ENGINE_METHOD_DH: float with get, set
-        abstract ENGINE_METHOD_RAND: float with get, set
-        abstract ENGINE_METHOD_ECDH: float with get, set
-        abstract ENGINE_METHOD_ECDSA: float with get, set
-        abstract ENGINE_METHOD_CIPHERS: float with get, set
-        abstract ENGINE_METHOD_DIGESTS: float with get, set
-        abstract ENGINE_METHOD_STORE: float with get, set
-        abstract ENGINE_METHOD_PKEY_METHS: float with get, set
-        abstract ENGINE_METHOD_PKEY_ASN1_METHS: float with get, set
-        abstract ENGINE_METHOD_ALL: float with get, set
-        abstract ENGINE_METHOD_NONE: float with get, set
-        abstract DH_CHECK_P_NOT_SAFE_PRIME: float with get, set
-        abstract DH_CHECK_P_NOT_PRIME: float with get, set
-        abstract DH_UNABLE_TO_CHECK_GENERATOR: float with get, set
-        abstract DH_NOT_SUITABLE_GENERATOR: float with get, set
-        abstract NPN_ENABLED: float with get, set
-        abstract RSA_PKCS1_PADDING: float with get, set
-        abstract RSA_SSLV23_PADDING: float with get, set
-        abstract RSA_NO_PADDING: float with get, set
-        abstract RSA_PKCS1_OAEP_PADDING: float with get, set
-        abstract RSA_X931_PADDING: float with get, set
-        abstract RSA_PKCS1_PSS_PADDING: float with get, set
-        abstract POINT_CONVERSION_COMPRESSED: float with get, set
-        abstract POINT_CONVERSION_UNCOMPRESSED: float with get, set
-        abstract POINT_CONVERSION_HYBRID: float with get, set
-        abstract O_RDONLY: float with get, set
-        abstract O_WRONLY: float with get, set
-        abstract O_RDWR: float with get, set
-        abstract S_IFMT: float with get, set
-        abstract S_IFREG: float with get, set
-        abstract S_IFDIR: float with get, set
-        abstract S_IFCHR: float with get, set
-        abstract S_IFBLK: float with get, set
-        abstract S_IFIFO: float with get, set
-        abstract S_IFSOCK: float with get, set
-        abstract S_IRWXU: float with get, set
-        abstract S_IRUSR: float with get, set
-        abstract S_IWUSR: float with get, set
-        abstract S_IXUSR: float with get, set
-        abstract S_IRWXG: float with get, set
-        abstract S_IRGRP: float with get, set
-        abstract S_IWGRP: float with get, set
-        abstract S_IXGRP: float with get, set
-        abstract S_IRWXO: float with get, set
-        abstract S_IROTH: float with get, set
-        abstract S_IWOTH: float with get, set
-        abstract S_IXOTH: float with get, set
-        abstract S_IFLNK: float with get, set
-        abstract O_CREAT: float with get, set
-        abstract O_EXCL: float with get, set
-        abstract O_NOCTTY: float with get, set
-        abstract O_DIRECTORY: float with get, set
-        abstract O_NOATIME: float with get, set
-        abstract O_NOFOLLOW: float with get, set
-        abstract O_SYNC: float with get, set
-        abstract O_DSYNC: float with get, set
-        abstract O_SYMLINK: float with get, set
-        abstract O_DIRECT: float with get, set
-        abstract O_NONBLOCK: float with get, set
-        abstract O_TRUNC: float with get, set
-        abstract O_APPEND: float with get, set
-        abstract F_OK: float with get, set
-        abstract R_OK: float with get, set
-        abstract W_OK: float with get, set
-        abstract X_OK: float with get, set
-        abstract UV_UDP_REUSEADDR: float with get, set
-        abstract SIGQUIT: float with get, set
-        abstract SIGTRAP: float with get, set
-        abstract SIGIOT: float with get, set
-        abstract SIGBUS: float with get, set
-        abstract SIGUSR1: float with get, set
-        abstract SIGUSR2: float with get, set
-        abstract SIGPIPE: float with get, set
-        abstract SIGALRM: float with get, set
-        abstract SIGCHLD: float with get, set
-        abstract SIGSTKFLT: float with get, set
-        abstract SIGCONT: float with get, set
-        abstract SIGSTOP: float with get, set
-        abstract SIGTSTP: float with get, set
-        abstract SIGTTIN: float with get, set
-        abstract SIGTTOU: float with get, set
-        abstract SIGURG: float with get, set
-        abstract SIGXCPU: float with get, set
-        abstract SIGXFSZ: float with get, set
-        abstract SIGVTALRM: float with get, set
-        abstract SIGPROF: float with get, set
-        abstract SIGIO: float with get, set
-        abstract SIGPOLL: float with get, set
-        abstract SIGPWR: float with get, set
-        abstract SIGSYS: float with get, set
-        abstract SIGUNUSED: float with get, set
-        abstract defaultCoreCipherList: string with get, set
-        abstract defaultCipherList: string with get, set
-        abstract ENGINE_METHOD_RSA: float with get, set
-        abstract ALPN_ENABLED: float with get, set
+        abstract E2BIG: float
+        abstract EACCES: float
+        abstract EADDRINUSE: float
+        abstract EADDRNOTAVAIL: float
+        abstract EAFNOSUPPORT: float
+        abstract EAGAIN: float
+        abstract EALREADY: float
+        abstract EBADF: float
+        abstract EBADMSG: float
+        abstract EBUSY: float
+        abstract ECANCELED: float
+        abstract ECHILD: float
+        abstract ECONNABORTED: float
+        abstract ECONNREFUSED: float
+        abstract ECONNRESET: float
+        abstract EDEADLK: float
+        abstract EDESTADDRREQ: float
+        abstract EDOM: float
+        abstract EEXIST: float
+        abstract EFAULT: float
+        abstract EFBIG: float
+        abstract EHOSTUNREACH: float
+        abstract EIDRM: float
+        abstract EILSEQ: float
+        abstract EINPROGRESS: float
+        abstract EINTR: float
+        abstract EINVAL: float
+        abstract EIO: float
+        abstract EISCONN: float
+        abstract EISDIR: float
+        abstract ELOOP: float
+        abstract EMFILE: float
+        abstract EMLINK: float
+        abstract EMSGSIZE: float
+        abstract ENAMETOOLONG: float
+        abstract ENETDOWN: float
+        abstract ENETRESET: float
+        abstract ENETUNREACH: float
+        abstract ENFILE: float
+        abstract ENOBUFS: float
+        abstract ENODATA: float
+        abstract ENODEV: float
+        abstract ENOENT: float
+        abstract ENOEXEC: float
+        abstract ENOLCK: float
+        abstract ENOLINK: float
+        abstract ENOMEM: float
+        abstract ENOMSG: float
+        abstract ENOPROTOOPT: float
+        abstract ENOSPC: float
+        abstract ENOSR: float
+        abstract ENOSTR: float
+        abstract ENOSYS: float
+        abstract ENOTCONN: float
+        abstract ENOTDIR: float
+        abstract ENOTEMPTY: float
+        abstract ENOTSOCK: float
+        abstract ENOTSUP: float
+        abstract ENOTTY: float
+        abstract ENXIO: float
+        abstract EOPNOTSUPP: float
+        abstract EOVERFLOW: float
+        abstract EPERM: float
+        abstract EPIPE: float
+        abstract EPROTO: float
+        abstract EPROTONOSUPPORT: float
+        abstract EPROTOTYPE: float
+        abstract ERANGE: float
+        abstract EROFS: float
+        abstract ESPIPE: float
+        abstract ESRCH: float
+        abstract ETIME: float
+        abstract ETIMEDOUT: float
+        abstract ETXTBSY: float
+        abstract EWOULDBLOCK: float
+        abstract EXDEV: float
+        abstract WSAEINTR: float
+        abstract WSAEBADF: float
+        abstract WSAEACCES: float
+        abstract WSAEFAULT: float
+        abstract WSAEINVAL: float
+        abstract WSAEMFILE: float
+        abstract WSAEWOULDBLOCK: float
+        abstract WSAEINPROGRESS: float
+        abstract WSAEALREADY: float
+        abstract WSAENOTSOCK: float
+        abstract WSAEDESTADDRREQ: float
+        abstract WSAEMSGSIZE: float
+        abstract WSAEPROTOTYPE: float
+        abstract WSAENOPROTOOPT: float
+        abstract WSAEPROTONOSUPPORT: float
+        abstract WSAESOCKTNOSUPPORT: float
+        abstract WSAEOPNOTSUPP: float
+        abstract WSAEPFNOSUPPORT: float
+        abstract WSAEAFNOSUPPORT: float
+        abstract WSAEADDRINUSE: float
+        abstract WSAEADDRNOTAVAIL: float
+        abstract WSAENETDOWN: float
+        abstract WSAENETUNREACH: float
+        abstract WSAENETRESET: float
+        abstract WSAECONNABORTED: float
+        abstract WSAECONNRESET: float
+        abstract WSAENOBUFS: float
+        abstract WSAEISCONN: float
+        abstract WSAENOTCONN: float
+        abstract WSAESHUTDOWN: float
+        abstract WSAETOOMANYREFS: float
+        abstract WSAETIMEDOUT: float
+        abstract WSAECONNREFUSED: float
+        abstract WSAELOOP: float
+        abstract WSAENAMETOOLONG: float
+        abstract WSAEHOSTDOWN: float
+        abstract WSAEHOSTUNREACH: float
+        abstract WSAENOTEMPTY: float
+        abstract WSAEPROCLIM: float
+        abstract WSAEUSERS: float
+        abstract WSAEDQUOT: float
+        abstract WSAESTALE: float
+        abstract WSAEREMOTE: float
+        abstract WSASYSNOTREADY: float
+        abstract WSAVERNOTSUPPORTED: float
+        abstract WSANOTINITIALISED: float
+        abstract WSAEDISCON: float
+        abstract WSAENOMORE: float
+        abstract WSAECANCELLED: float
+        abstract WSAEINVALIDPROCTABLE: float
+        abstract WSAEINVALIDPROVIDER: float
+        abstract WSAEPROVIDERFAILEDINIT: float
+        abstract WSASYSCALLFAILURE: float
+        abstract WSASERVICE_NOT_FOUND: float
+        abstract WSATYPE_NOT_FOUND: float
+        abstract WSA_E_NO_MORE: float
+        abstract WSA_E_CANCELLED: float
+        abstract WSAEREFUSED: float
+        abstract SIGHUP: float
+        abstract SIGINT: float
+        abstract SIGILL: float
+        abstract SIGABRT: float
+        abstract SIGFPE: float
+        abstract SIGKILL: float
+        abstract SIGSEGV: float
+        abstract SIGTERM: float
+        abstract SIGBREAK: float
+        abstract SIGWINCH: float
+        abstract SSL_OP_ALL: float
+        abstract SSL_OP_ALLOW_UNSAFE_LEGACY_RENEGOTIATION: float
+        abstract SSL_OP_CIPHER_SERVER_PREFERENCE: float
+        abstract SSL_OP_CISCO_ANYCONNECT: float
+        abstract SSL_OP_COOKIE_EXCHANGE: float
+        abstract SSL_OP_CRYPTOPRO_TLSEXT_BUG: float
+        abstract SSL_OP_DONT_INSERT_EMPTY_FRAGMENTS: float
+        abstract SSL_OP_EPHEMERAL_RSA: float
+        abstract SSL_OP_LEGACY_SERVER_CONNECT: float
+        abstract SSL_OP_MICROSOFT_BIG_SSLV3_BUFFER: float
+        abstract SSL_OP_MICROSOFT_SESS_ID_BUG: float
+        abstract SSL_OP_MSIE_SSLV2_RSA_PADDING: float
+        abstract SSL_OP_NETSCAPE_CA_DN_BUG: float
+        abstract SSL_OP_NETSCAPE_CHALLENGE_BUG: float
+        abstract SSL_OP_NETSCAPE_DEMO_CIPHER_CHANGE_BUG: float
+        abstract SSL_OP_NETSCAPE_REUSE_CIPHER_CHANGE_BUG: float
+        abstract SSL_OP_NO_COMPRESSION: float
+        abstract SSL_OP_NO_QUERY_MTU: float
+        abstract SSL_OP_NO_SESSION_RESUMPTION_ON_RENEGOTIATION: float
+        abstract SSL_OP_NO_SSLv2: float
+        abstract SSL_OP_NO_SSLv3: float
+        abstract SSL_OP_NO_TICKET: float
+        abstract SSL_OP_NO_TLSv1: float
+        abstract SSL_OP_NO_TLSv1_1: float
+        abstract SSL_OP_NO_TLSv1_2: float
+        abstract SSL_OP_PKCS1_CHECK_1: float
+        abstract SSL_OP_PKCS1_CHECK_2: float
+        abstract SSL_OP_SINGLE_DH_USE: float
+        abstract SSL_OP_SINGLE_ECDH_USE: float
+        abstract SSL_OP_SSLEAY_080_CLIENT_DH_BUG: float
+        abstract SSL_OP_SSLREF2_REUSE_CERT_TYPE_BUG: float
+        abstract SSL_OP_TLS_BLOCK_PADDING_BUG: float
+        abstract SSL_OP_TLS_D5_BUG: float
+        abstract SSL_OP_TLS_ROLLBACK_BUG: float
+        abstract ENGINE_METHOD_DSA: float
+        abstract ENGINE_METHOD_DH: float
+        abstract ENGINE_METHOD_RAND: float
+        abstract ENGINE_METHOD_ECDH: float
+        abstract ENGINE_METHOD_ECDSA: float
+        abstract ENGINE_METHOD_CIPHERS: float
+        abstract ENGINE_METHOD_DIGESTS: float
+        abstract ENGINE_METHOD_STORE: float
+        abstract ENGINE_METHOD_PKEY_METHS: float
+        abstract ENGINE_METHOD_PKEY_ASN1_METHS: float
+        abstract ENGINE_METHOD_ALL: float
+        abstract ENGINE_METHOD_NONE: float
+        abstract DH_CHECK_P_NOT_SAFE_PRIME: float
+        abstract DH_CHECK_P_NOT_PRIME: float
+        abstract DH_UNABLE_TO_CHECK_GENERATOR: float
+        abstract DH_NOT_SUITABLE_GENERATOR: float
+        abstract NPN_ENABLED: float
+        abstract RSA_PKCS1_PADDING: float
+        abstract RSA_SSLV23_PADDING: float
+        abstract RSA_NO_PADDING: float
+        abstract RSA_PKCS1_OAEP_PADDING: float
+        abstract RSA_X931_PADDING: float
+        abstract RSA_PKCS1_PSS_PADDING: float
+        abstract POINT_CONVERSION_COMPRESSED: float
+        abstract POINT_CONVERSION_UNCOMPRESSED: float
+        abstract POINT_CONVERSION_HYBRID: float
+        abstract O_RDONLY: float
+        abstract O_WRONLY: float
+        abstract O_RDWR: float
+        abstract S_IFMT: float
+        abstract S_IFREG: float
+        abstract S_IFDIR: float
+        abstract S_IFCHR: float
+        abstract S_IFBLK: float
+        abstract S_IFIFO: float
+        abstract S_IFSOCK: float
+        abstract S_IRWXU: float
+        abstract S_IRUSR: float
+        abstract S_IWUSR: float
+        abstract S_IXUSR: float
+        abstract S_IRWXG: float
+        abstract S_IRGRP: float
+        abstract S_IWGRP: float
+        abstract S_IXGRP: float
+        abstract S_IRWXO: float
+        abstract S_IROTH: float
+        abstract S_IWOTH: float
+        abstract S_IXOTH: float
+        abstract S_IFLNK: float
+        abstract O_CREAT: float
+        abstract O_EXCL: float
+        abstract O_NOCTTY: float
+        abstract O_DIRECTORY: float
+        abstract O_NOATIME: float
+        abstract O_NOFOLLOW: float
+        abstract O_SYNC: float
+        abstract O_DSYNC: float
+        abstract O_SYMLINK: float
+        abstract O_DIRECT: float
+        abstract O_NONBLOCK: float
+        abstract O_TRUNC: float
+        abstract O_APPEND: float
+        abstract F_OK: float
+        abstract R_OK: float
+        abstract W_OK: float
+        abstract X_OK: float
+        abstract UV_UDP_REUSEADDR: float
+        abstract SIGQUIT: float
+        abstract SIGTRAP: float
+        abstract SIGIOT: float
+        abstract SIGBUS: float
+        abstract SIGUSR1: float
+        abstract SIGUSR2: float
+        abstract SIGPIPE: float
+        abstract SIGALRM: float
+        abstract SIGCHLD: float
+        abstract SIGSTKFLT: float
+        abstract SIGCONT: float
+        abstract SIGSTOP: float
+        abstract SIGTSTP: float
+        abstract SIGTTIN: float
+        abstract SIGTTOU: float
+        abstract SIGURG: float
+        abstract SIGXCPU: float
+        abstract SIGXFSZ: float
+        abstract SIGVTALRM: float
+        abstract SIGPROF: float
+        abstract SIGIO: float
+        abstract SIGPOLL: float
+        abstract SIGPWR: float
+        abstract SIGSYS: float
+        abstract SIGUNUSED: float
+        abstract defaultCoreCipherList: string
+        abstract defaultCipherList: string
+        abstract ENGINE_METHOD_RSA: float
+        abstract ALPN_ENABLED: float
 
-module v8 =
+module V8 =
 
     type [<AllowNullLiteral>] IExports =
         abstract getHeapStatistics: unit -> HeapInfo
@@ -4270,7 +4844,9 @@ module v8 =
         abstract peak_malloced_memory: float with get, set
         abstract does_zap_garbage: DoesZapCodeSpaceFlag with get, set
 
-module timers =
+module Timers =
+    let [<Import("setTimeout","timers")>] setTimeout: SetTimeout.IExports = jsNative
+    let [<Import("setImmediate","timers")>] setImmediate: SetImmediate.IExports = jsNative
 
     type [<AllowNullLiteral>] IExports =
         abstract setTimeout: callback: (ResizeArray<obj option> -> unit) * ms: float * [<ParamArray>] args: ResizeArray<obj option> -> NodeJS.Timer
@@ -4280,13 +4856,13 @@ module timers =
         abstract setImmediate: callback: (ResizeArray<obj option> -> unit) * [<ParamArray>] args: ResizeArray<obj option> -> obj option
         abstract clearImmediate: immediateId: obj option -> unit
 
-    module setTimeout =
+    module SetTimeout =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: ms: float -> Promise<unit>
             abstract __promisify__: ms: float * value: 'T -> Promise<'T>
 
-    module setImmediate =
+    module SetImmediate =
 
         type [<AllowNullLiteral>] IExports =
             abstract __promisify__: unit -> Promise<unit>
@@ -4296,10 +4872,10 @@ module _debugger =
 
     type [<AllowNullLiteral>] IExports =
         abstract Protocol: ProtocolStatic
-        abstract NO_FRAME: float with get, set
-        abstract port: float with get, set
+        abstract NO_FRAME: float
+        abstract port: float
         abstract SourceInfo: body: BreakResponse -> string
-        abstract Client: obj with get, set
+        abstract Client: obj
 
     type [<AllowNullLiteral>] Packet =
         abstract raw: string with get, set
@@ -4405,7 +4981,7 @@ module _debugger =
         abstract reqScripts: cb: obj option -> unit
         abstract reqContinue: cb: RequestHandler -> unit
 
-module async_hooks =
+module Async_hooks =
 
     type [<AllowNullLiteral>] IExports =
         /// Returns the asyncId of the current execution context.
@@ -4414,22 +4990,31 @@ module async_hooks =
         /// Returns the ID of the resource responsible for calling the callback that is currently being executed.
         abstract triggerAsyncId: unit -> float
         abstract triggerId: unit -> float
-        /// Registers functions to be called for different lifetime events of each async operation.
+        /// <summary>Registers functions to be called for different lifetime events of each async operation.</summary>
+        /// <param name="options">the callbacks to register</param>
         abstract createHook: options: HookCallbacks -> AsyncHook
         abstract AsyncResource: AsyncResourceStatic
 
     type [<AllowNullLiteral>] HookCallbacks =
-        /// Called when a class is constructed that has the possibility to emit an asynchronous event.
+        /// <summary>Called when a class is constructed that has the possibility to emit an asynchronous event.</summary>
+        /// <param name="asyncId">a unique ID for the async resource</param>
+        /// <param name="type">the type of the async resource</param>
+        /// <param name="triggerAsyncId">the unique ID of the async resource in whose execution context this async resource was created</param>
+        /// <param name="resource">reference to the resource representing the async operation, needs to be released during destroy</param>
         abstract init: asyncId: float * ``type``: string * triggerAsyncId: float * resource: Object -> unit
-        /// When an asynchronous operation is initiated or completes a callback is called to notify the user.
-        /// The before callback is called just before said callback is executed.
+        /// <summary>When an asynchronous operation is initiated or completes a callback is called to notify the user.
+        /// The before callback is called just before said callback is executed.</summary>
+        /// <param name="asyncId">the unique identifier assigned to the resource about to execute the callback.</param>
         abstract before: asyncId: float -> unit
-        /// Called immediately after the callback specified in before is completed.
+        /// <summary>Called immediately after the callback specified in before is completed.</summary>
+        /// <param name="asyncId">the unique identifier assigned to the resource which has executed the callback.</param>
         abstract after: asyncId: float -> unit
-        /// Called when a promise has resolve() called. This may not be in the same execution id
-        /// as the promise itself.
+        /// <summary>Called when a promise has resolve() called. This may not be in the same execution id
+        /// as the promise itself.</summary>
+        /// <param name="asyncId">the unique id for the promise that was resolve()d.</param>
         abstract promiseResolve: asyncId: float -> unit
-        /// Called after the resource corresponding to asyncId is destroyed
+        /// <summary>Called after the resource corresponding to asyncId is destroyed</summary>
+        /// <param name="asyncId">a unique ID for the async resource</param>
         abstract destroy: asyncId: float -> unit
 
     type [<AllowNullLiteral>] AsyncHook =
@@ -4453,17 +5038,19 @@ module async_hooks =
     /// The class AsyncResource was designed to be extended by the embedder's async resources.
     /// Using this users can easily trigger the lifetime events of their own resources.
     type [<AllowNullLiteral>] AsyncResourceStatic =
-        /// AsyncResource() is meant to be extended. Instantiating a
+        /// <summary>AsyncResource() is meant to be extended. Instantiating a
         /// new AsyncResource() also triggers init. If triggerAsyncId is omitted then
-        /// async_hook.executionAsyncId() is used.
+        /// async_hook.executionAsyncId() is used.</summary>
+        /// <param name="type">the name of this async resource type</param>
+        /// <param name="triggerAsyncId">the unique ID of the async resource in whose execution context this async resource was created</param>
         [<Emit "new $0($1...)">] abstract Create: ``type``: string * ?triggerAsyncId: float -> AsyncResource
 
-module http2 =
-    type IncomingHttpHeaders = http.IncomingHttpHeaders
-    type OutgoingHttpHeaders = http.OutgoingHttpHeaders
+module Http2 =
+    type IncomingHttpHeaders = Http.IncomingHttpHeaders
+    type OutgoingHttpHeaders = Http.OutgoingHttpHeaders
 
     type [<AllowNullLiteral>] IExports =
-        abstract constants: obj with get, set
+        abstract constants: obj
         abstract getDefaultSettings: unit -> Settings
         abstract getPackedSettings: settings: Settings -> Settings
         abstract getUnpackedSettings: buf: U2<Buffer, Uint8Array> -> Settings
@@ -4471,8 +5058,8 @@ module http2 =
         abstract createServer: options: ServerOptions * ?onRequestHandler: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2Server
         abstract createSecureServer: ?onRequestHandler: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         abstract createSecureServer: options: SecureServerOptions * ?onRequestHandler: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
-        abstract connect: authority: U2<string, url.URL> * ?listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
-        abstract connect: authority: U2<string, url.URL> * ?options: U2<ClientSessionOptions, SecureClientSessionOptions> * ?listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        abstract connect: authority: U2<string, Url.URL> * ?listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
+        abstract connect: authority: U2<string, Url.URL> * ?options: U2<ClientSessionOptions, SecureClientSessionOptions> * ?listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
 
     type [<AllowNullLiteral>] StreamPriorityOptions =
         abstract exclusive: bool option with get, set
@@ -4497,7 +5084,7 @@ module http2 =
         abstract length: float with get, set
 
     type [<AllowNullLiteral>] ServerStreamFileResponseOptions =
-        abstract statCheck: (fs.Stats -> OutgoingHttpHeaders -> StatOptions -> U2<unit, bool>) option with get, set
+        abstract statCheck: (Fs.Stats -> OutgoingHttpHeaders -> StatOptions -> U2<unit, bool>) option with get, set
         abstract getTrailers: (OutgoingHttpHeaders -> unit) option with get, set
         abstract offset: float option with get, set
         abstract length: float option with get, set
@@ -4507,7 +5094,7 @@ module http2 =
         abstract onError: (NodeJS.ErrnoException -> unit) option with get, set
 
     type [<AllowNullLiteral>] Http2Stream =
-        inherit stream.Duplex
+        inherit Stream.Duplex
         abstract aborted: bool
         abstract destroyed: bool
         abstract priority: options: StreamPriorityOptions -> unit
@@ -4530,8 +5117,8 @@ module http2 =
         [<Emit "$0.addListener('error',$1)">] abstract addListener_error: listener: (Error -> unit) -> Http2Stream
         [<Emit "$0.addListener('finish',$1)">] abstract addListener_finish: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.addListener('frameError',$1)">] abstract addListener_frameError: listener: (float -> float -> unit) -> Http2Stream
-        [<Emit "$0.addListener('pipe',$1)">] abstract addListener_pipe: listener: (stream.Readable -> unit) -> Http2Stream
-        [<Emit "$0.addListener('unpipe',$1)">] abstract addListener_unpipe: listener: (stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.addListener('pipe',$1)">] abstract addListener_pipe: listener: (Stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.addListener('unpipe',$1)">] abstract addListener_unpipe: listener: (Stream.Readable -> unit) -> Http2Stream
         [<Emit "$0.addListener('streamClosed',$1)">] abstract addListener_streamClosed: listener: (float -> unit) -> Http2Stream
         [<Emit "$0.addListener('timeout',$1)">] abstract addListener_timeout: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.addListener('trailers',$1)">] abstract addListener_trailers: listener: (IncomingHttpHeaders -> float -> unit) -> Http2Stream
@@ -4544,8 +5131,8 @@ module http2 =
         [<Emit "$0.emit('error',$1)">] abstract emit_error: err: Error -> bool
         [<Emit "$0.emit('finish')">] abstract emit_finish: unit -> bool
         [<Emit "$0.emit('frameError',$1,$2)">] abstract emit_frameError: frameType: float * errorCode: float -> bool
-        [<Emit "$0.emit('pipe',$1)">] abstract emit_pipe: src: stream.Readable -> bool
-        [<Emit "$0.emit('unpipe',$1)">] abstract emit_unpipe: src: stream.Readable -> bool
+        [<Emit "$0.emit('pipe',$1)">] abstract emit_pipe: src: Stream.Readable -> bool
+        [<Emit "$0.emit('unpipe',$1)">] abstract emit_unpipe: src: Stream.Readable -> bool
         [<Emit "$0.emit('streamClosed',$1)">] abstract emit_streamClosed: code: float -> bool
         [<Emit "$0.emit('timeout')">] abstract emit_timeout: unit -> bool
         [<Emit "$0.emit('trailers',$1,$2)">] abstract emit_trailers: trailers: IncomingHttpHeaders * flags: float -> bool
@@ -4558,8 +5145,8 @@ module http2 =
         [<Emit "$0.on('error',$1)">] abstract on_error: listener: (Error -> unit) -> Http2Stream
         [<Emit "$0.on('finish',$1)">] abstract on_finish: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.on('frameError',$1)">] abstract on_frameError: listener: (float -> float -> unit) -> Http2Stream
-        [<Emit "$0.on('pipe',$1)">] abstract on_pipe: listener: (stream.Readable -> unit) -> Http2Stream
-        [<Emit "$0.on('unpipe',$1)">] abstract on_unpipe: listener: (stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.on('pipe',$1)">] abstract on_pipe: listener: (Stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.on('unpipe',$1)">] abstract on_unpipe: listener: (Stream.Readable -> unit) -> Http2Stream
         [<Emit "$0.on('streamClosed',$1)">] abstract on_streamClosed: listener: (float -> unit) -> Http2Stream
         [<Emit "$0.on('timeout',$1)">] abstract on_timeout: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.on('trailers',$1)">] abstract on_trailers: listener: (IncomingHttpHeaders -> float -> unit) -> Http2Stream
@@ -4572,8 +5159,8 @@ module http2 =
         [<Emit "$0.once('error',$1)">] abstract once_error: listener: (Error -> unit) -> Http2Stream
         [<Emit "$0.once('finish',$1)">] abstract once_finish: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.once('frameError',$1)">] abstract once_frameError: listener: (float -> float -> unit) -> Http2Stream
-        [<Emit "$0.once('pipe',$1)">] abstract once_pipe: listener: (stream.Readable -> unit) -> Http2Stream
-        [<Emit "$0.once('unpipe',$1)">] abstract once_unpipe: listener: (stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.once('pipe',$1)">] abstract once_pipe: listener: (Stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.once('unpipe',$1)">] abstract once_unpipe: listener: (Stream.Readable -> unit) -> Http2Stream
         [<Emit "$0.once('streamClosed',$1)">] abstract once_streamClosed: listener: (float -> unit) -> Http2Stream
         [<Emit "$0.once('timeout',$1)">] abstract once_timeout: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.once('trailers',$1)">] abstract once_trailers: listener: (IncomingHttpHeaders -> float -> unit) -> Http2Stream
@@ -4586,8 +5173,8 @@ module http2 =
         [<Emit "$0.prependListener('error',$1)">] abstract prependListener_error: listener: (Error -> unit) -> Http2Stream
         [<Emit "$0.prependListener('finish',$1)">] abstract prependListener_finish: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.prependListener('frameError',$1)">] abstract prependListener_frameError: listener: (float -> float -> unit) -> Http2Stream
-        [<Emit "$0.prependListener('pipe',$1)">] abstract prependListener_pipe: listener: (stream.Readable -> unit) -> Http2Stream
-        [<Emit "$0.prependListener('unpipe',$1)">] abstract prependListener_unpipe: listener: (stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.prependListener('pipe',$1)">] abstract prependListener_pipe: listener: (Stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.prependListener('unpipe',$1)">] abstract prependListener_unpipe: listener: (Stream.Readable -> unit) -> Http2Stream
         [<Emit "$0.prependListener('streamClosed',$1)">] abstract prependListener_streamClosed: listener: (float -> unit) -> Http2Stream
         [<Emit "$0.prependListener('timeout',$1)">] abstract prependListener_timeout: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.prependListener('trailers',$1)">] abstract prependListener_trailers: listener: (IncomingHttpHeaders -> float -> unit) -> Http2Stream
@@ -4600,8 +5187,8 @@ module http2 =
         [<Emit "$0.prependOnceListener('error',$1)">] abstract prependOnceListener_error: listener: (Error -> unit) -> Http2Stream
         [<Emit "$0.prependOnceListener('finish',$1)">] abstract prependOnceListener_finish: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.prependOnceListener('frameError',$1)">] abstract prependOnceListener_frameError: listener: (float -> float -> unit) -> Http2Stream
-        [<Emit "$0.prependOnceListener('pipe',$1)">] abstract prependOnceListener_pipe: listener: (stream.Readable -> unit) -> Http2Stream
-        [<Emit "$0.prependOnceListener('unpipe',$1)">] abstract prependOnceListener_unpipe: listener: (stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.prependOnceListener('pipe',$1)">] abstract prependOnceListener_pipe: listener: (Stream.Readable -> unit) -> Http2Stream
+        [<Emit "$0.prependOnceListener('unpipe',$1)">] abstract prependOnceListener_unpipe: listener: (Stream.Readable -> unit) -> Http2Stream
         [<Emit "$0.prependOnceListener('streamClosed',$1)">] abstract prependOnceListener_streamClosed: listener: (float -> unit) -> Http2Stream
         [<Emit "$0.prependOnceListener('timeout',$1)">] abstract prependOnceListener_timeout: listener: (unit -> unit) -> Http2Stream
         [<Emit "$0.prependOnceListener('trailers',$1)">] abstract prependOnceListener_trailers: listener: (IncomingHttpHeaders -> float -> unit) -> Http2Stream
@@ -4677,7 +5264,7 @@ module http2 =
         abstract inflateDynamicTableSize: float option with get, set
 
     type [<AllowNullLiteral>] Http2Session =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract destroy: unit -> unit
         abstract destroyed: bool
         abstract localSettings: Settings
@@ -4687,7 +5274,7 @@ module http2 =
         abstract setTimeout: msecs: float * ?callback: (unit -> unit) -> unit
         abstract shutdown: ?callback: (unit -> unit) -> unit
         abstract shutdown: options: SessionShutdownOptions * ?callback: (unit -> unit) -> unit
-        abstract socket: U2<net.Socket, tls.TLSSocket>
+        abstract socket: U2<Net.Socket, Tls.TLSSocket>
         abstract state: SessionState
         abstract priority: stream: Http2Stream * options: StreamPriorityOptions -> unit
         abstract settings: settings: Settings -> unit
@@ -4751,44 +5338,44 @@ module http2 =
         inherit Http2Session
         abstract request: ?headers: OutgoingHttpHeaders * ?options: ClientSessionRequestOptions -> ClientHttp2Stream
         abstract addListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ClientHttp2Session
-        [<Emit "$0.addListener('connect',$1)">] abstract addListener_connect: listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        [<Emit "$0.addListener('connect',$1)">] abstract addListener_connect: listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
         [<Emit "$0.addListener('stream',$1)">] abstract addListener_stream: listener: (ClientHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ClientHttp2Session
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
-        [<Emit "$0.emit('connect',$1,$2)">] abstract emit_connect: session: ClientHttp2Session * socket: U2<net.Socket, tls.TLSSocket> -> bool
+        [<Emit "$0.emit('connect',$1,$2)">] abstract emit_connect: session: ClientHttp2Session * socket: U2<Net.Socket, Tls.TLSSocket> -> bool
         [<Emit "$0.emit('stream',$1,$2,$3)">] abstract emit_stream: stream: ClientHttp2Stream * headers: IncomingHttpHeaders * flags: float -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ClientHttp2Session
-        [<Emit "$0.on('connect',$1)">] abstract on_connect: listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        [<Emit "$0.on('connect',$1)">] abstract on_connect: listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
         [<Emit "$0.on('stream',$1)">] abstract on_stream: listener: (ClientHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ClientHttp2Session
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ClientHttp2Session
-        [<Emit "$0.once('connect',$1)">] abstract once_connect: listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        [<Emit "$0.once('connect',$1)">] abstract once_connect: listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
         [<Emit "$0.once('stream',$1)">] abstract once_stream: listener: (ClientHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ClientHttp2Session
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ClientHttp2Session
-        [<Emit "$0.prependListener('connect',$1)">] abstract prependListener_connect: listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        [<Emit "$0.prependListener('connect',$1)">] abstract prependListener_connect: listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
         [<Emit "$0.prependListener('stream',$1)">] abstract prependListener_stream: listener: (ClientHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ClientHttp2Session
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ClientHttp2Session
-        [<Emit "$0.prependOnceListener('connect',$1)">] abstract prependOnceListener_connect: listener: (ClientHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ClientHttp2Session
+        [<Emit "$0.prependOnceListener('connect',$1)">] abstract prependOnceListener_connect: listener: (ClientHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ClientHttp2Session
         [<Emit "$0.prependOnceListener('stream',$1)">] abstract prependOnceListener_stream: listener: (ClientHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ClientHttp2Session
 
     type [<AllowNullLiteral>] ServerHttp2Session =
         inherit Http2Session
         abstract server: U2<Http2Server, Http2SecureServer>
         abstract addListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ServerHttp2Session
-        [<Emit "$0.addListener('connect',$1)">] abstract addListener_connect: listener: (ServerHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ServerHttp2Session
+        [<Emit "$0.addListener('connect',$1)">] abstract addListener_connect: listener: (ServerHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ServerHttp2Session
         [<Emit "$0.addListener('stream',$1)">] abstract addListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ServerHttp2Session
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
-        [<Emit "$0.emit('connect',$1,$2)">] abstract emit_connect: session: ServerHttp2Session * socket: U2<net.Socket, tls.TLSSocket> -> bool
+        [<Emit "$0.emit('connect',$1,$2)">] abstract emit_connect: session: ServerHttp2Session * socket: U2<Net.Socket, Tls.TLSSocket> -> bool
         [<Emit "$0.emit('stream',$1,$2,$3)">] abstract emit_stream: stream: ServerHttp2Stream * headers: IncomingHttpHeaders * flags: float -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ServerHttp2Session
-        [<Emit "$0.on('connect',$1)">] abstract on_connect: listener: (ServerHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ServerHttp2Session
+        [<Emit "$0.on('connect',$1)">] abstract on_connect: listener: (ServerHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ServerHttp2Session
         [<Emit "$0.on('stream',$1)">] abstract on_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ServerHttp2Session
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ServerHttp2Session
-        [<Emit "$0.once('connect',$1)">] abstract once_connect: listener: (ServerHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ServerHttp2Session
+        [<Emit "$0.once('connect',$1)">] abstract once_connect: listener: (ServerHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ServerHttp2Session
         [<Emit "$0.once('stream',$1)">] abstract once_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ServerHttp2Session
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ServerHttp2Session
-        [<Emit "$0.prependListener('connect',$1)">] abstract prependListener_connect: listener: (ServerHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ServerHttp2Session
+        [<Emit "$0.prependListener('connect',$1)">] abstract prependListener_connect: listener: (ServerHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ServerHttp2Session
         [<Emit "$0.prependListener('stream',$1)">] abstract prependListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ServerHttp2Session
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> ServerHttp2Session
-        [<Emit "$0.prependOnceListener('connect',$1)">] abstract prependOnceListener_connect: listener: (ServerHttp2Session -> U2<net.Socket, tls.TLSSocket> -> unit) -> ServerHttp2Session
+        [<Emit "$0.prependOnceListener('connect',$1)">] abstract prependOnceListener_connect: listener: (ServerHttp2Session -> U2<Net.Socket, Tls.TLSSocket> -> unit) -> ServerHttp2Session
         [<Emit "$0.prependOnceListener('stream',$1)">] abstract prependOnceListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> ServerHttp2Session
 
     type [<AllowNullLiteral>] SessionOptions =
@@ -4808,11 +5395,11 @@ module http2 =
 
     type [<AllowNullLiteral>] SecureClientSessionOptions =
         inherit ClientSessionOptions
-        inherit tls.ConnectionOptions
+        inherit Tls.ConnectionOptions
 
     type [<AllowNullLiteral>] SecureServerSessionOptions =
         inherit ServerSessionOptions
-        inherit tls.TlsOptions
+        inherit Tls.TlsOptions
 
     type [<AllowNullLiteral>] ServerOptions =
         inherit ServerSessionOptions
@@ -4823,7 +5410,7 @@ module http2 =
         abstract allowHTTP1: bool option with get, set
 
     type [<AllowNullLiteral>] Http2Server =
-        inherit net.Server
+        inherit Net.Server
         abstract addListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2Server
         [<Emit "$0.addListener('request',$1)">] abstract addListener_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2Server
         [<Emit "$0.addListener('sessionError',$1)">] abstract addListener_sessionError: listener: (Error -> unit) -> Http2Server
@@ -4862,59 +5449,59 @@ module http2 =
         [<Emit "$0.prependOnceListener('timeout',$1)">] abstract prependOnceListener_timeout: listener: (unit -> unit) -> Http2Server
 
     type [<AllowNullLiteral>] Http2SecureServer =
-        inherit tls.Server
+        inherit Tls.Server
         abstract addListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2SecureServer
         [<Emit "$0.addListener('request',$1)">] abstract addListener_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         [<Emit "$0.addListener('sessionError',$1)">] abstract addListener_sessionError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.addListener('socketError',$1)">] abstract addListener_socketError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.addListener('stream',$1)">] abstract addListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> Http2SecureServer
         [<Emit "$0.addListener('timeout',$1)">] abstract addListener_timeout: listener: (unit -> unit) -> Http2SecureServer
-        [<Emit "$0.addListener('unknownProtocol',$1)">] abstract addListener_unknownProtocol: listener: (tls.TLSSocket -> unit) -> Http2SecureServer
+        [<Emit "$0.addListener('unknownProtocol',$1)">] abstract addListener_unknownProtocol: listener: (Tls.TLSSocket -> unit) -> Http2SecureServer
         abstract emit: ``event``: U2<string, Symbol> * [<ParamArray>] args: ResizeArray<obj option> -> bool
         [<Emit "$0.emit('request',$1,$2)">] abstract emit_request: request: Http2ServerRequest * response: Http2ServerResponse -> bool
         [<Emit "$0.emit('sessionError',$1)">] abstract emit_sessionError: err: Error -> bool
         [<Emit "$0.emit('socketError',$1)">] abstract emit_socketError: err: Error -> bool
         [<Emit "$0.emit('stream',$1,$2,$3)">] abstract emit_stream: stream: ServerHttp2Stream * headers: IncomingHttpHeaders * flags: float -> bool
         [<Emit "$0.emit('timeout')">] abstract emit_timeout: unit -> bool
-        [<Emit "$0.emit('unknownProtocol',$1)">] abstract emit_unknownProtocol: socket: tls.TLSSocket -> bool
+        [<Emit "$0.emit('unknownProtocol',$1)">] abstract emit_unknownProtocol: socket: Tls.TLSSocket -> bool
         abstract on: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2SecureServer
         [<Emit "$0.on('request',$1)">] abstract on_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         [<Emit "$0.on('sessionError',$1)">] abstract on_sessionError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.on('socketError',$1)">] abstract on_socketError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.on('stream',$1)">] abstract on_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> Http2SecureServer
         [<Emit "$0.on('timeout',$1)">] abstract on_timeout: listener: (unit -> unit) -> Http2SecureServer
-        [<Emit "$0.on('unknownProtocol',$1)">] abstract on_unknownProtocol: listener: (tls.TLSSocket -> unit) -> Http2SecureServer
+        [<Emit "$0.on('unknownProtocol',$1)">] abstract on_unknownProtocol: listener: (Tls.TLSSocket -> unit) -> Http2SecureServer
         abstract once: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2SecureServer
         [<Emit "$0.once('request',$1)">] abstract once_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         [<Emit "$0.once('sessionError',$1)">] abstract once_sessionError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.once('socketError',$1)">] abstract once_socketError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.once('stream',$1)">] abstract once_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> Http2SecureServer
         [<Emit "$0.once('timeout',$1)">] abstract once_timeout: listener: (unit -> unit) -> Http2SecureServer
-        [<Emit "$0.once('unknownProtocol',$1)">] abstract once_unknownProtocol: listener: (tls.TLSSocket -> unit) -> Http2SecureServer
+        [<Emit "$0.once('unknownProtocol',$1)">] abstract once_unknownProtocol: listener: (Tls.TLSSocket -> unit) -> Http2SecureServer
         abstract prependListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2SecureServer
         [<Emit "$0.prependListener('request',$1)">] abstract prependListener_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         [<Emit "$0.prependListener('sessionError',$1)">] abstract prependListener_sessionError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.prependListener('socketError',$1)">] abstract prependListener_socketError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.prependListener('stream',$1)">] abstract prependListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> Http2SecureServer
         [<Emit "$0.prependListener('timeout',$1)">] abstract prependListener_timeout: listener: (unit -> unit) -> Http2SecureServer
-        [<Emit "$0.prependListener('unknownProtocol',$1)">] abstract prependListener_unknownProtocol: listener: (tls.TLSSocket -> unit) -> Http2SecureServer
+        [<Emit "$0.prependListener('unknownProtocol',$1)">] abstract prependListener_unknownProtocol: listener: (Tls.TLSSocket -> unit) -> Http2SecureServer
         abstract prependOnceListener: ``event``: string * listener: (ResizeArray<obj option> -> unit) -> Http2SecureServer
         [<Emit "$0.prependOnceListener('request',$1)">] abstract prependOnceListener_request: listener: (Http2ServerRequest -> Http2ServerResponse -> unit) -> Http2SecureServer
         [<Emit "$0.prependOnceListener('sessionError',$1)">] abstract prependOnceListener_sessionError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.prependOnceListener('socketError',$1)">] abstract prependOnceListener_socketError: listener: (Error -> unit) -> Http2SecureServer
         [<Emit "$0.prependOnceListener('stream',$1)">] abstract prependOnceListener_stream: listener: (ServerHttp2Stream -> IncomingHttpHeaders -> float -> unit) -> Http2SecureServer
         [<Emit "$0.prependOnceListener('timeout',$1)">] abstract prependOnceListener_timeout: listener: (unit -> unit) -> Http2SecureServer
-        [<Emit "$0.prependOnceListener('unknownProtocol',$1)">] abstract prependOnceListener_unknownProtocol: listener: (tls.TLSSocket -> unit) -> Http2SecureServer
+        [<Emit "$0.prependOnceListener('unknownProtocol',$1)">] abstract prependOnceListener_unknownProtocol: listener: (Tls.TLSSocket -> unit) -> Http2SecureServer
 
     type [<AllowNullLiteral>] Http2ServerRequest =
-        inherit stream.Readable
+        inherit Stream.Readable
         abstract headers: IncomingHttpHeaders with get, set
         abstract httpVersion: string with get, set
         abstract ``method``: string with get, set
         abstract rawHeaders: ResizeArray<string> with get, set
         abstract rawTrailers: ResizeArray<string> with get, set
         abstract setTimeout: msecs: float * ?callback: (unit -> unit) -> unit
-        abstract socket: U2<net.Socket, tls.TLSSocket> with get, set
+        abstract socket: U2<Net.Socket, Tls.TLSSocket> with get, set
         abstract stream: ServerHttp2Stream with get, set
         abstract trailers: IncomingHttpHeaders with get, set
         abstract url: string with get, set
@@ -4932,9 +5519,9 @@ module http2 =
         [<Emit "$0.prependOnceListener('aborted',$1)">] abstract prependOnceListener_aborted: listener: (bool -> float -> unit) -> Http2ServerRequest
 
     type [<AllowNullLiteral>] Http2ServerResponse =
-        inherit events.EventEmitter
+        inherit Events.EventEmitter
         abstract addTrailers: trailers: OutgoingHttpHeaders -> unit
-        abstract connection: U2<net.Socket, tls.TLSSocket> with get, set
+        abstract connection: U2<Net.Socket, Tls.TLSSocket> with get, set
         abstract ``end``: ?callback: (unit -> unit) -> unit
         abstract ``end``: ?data: U2<string, Buffer> * ?callback: (unit -> unit) -> unit
         abstract ``end``: ?data: U2<string, Buffer> * ?encoding: string * ?callback: (unit -> unit) -> unit
@@ -4948,7 +5535,7 @@ module http2 =
         abstract sendDate: bool with get, set
         abstract setHeader: name: string * value: U3<float, string, ResizeArray<string>> -> unit
         abstract setTimeout: msecs: float * ?callback: (unit -> unit) -> unit
-        abstract socket: U2<net.Socket, tls.TLSSocket> with get, set
+        abstract socket: U2<Net.Socket, Tls.TLSSocket> with get, set
         abstract statusCode: float with get, set
         abstract statusMessage: string with get, set
         abstract stream: ServerHttp2Stream with get, set

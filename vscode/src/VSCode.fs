@@ -1,4 +1,4 @@
-// ts2fable 0.5.0-build.148
+// ts2fable 0.5.2
 module rec VSCode
 open System
 open Fable.Core
