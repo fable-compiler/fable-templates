@@ -39,7 +39,7 @@ let [<Import("*","fs")>] fs: Fs.IExports = jsNative
 let [<Import("*","path")>] path: Path.IExports = jsNative
 let [<Import("*","string_decoder")>] string_decoder: String_decoder.IExports = jsNative
 let [<Import("*","tls")>] tls: Tls.IExports = jsNative
-let [<Import("*","crypto")>] crypto: Crypto.IExports = jsNative
+// let [<Import("*","crypto")>] crypto: Crypto.IExports = jsNative
 let [<Import("*","stream")>] stream: Stream.IExports = jsNative
 let [<Import("*","util")>] util: Util.IExports = jsNative
 let [<Import("*","assert")>] ``assert``: Assert.IExports = jsNative
@@ -50,7 +50,7 @@ let [<Import("*","v8")>] v8: V8.IExports = jsNative
 let [<Import("*","timers")>] timers: Timers.IExports = jsNative
 // let [<Import("*","_debugger")>] _debugger: _debugger.IExports = jsNative
 let [<Import("*","async_hooks")>] async_hooks: Async_hooks.IExports = jsNative
-let [<Import("*","http2")>] http2: Http2.IExports = jsNative
+// let [<Import("*","http2")>] http2: Http2.IExports = jsNative
 
 type [<AllowNullLiteral>] IExports =
     abstract setTimeout: callback: (ResizeArray<obj option> -> unit) * ms: float * [<ParamArray>] args: ResizeArray<obj option> -> NodeJS.Timer

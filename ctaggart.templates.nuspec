@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
   <metadata>
     <id>ctaggart.templates</id>
-    <version>0.3.0-b8</version>
+    <version>0.3.0</version>
     <authors>Cameron Taggart</authors>
     <owners>Cameron Taggart</owners>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
