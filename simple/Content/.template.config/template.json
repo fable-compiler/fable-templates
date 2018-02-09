@@ -10,6 +10,5 @@
   "groupIdentity": "Fable",
   "shortName": "fable",
   "sourceName": "FableTemplate",
-  // This allows using the `-n` option to create a new directory
   "preferNameDirectory": true
 }

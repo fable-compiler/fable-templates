@@ -7,11 +7,8 @@ You can find more templates by searching `Fable.Template` packages in [Nuget](ht
 
 * [dotnet SDK](https://www.microsoft.com/net/download/core) 2.0 or higher
 * [node.js](https://nodejs.org) 6.11 or higher
-* A JS package manager: [yarn](https://yarnpkg.com) or [npm](http://npmjs.com/)
-
-> npm comes bundled with node.js, but we recommend to use at least npm 5. If you have npm installed, you can upgrade it by running `npm install -g npm`.
-
-Although is not a Fable requirement, on macOS and Linux you'll need [Mono](http://www.mono-project.com/) for other F# tooling like Paket or editor support.
+* [yarn](https://yarnpkg.com): JS package manager
+* [mono](http://www.mono-project.com/) on macOS/Linux to run [paket](https://fsprojects.github.io/Paket/).
 
 ## Editor
 
@@ -31,32 +28,28 @@ In a terminal, run `dotnet new fable` to create a project in the current directo
 
 > In the commands below, yarn is the tool of choice. If you want to use npm, just replace `yarn` by `npm` in the commands.
 
-* Install JS dependencies: `yarn install`
-* **Move to `src` folder**: `cd src`
-* Install F# dependencies: `dotnet restore`
-* Start Fable daemon and [Webpack](https://webpack.js.org/) dev server: `dotnet fable yarn-start`
+* Install dependencies: `yarn`
+* Start Fable daemon and [Webpack](https://webpack.js.org/) dev server: `yarn start`
 * In your browser, open: http://localhost:8080/
 
-> `dotnet fable yarn-start` (or `npm-start`) is used to start the Fable daemon and run a script in package.json concurrently. It's a shortcut of `yarn-run [SCRIPT_NAME]`, e.g. `dotnet fable yarn-run start`.
+> Check the `scripts` section in `package.json` for more info. If you are using VS Code + [Ionide](http://ionide.io/), you can also use F5 or Ctrl+Shift+B (Cmd+Shift+B on macOS) instead of typing `yarn start`. With this Fable-specific errors will be highlighted in the editor along with other F# errors. See _Debugging in VS Code_ below.
 
-If you are using VS Code + [Ionide](http://ionide.io/), you can also use the key combination: Ctrl+Shift+B (Cmd+Shift+B on macOS) instead of typing the `dotnet fable yarn-start` command. This also has the advantage that Fable-specific errors will be highlighted in the editor along with other F# errors.
+Any modification you do to the F# code will be reflected in the web page after saving. When you want to output the JS code to disk, run `yarn build` and you'll get your frontend files ready for deployment in the `build` folder.
 
-Any modification you do to the F# code will be reflected in the web page after saving. When you want to output the JS code to disk, run `dotnet fable yarn-build` and you'll get a minified JS bundle in the `public` folder.
-
-## Debug in vscode 
+## Debugging in VS Code
 
 * Install [Debugger For Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) in vscode
-* Set breakpiont in App.fs
-* Press F5 in vscode 
-* After all the .fs files are Compiled,http://localhost:8080/ will popup
-* Press F5 in http://localhost:8080/ 
-* breakpoint was caught in vscode
+* Press F5 in vscode
+* After all the .fs files are compiled, the browser will be launched
+* Set a breakpoint in F#
+* Restart with Ctrl+Shift+F5 (Cmd+Shift+F5 on macOS)
+* The breakpoint will be caught in vscode
 
 ## JS Output
 
-This template uses [babel-preset-env](http://babeljs.io/env) to output JS code whose syntax is compatible with a wide range of browsers. Currently it's set to support browsers with at least 1% of market share. To change this (for example, if you don't need to support IE), [replace this line](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/webpack.config.js#L13) with a query understood by [browserl.ist](http://browserl.ist/?q=%3E+1%25).
+This template uses [babel-preset-env](http://babeljs.io/env) to output JS code whose syntax is compatible with a wide range of browsers. Currently it's set to support browsers with at least 1% of market share. You can replace this in `babelOptions` within `tools/webpack.config.common.js` with a query understood by [browserl.ist](http://browserl.ist/?q=%3E+1%25).
 
-To replace objects and APIs that may be missing in old browsers, the `index.html` file [submits a request](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/public/index.html#L8) to [cdn.polyfill.io](https://polyfill.io/v2/docs/) that tailors the polyfill according to the user's browser.
+To replace objects and APIs that may be missing in old browsers, the final `index.html` will include a request to [cdn.polyfill.io](https://polyfill.io/v2/docs/).
 
 ## Project structure
 
@@ -69,23 +62,20 @@ To replace objects and APIs that may be missing in old browsers, the `index.html
 - **paket.lock**: automatically generated, but should be committed to source control, [see why](https://fsprojects.github.io/Paket/faq.html#Why-should-I-commit-the-lock-file).
 - **Nuget.Config**: prevents conflicts with Paket in machines with some Nuget configuration.
 
-> Paket dependencies will be installed in the `packages` directory. See [Paket website](https://fsprojects.github.io/Paket/) for more info.
+> Paket dependencies will be installed in a cache. See [Paket website](https://fsprojects.github.io/Paket/) for more info.
 
-### yarn/npm
+### yarn
 
 - **package.json**: contains the JS dependencies together with other info, like development scripts.
 - **yarn.lock**: is the lock file created by yarn.
-- **package-lock.json**: is the lock file understood by npm 5, if you use it instead of yarn.
 
-> JS dependencies will be installed in `node_modules`. See [yarn](https://yarnpkg.com) and/or [npm](http://npmjs.com/) websites for more info.
+> JS dependencies will be installed in `node_modules`. See [yarn](https://yarnpkg.com) website for more info.
 
 ### Webpack
 
 [Webpack](https://webpack.js.org) is a bundler, which links different JS sources into a single file making deployment much easier. It also offers other features, like a static dev server that can automatically refresh the browser upon changes in your code or a minifier for production release. Fable interacts with Webpack through the `fable-loader`.
 
-- **webpack.config.js**: is the configuration file for Webpack. It allows you to set many things: like the path of the bundle, the port for the development server or [Babel](https://babeljs.io/) options. See [Webpack website](https://webpack.js.org) for more info.
-
-> Make sure to resolve all the paths [as well as Babel options](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/webpack.config.js#L9) to make sure all the files referenced by Fable will be found by Babel/Webpack.
+Webpack configuration files are in the `tools` directory. If you need to edit them, check [Webpack](https://webpack.js.org) website for more information.
 
 ### F# source files
 
