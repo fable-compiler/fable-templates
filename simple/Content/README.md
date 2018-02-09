@@ -43,6 +43,15 @@ If you are using VS Code + [Ionide](http://ionide.io/), you can also use the key
 
 Any modification you do to the F# code will be reflected in the web page after saving. When you want to output the JS code to disk, run `dotnet fable yarn-build` and you'll get a minified JS bundle in the `public` folder.
 
+## Debug in vscode 
+```shell
+Set breakpiont in App.fs
+Press F5 in vscode 
+After all the .fs files are Compiled,http://localhost:8080/ will popup
+Press F5 in http://localhost:8080/ 
+breakpoint was caught in vscode
+```
+
 ## JS Output
 
 This template uses [babel-preset-env](http://babeljs.io/env) to output JS code whose syntax is compatible with a wide range of browsers. Currently it's set to support browsers with at least 1% of market share. To change this (for example, if you don't need to support IE), [replace this line](https://github.com/fable-compiler/fable-templates/blob/7b9352cdaeb77ecd600b45ed4eab2f41c73b85e4/simple/Content/webpack.config.js#L13) with a query understood by [browserl.ist](http://browserl.ist/?q=%3E+1%25).
