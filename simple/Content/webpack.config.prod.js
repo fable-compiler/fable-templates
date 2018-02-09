@@ -17,24 +17,16 @@ var babelOptions = fableUtils.resolveBabelOptions({
   ],
 });
 
-var isProduction = process.argv.indexOf("-p") >= 0;
-console.log("Bundling for " + (isProduction ? "production" : "development") + "...");
+console.log("Bundling for " + ( "production") + "...");
 
 module.exports = {
-  devtool: "source-map",
   entry: resolve('./src/FableTemplate.fsproj'),
   output: {
     filename: 'bundle.js',
-    path: resolve('./public'),
-    devtoolModuleFilenameTemplate: info =>
-    path.resolve(info.absoluteResourcePath).replace(/\\/g, '/'),
+    path: resolve('./build'),
   },
   resolve: {
     modules: [resolve("./node_modules/")]
-  },
-  devServer: {
-    contentBase: resolve('./public'),
-    port: 8080
   },
   module: {
     rules: [
@@ -44,7 +36,7 @@ module.exports = {
           loader: "fable-loader",
           options: {
             babel: babelOptions,
-            define: isProduction ? [] : ["DEBUG"]
+            define: []
           }
         }
       },
@@ -57,5 +49,5 @@ module.exports = {
         },
       }
     ]
-  }
+  },
 };
