@@ -44,13 +44,12 @@ If you are using VS Code + [Ionide](http://ionide.io/), you can also use the key
 Any modification you do to the F# code will be reflected in the web page after saving. When you want to output the JS code to disk, run `dotnet fable yarn-build` and you'll get a minified JS bundle in the `public` folder.
 
 ## Debug in vscode 
-```shell
-Set breakpiont in App.fs
-Press F5 in vscode 
-After all the .fs files are Compiled,http://localhost:8080/ will popup
-Press F5 in http://localhost:8080/ 
-breakpoint was caught in vscode
-```
+
+* Set breakpiont in App.fs
+* Press F5 in vscode 
+* After all the .fs files are Compiled,http://localhost:8080/ will popup
+* Press F5 in http://localhost:8080/ 
+* breakpoint was caught in vscode
 
 ## JS Output
 
