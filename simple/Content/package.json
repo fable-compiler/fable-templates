@@ -1,8 +1,8 @@
 {
   "private": true,
   "scripts": {
-    "build": "webpack -p",
-    "start": "webpack-dev-server",
+    "build": "webpack --config webpack.config.prod.js",
+    "start": "webpack-dev-server --config webpack.config.dev.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
