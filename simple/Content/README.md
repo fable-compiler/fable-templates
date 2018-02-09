@@ -45,6 +45,7 @@ Any modification you do to the F# code will be reflected in the web page after s
 
 ## Debug in vscode 
 
+* Install [Debugger For Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) in vscode
 * Set breakpiont in App.fs
 * Press F5 in vscode 
 * After all the .fs files are Compiled,http://localhost:8080/ will popup
