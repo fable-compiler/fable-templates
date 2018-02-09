@@ -1,6 +1,7 @@
 var path = require("path");
 var webpack = require("webpack");
 var fableUtils = require("fable-utils");
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 function resolve(filePath) {
   return path.join(__dirname, filePath)
@@ -50,4 +51,10 @@ module.exports = {
       }
     ]
   },
+  plugins: [
+    new HtmlWebpackPlugin({
+      inject: true,
+      template: resolve ("public/index.html")
+    }),
+  ]
 };
