@@ -6,7 +6,7 @@
   "scripts": {
     "postinstall": "dotnet restore",
     "build": "fake run tools/workflow.fsx -t Build",
-    "start": "fake run tools/workflow.fsx -t Start",
+    "start": "fake run tools/workflow.fsx",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
