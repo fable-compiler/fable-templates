@@ -1,16 +1,14 @@
 {
     // See https://go.microsoft.com/fwlink/?LinkId=733558
     // for the documentation about the tasks.json format
-    "version": "0.1.0",
-    "command": "yarn",
-    "runner": "terminal",
-    "args": [],
+    "version": "2.0.0",
     "tasks": [
         {
-            "taskName": "Start",
-            "args": ["start" ],
-            "isBuildCommand": true,
-            "suppressTaskName": true,
+            "command": "yarn",
+            "args": ["start"],
+            "type": "shell",
+            "label": "Start",
+            "group": "build",
             "isBackground": true,
             "problemMatcher": {
                 "fileLocation": "absolute",
