@@ -1,15 +1,13 @@
-open System
-
 #r "paket:
-nuget Fake.DotNet.Cli
 nuget Fake.IO.FileSystem
 nuget Fake.Core.Target //"
 #load "./.fake/workflow.fsx/intellisense.fsx"
-
+open System
 open Fake.IO
 open Fake.Core
 let mutable dotnetExePath = "dotnet"
 let toolDir = "./tools/" |> Path.getFullName
+
 let runDotnet workingDir args =
     let result =
         Process.ExecProcess (fun info ->
