@@ -2,13 +2,13 @@
   <PropertyGroup>
     <Description>Simple Fable App</Description>
     <Authors>Alfonso Garcia-Caro</Authors>
-    <PackageProjectUrl>https://github.com/fable-compiler/Fable</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/fable-compiler/Fable/blob/master/LICENSE</PackageLicenseUrl>
-    <RepositoryUrl>https://github.com/fable-compiler/Fable.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/fable-compiler/fable-templates</PackageProjectUrl>
+    <PackageLicenseUrl>https://github.com/fable-compiler/fable-templates/blob/master/LICENSE</PackageLicenseUrl>
+    <RepositoryUrl>https://github.com/fable-compiler/fable-templates.git</RepositoryUrl>
     <PackageTags>fable;template;fsharp</PackageTags>
     <NeutralLanguage>en-US</NeutralLanguage>
     <PackageType>Template</PackageType>
-    <Version>1.3.2</Version>
+    <Version>1.3.3</Version>
     <PackProjectInputFile>$(MSBuildProjectFullPath)</PackProjectInputFile>
     <NoBuild>true</NoBuild>
     <IncludeBuildOutput>false</IncludeBuildOutput>
