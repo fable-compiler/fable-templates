@@ -1,0 +1,14 @@
+{
+  "author": "Alfonso Garcia-Caro",
+  "classifications": [ "Fable" ],
+  "name": "Fable 2 Minimal App",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "identity": "Fable2.Template",
+  "groupIdentity": "Fable2",
+  "shortName": "fable2-minimal",
+  "sourceName": "Fable2Template",
+  "preferNameDirectory": true
+}
