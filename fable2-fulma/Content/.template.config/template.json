@@ -1,0 +1,14 @@
+{
+  "author": "Maxime Mangel",
+  "classifications": [ "Fable" ],
+  "name": "Fable 2 Fulma App",
+  "tags": {
+    "language": "F#",
+    "type": "project"
+  },
+  "identity": "Fable2.Template.Fulma",
+  "groupIdentity": "Fable2",
+  "shortName": "fable2-fulma",
+  "sourceName": "Fable2TemplateFulma",
+  "preferNameDirectory": true
+}
