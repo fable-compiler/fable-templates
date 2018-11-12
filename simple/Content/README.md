@@ -45,12 +45,6 @@ Any modification you do to the F# code will be reflected in the web page after s
 * Restart with Ctrl+Shift+F5 (Cmd+Shift+F5 on macOS)
 * The breakpoint will be caught in vscode
 
-## JS Output
-
-This template uses [babel-preset-env](http://babeljs.io/env) to output JS code whose syntax is compatible with a wide range of browsers. Currently it's set to support browsers with at least 1% of market share. You can replace this in `babelOptions` within `tools/webpack.config.common.js` with a query understood by [browserl.ist](http://browserl.ist/?q=%3E+1%25).
-
-To replace objects and APIs that may be missing in old browsers, the final `index.html` will include a request to [cdn.polyfill.io](https://polyfill.io/v2/docs/).
-
 ## Project structure
 
 ### Paket
