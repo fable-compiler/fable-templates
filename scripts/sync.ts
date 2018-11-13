@@ -1,10 +1,5 @@
-import * as fs from "fs-extra";
+import * as shell from "shelljs";
 import * as path from "path";
-
-function createDirEmpty(dir: string) {
-    fs.removeSync(dir)
-    fs.mkdirSync(dir);
-}
 
 const args = process.argv.slice(2);
 const dirName = args[0];
@@ -12,12 +7,17 @@ const contentDir = path.join(dirName, "Content");
 
 const tempDir = "temp";
 const templateConfigDir = ".template.config";
-createDirEmpty(tempDir)
-fs.copySync(path.join(contentDir, templateConfigDir), tempDir);
-fs.removeSync(contentDir);
-fs.copySync(path.join("../fable2-samples", dirName), contentDir, {
-    filter(src, dest) {
-        return !/node_modules|\.fable/.test(src);
+
+shell.rm("-rf", tempDir)
+shell.mkdir(tempDir);
+shell.cp("-R", path.join(contentDir, templateConfigDir), tempDir);
+shell.rm("-rf", contentDir);
+shell.mkdir(contentDir);
+
+const sampleDir = path.join("../fable2-samples", dirName);
+shell.ls(sampleDir).forEach(function (name) {
+    if (!/node_modules/.test(name)) {
+        shell.cp("-R", path.join(sampleDir, name), contentDir);
     }
-});
-fs.copySync(tempDir, path.join(contentDir, templateConfigDir));
+})
+shell.cp("-R", path.join(tempDir, templateConfigDir), contentDir);
