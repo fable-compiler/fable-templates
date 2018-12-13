@@ -1,5 +1,7 @@
 # Fable 2 Minimal App
 
+**ATTENTION**: This template is not maintained anymore, please check [Getting Started in Fable docs](https://fable.io/docs/getting_started.html) for other ways to get started with Fable.
+
 This is a simple Fable 2 app including an [Elmish](https://elmish.github.io/) counter with as little configuration as possible. If you want to see a more complex app including commonly used F# tools like Paket or Fake, check [the Fulma demo](https://github.com/MangelMaxime/fulma-demo).
 
 ## Requirements
