@@ -19,14 +19,15 @@ Templates for Fable projects maintained by fable-compiler org
 
 ### Requirements
 
-You need to have your NuGet API key set in `NUGET_KEY` variable.
+- Your NuGet API key set in `NUGET_KEY` variable.
 
 ### Procedure to publish a new version
 
 In order to publish a new version of the template you need to:
 
-1. Update the version in the template file. For example, `minimal/Fable.Template.proj`
-2. Run `publish.sh`
+1. Update the changelog of the template you want to publish
+2. Run `dotnet tool restore`
+3. Run `dotnet fake build -t Release`
 
 ### Gitpod condition
 
