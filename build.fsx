@@ -135,17 +135,15 @@ let pushNuget (newVersion: string) (projFile: string) =
             Directory.GetFiles(projDir </> "bin" </> "Release", "*.nupkg")
             |> Array.find (fun nupkg -> nupkg.Contains(newVersion))
 
-    // if needsPublishing then
-    //     DotNet.nugetPush (fun p ->
-    //             { p with
-    //                 PushParams =
-    //                     { p.PushParams with
-    //                         ApiKey = Some nugetKey
-    //                         Source = Some "nuget.org"
-    //                     }
-    //              }
-    //         ) nupkg
-        ()
+        DotNet.nugetPush (fun p ->
+                { p with
+                    PushParams =
+                        { p.PushParams with
+                            ApiKey = Some nugetKey
+                            Source = Some "nuget.org"
+                        }
+                 }
+            ) nupkg
 
 let clean = BuildTask.create "Clean" [ ] {
     !! "minimal/**/bin"
