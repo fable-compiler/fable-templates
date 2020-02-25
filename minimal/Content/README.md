@@ -1,20 +1,17 @@
-# Fable 2 Minimal App
+# Fable Minimal App
 
-**ATTENTION**: This template is not maintained anymore, please check [Getting Started in Fable docs](https://fable.io/docs/getting_started.html) for other ways to get started with Fable.
-
-This is a simple Fable 2 app including an [Elmish](https://elmish.github.io/) counter with as little configuration as possible. If you want to see a more complex app including commonly used F# tools like Paket or Fake, check [the Fulma demo](https://github.com/MangelMaxime/fulma-demo).
+This is a small Fable app project so you can easily get started and add your own code easily in it.
 
 ## Requirements
 
-* [dotnet SDK](https://www.microsoft.com/net/download/core) 2.0 or higher
+* [dotnet SDK](https://www.microsoft.com/net/download/core) 3.0 or higher
 * [node.js](https://nodejs.org) with [npm](https://www.npmjs.com/)
 * An F# editor like Visual Studio, Visual Studio Code with [Ionide](http://ionide.io/) or [JetBrains Rider](https://www.jetbrains.com/rider/).
 
 ## Building and running the app
 
 * Install JS dependencies: `npm install`
-* Install F# dependencies: `dotnet restore src`
-* Move to `src` directory to start Fable and Webpack dev server: `dotnet fable webpack-dev-server`
+* Install F# dependencies: `npm start`
 * After the first compilation is finished, in your browser open: http://localhost:8080/
 
 Any modification you do to the F# code will be reflected in the web page after saving.

@@ -1,43 +1,14 @@
 module App
 
-(**
- The famous Increment/Decrement ported from Elm.
- You can find more info about Emish architecture and samples at https://elmish.github.io/
-*)
+open Browser.Dom
 
-open Elmish
-open Elmish.React
-open Fable.Helpers.React
-open Fable.Helpers.React.Props
+// Mutable variable to count the number of times we clicked the button
+let mutable count = 0
 
-// MODEL
+// Get a reference to our button and cast the Element to an HTMLButtonElement
+let myButton = document.querySelector(".my-button") :?> Browser.Types.HTMLButtonElement
 
-type Model = int
-
-type Msg =
-| Increment
-| Decrement
-
-let init() : Model = 0
-
-// UPDATE
-
-let update (msg:Msg) (model:Model) =
-    match msg with
-    | Increment -> model + 10
-    | Decrement -> model - 1
-
-// VIEW (rendered with React)
-
-let view (model:Model) dispatch =
-
-  div []
-      [ button [ OnClick (fun _ -> dispatch Increment) ] [ str "+" ]
-        div [] [ str (string model) ]
-        button [ OnClick (fun _ -> dispatch Decrement) ] [ str "-" ] ]
-
-// App
-Program.mkSimple init update view
-|> Program.withReact "elmish-app"
-|> Program.withConsoleTrace
-|> Program.run
+// Register our listener
+myButton.onclick <- fun _ ->
+    count <- count + 1
+    myButton.innerText <- sprintf "You clicked: %i time(s)" count

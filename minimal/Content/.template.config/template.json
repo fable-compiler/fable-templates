@@ -1,14 +1,24 @@
 {
-  "author": "Alfonso Garcia-Caro",
-  "classifications": [ "Fable" ],
-  "name": "Simple Fable App",
-  "tags": {
-    "language": "F#",
-    "type": "project"
-  },
-  "identity": "Fable.Template",
-  "groupIdentity": "Fable",
-  "shortName": "fable",
-  "sourceName": "FableTemplate",
-  "preferNameDirectory": true
+    "author": "Alfonso Garcia-Caro",
+    "classifications": [
+        "Fable"
+    ],
+    "name": "Simple Fable App",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "Fable.Template",
+    "groupIdentity": "Fable",
+    "shortName": "fable",
+    "sourceName": "FableTemplate",
+    "preferNameDirectory": true,
+    "symbols": {
+        "gitpod": {
+            "type": "parameter",
+            "dataType": "bool",
+            "defaultValue": "false",
+            "description": "If set then, the tempalte will support running inside of Gitpod"
+        }
+    }
 }
