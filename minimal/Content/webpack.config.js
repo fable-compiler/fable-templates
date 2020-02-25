@@ -3,6 +3,19 @@
 // https://github.com/fable-compiler/webpack-config-template
 
 var path = require("path");
+//#if( gitpod )		
+const execSync = require('child_process').execSync;
+var isGitPod = process.env.GITPOD_INSTANCE_ID !== undefined;
+
+function getDevServerUrl() {
+    if (isGitPod) {
+        const url = execSync('gp url 8080');
+        return url.toString().trim();
+    } else {
+        return `http://localhost:${CONFIG.devServerPort}`;
+    }
+}
+//#endif
 
 module.exports = {
     mode: "development",
@@ -12,8 +25,14 @@ module.exports = {
         filename: "bundle.js",
     },
     devServer: {
+        publicPath: "/",
         contentBase: "./public",
         port: 8080,
+//#if( gitpod )		
+        public: getDevServerUrl(),
+        host: '0.0.0.0',
+        allowedHosts: ['localhost', '.gitpod.io']
+//#endif
     },
     module: {
         rules: [{
