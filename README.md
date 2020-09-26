@@ -4,18 +4,25 @@
 
 Templates for Fable projects maintained by fable-compiler org
 
+## Quick install
+
+To create a new minimal Fable project:
+```sh
+dotnet new -i Fable.Template
+dotnet new fable -n <name-of-your-project>
+```
+
 ## List of templates
 
 | Name  | Short Name | Description  |
 |---|---|---|
 | Fable.Template | fable |  Small Fable app project, with the only dependency on Fable.Browser.Dom |
 
-
 ## How to test the template before publishing?
 
-1. Package the template by running `dotnet pack -c Relase minimal/Fable.Template.proj`
-2. Install the new version of the tempalte: `dotnet new -i bin/Release/Fable.Template.x.y.z.nupkg`
-3. Create the template: `dotnet new -i fable -n <name-of-your-project>`. 
+1. Package the template by running `dotnet pack -c Release minimal/Fable.Template.proj`
+2. Install the new version of the tempalte: `dotnet new i minimal/bin/Release/Fable.Template.x.y.z.nupkg`
+3. Create the template: `dotnet new fable -n <name-of-your-project>`. 
     
     If you are using gitpod to contribute, add `--gitpod` at the end
     
