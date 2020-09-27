@@ -18,7 +18,7 @@
             "type": "parameter",
             "dataType": "bool",
             "defaultValue": "false",
-            "description": "If set then, the tempalte will support running inside of Gitpod"
+            "description": "If set then, the template will support running inside of Gitpod"
         }
     }
 }
