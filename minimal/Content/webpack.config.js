@@ -19,7 +19,7 @@ function getDevServerUrl() {
 
 module.exports = {
     mode: "development",
-    entry: "./src/App.fsproj",
+    entry: "./src/App.fs.js",
     output: {
         path: path.join(__dirname, "./public"),
         filename: "bundle.js",
@@ -35,9 +35,5 @@ module.exports = {
 //#endif
     },
     module: {
-        rules: [{
-            test: /\.fs(x|proj)?$/,
-            use: "fable-loader"
-        }]
     }
 }
