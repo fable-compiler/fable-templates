@@ -20,14 +20,15 @@ dotnet new fable -n <name-of-your-project>
 
 ## How to test the template before publishing?
 
-1. Package the template by running `dotnet pack -c Release minimal/Fable.Template.proj`
-2. Install the new version of the template: `dotnet new i minimal/bin/Release/Fable.Template.x.y.z.nupkg`
-3. Create the template: `dotnet new fable -n <name-of-your-project>`. 
+1. Restore nuget package `dotnet restore minimal`
+2. Package the template by running `dotnet pack -c Release minimal/Fable.Template.proj`
+3. Install the new version of the template: `dotnet new -i minimal/bin/Release/Fable.Template.x.y.z.nupkg`
+4. Create the template: `dotnet new fable -n <name-of-your-project>`. 
     
     If you are using gitpod to contribute, add `--gitpod` at the end
     
-4. `cd <name-of-your-project>`
-5. Follow the instructions from the README.md of the installed template
+5. `cd <name-of-your-project>`
+6. Follow the instructions from the README.md of the installed template
 
 ## Maintainer notes
 
