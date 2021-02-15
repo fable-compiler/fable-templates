@@ -7,7 +7,7 @@ nuget Fake.IO.FileSystem
 nuget Fake.JavaScript.Npm
 nuget BlackFox.Fake.BuildTask
 nuget Fake.Api.GitHub
-nuget Fake.Tools.Git 
+nuget Fake.Tools.Git
 //"
 
 #load ".fake/build.fsx/intellisense.fsx"
@@ -159,7 +159,7 @@ let _release = BuildTask.create "Release" [ clean ] {
         let changelogPath = template </> "CHANGELOG.md"
         let version = Changelog.getLastVersion changelogPath
         let projFile = !! (template </> "*.proj") |> Seq.head
-        
+
         pushNuget version projFile
     )
 
