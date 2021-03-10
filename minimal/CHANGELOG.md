@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.2.0 - 2021-03-10
+
+* Add missing dotnet tool manifest
+
 ## 3.1.0 - 2021-02-15
 
 * Update to Fable 3
