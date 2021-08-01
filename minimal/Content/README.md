@@ -18,6 +18,10 @@ Any modification you do to the F# code will be reflected in the web page after s
 
 > Note: check the "scripts" section in `package.json` to see the commands triggered by the steps above.
 
+## Bundling for release
+
+Run the following command to compile and bundle up all your F# code into one Javascript file: `npm run build`. The compiled output ends up in the `public` folder under the name `bundle.js`.
+
 ## Project structure
 
 ### npm
