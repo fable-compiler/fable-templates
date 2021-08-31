@@ -1,0 +1,24 @@
+{
+    "author": "Mario Bašić",
+    "classifications": [
+        "Fable"
+    ],
+    "name": "Simple Fable App using Snowpack",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "Fable.Template.Snowpack",
+    "groupIdentity": "Fable",
+    "shortName": "fable-snowpack",
+    "sourceName": "FableSnowpackTemplate",
+    "preferNameDirectory": true,
+    "symbols": {
+        "gitpod": {
+            "type": "parameter",
+            "dataType": "bool",
+            "defaultValue": "false",
+            "description": "If set then, the template will support running inside of Gitpod"
+        }
+    }
+}

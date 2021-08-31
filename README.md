@@ -16,17 +16,18 @@ dotnet new fable -n <name-of-your-project>
 
 | Name  | Short Name | Description  |
 |---|---|---|
-| Fable.Template | fable |  Small Fable app project, with the only dependency on Fable.Browser.Dom |
+| Fable.Template | fable |  Small Fable app project with Webpack, with the only dependency on Fable.Browser.Dom |
+| Fable.Template.Snowpack | fable-snowpack |  Small Fable app project with Snowpack, with the only dependency on Fable.Browser.Dom |
 
 ## How to test the template before publishing?
 
 1. Restore nuget package `dotnet restore minimal`
 2. Package the template by running `dotnet pack -c Release minimal/Fable.Template.proj`
 3. Install the new version of the template: `dotnet new -i minimal/bin/Release/Fable.Template.x.y.z.nupkg`
-4. Create the template: `dotnet new fable -n <name-of-your-project>`. 
-    
+4. Create the template: `dotnet new fable -n <name-of-your-project>`.
+
     If you are using gitpod to contribute, add `--gitpod` at the end
-    
+
 5. `cd <name-of-your-project>`
 6. Follow the instructions from the README.md of the installed template
 

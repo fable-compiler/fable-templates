@@ -1,0 +1,13 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "dev": "snowpack dev",
+    "build": "snowpack build"
+  },
+  "devDependencies": {
+    "@snowpack/plugin-run-script": "^2.3.0",
+    "snowpack": "^3.8.8"
+  },
+  "version": "1.0.0"
+}
