@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.3.0 - 2021-09-03
+
+* Fix #43: Add a build script to package.json (by @inputusernamehere)
+
 ## 3.2.1 - 2021-07-15
 
 * Update README, package.json and Fable
