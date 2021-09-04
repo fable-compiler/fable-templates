@@ -17,7 +17,7 @@ dotnet new fable -n <name-of-your-project>
 | Name  | Short Name | Description  |
 |---|---|---|
 | Fable.Template | fable |  Small Fable app project with Webpack, with the only dependency on Fable.Browser.Dom |
-| Fable.Template.Snowpack | fable-snowpack |  Small Fable app project with Snowpack, with the only dependency on Fable.Browser.Dom |
+| Fable.Snowpack.Template | fable-snowpack |  Small Fable app project with Snowpack, with the only dependency on Fable.Browser.Dom |
 
 ## How to test the template before publishing?
 
