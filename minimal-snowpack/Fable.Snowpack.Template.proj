@@ -14,6 +14,7 @@
     <IncludeBuildOutput>false</IncludeBuildOutput>
     <TargetFramework>netstandard2.0</TargetFramework>
     <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoDefaultExcludes>true</NoDefaulExcludes>
   </PropertyGroup>
   <PropertyGroup>
     <ExcludeFromPackage>
