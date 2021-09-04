@@ -154,6 +154,7 @@ let clean = BuildTask.create "Clean" [ ] {
 let _release = BuildTask.create "Release" [ clean ] {
     [
         "minimal"
+        "minimal-snowpack"
     ]
     |> List.iter (fun template ->
         let changelogPath = template </> "CHANGELOG.md"
