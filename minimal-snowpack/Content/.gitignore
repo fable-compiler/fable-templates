@@ -1,3 +1,7 @@
+# Fable generated files
+.fable
+*.fs.js
+App.js
 temp/**
 
 ## Ignore Visual Studio temporary files, build results, and
@@ -288,4 +292,3 @@ __pycache__/
 *.btm.cs
 *.odx.cs
 *.xsd.cs
-.fable
