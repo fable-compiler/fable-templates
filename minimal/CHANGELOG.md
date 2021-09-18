@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.5.0 - 2021-09-18
+
+* PR #47: Ignore generated files (by @Happypig375)
+
 ## 3.4.0 - 2021-09-03
 
 * Include the `.gitignore` file

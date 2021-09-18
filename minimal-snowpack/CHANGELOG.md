@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 1.1.0 - 2021-09-18
+
+* PR #47: Ignore generated files (by @Happypig375)
+
 ## 1.0.0 - 2021-08-31
 
-- Initial version.
+* Initial version.
