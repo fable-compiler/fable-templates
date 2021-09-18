@@ -1,7 +1,7 @@
 # Fable generated files
 .fable
 *.fs.js
-bundle.js
+App.js
 temp/**
 
 ## Ignore Visual Studio temporary files, build results, and
