@@ -9,7 +9,7 @@
         "type": "project"
     },
     "identity": "Fable.Template.Snowpack",
-    "groupIdentity": "Fable",
+    "groupIdentity": "Fable Snowpack",
     "shortName": "fable-snowpack",
     "sourceName": "FableSnowpackTemplate",
     "preferNameDirectory": true
