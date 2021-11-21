@@ -6,6 +6,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 2.0.0 - 2021-11-21
+
+* Fix #49: Change the group identity to not have the templates clashing
+* Fix #48: Add `femto`
+
 ## 1.1.0 - 2021-09-18
 
 * PR #47: Ignore generated files (by @Happypig375)

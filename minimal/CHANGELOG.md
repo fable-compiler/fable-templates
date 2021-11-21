@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.6.0 - 2021-11-21
+
+* Fix #48: Add `femto`
+
 ## 3.5.0 - 2021-09-18
 
 * PR #47: Ignore generated files (by @Happypig375)
