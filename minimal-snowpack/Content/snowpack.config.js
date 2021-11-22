@@ -1,15 +1,21 @@
 /** @type {import("snowpack").SnowpackUserConfig } */
 module.exports = {
+  exclude: [
+    '**/node_modules/**/*',
+    '**/obj/**/*',
+    '**/bin/**/*',
+    '**/*.fsproj'
+  ],
   mount: {
     public: { url: '/' },
-    'src': { url: '/dist' }
+    'src': { url: '/' }
   },
   plugins: [
     [
       '@snowpack/plugin-run-script',
       {
-        cmd: 'dotnet fable ../App/App.fsproj -o ./src',
-        watch: 'dotnet fable watch ../App/App.fsproj -o ./src'
+        cmd: 'dotnet fable src',
+        watch: 'dotnet fable watch src'
       },
     ]
   ],

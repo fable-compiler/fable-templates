@@ -22,18 +22,18 @@ Any modification you do to the F# code will be reflected in the web page after s
 ## Project structure
 
 ```
-src/
-    App/
-        App.fs - F# sample code
-        App.fsproj - F# project
-    Web/
-        public/
-            favicon.ico - Fable favicon
-            index.html - Main HTML file
-            robots.txt
-        src/
-            App.js - Compiled JS from F# file above App.fs
-        package.json - JS dependencies
-        package-lock.json - JS dependencies lock file
-        snowpack.config.js - Snowpack configuration
+.
+├── Nuget.Config
+├── README.md
+├── package-lock.json
+├── package.json - JS dependencies
+├── public
+│   ├── favicon.ico - Fable favicon
+│   ├── index.html - Main HTML file
+│   └── robots.txt
+├── snowpack.config.js - Snowpack configuration
+└── src
+    ├── App.fs - F# sample code
+    ├── App.fs.js - Compiled JS from F# file above App.fs
+    └── App.fsproj - F# project
 ```
