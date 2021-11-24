@@ -27,6 +27,8 @@ Any modification you do to the F# code will be reflected in the web page after s
 ├── README.md
 ├── package-lock.json
 ├── package.json - JS dependencies
+├── build - Ready to deploy files when you run `npm run build`
+├── dist - Compiled JS from F# file
 ├── public
 │   ├── favicon.ico - Fable favicon
 │   ├── index.html - Main HTML file
@@ -34,6 +36,5 @@ Any modification you do to the F# code will be reflected in the web page after s
 ├── snowpack.config.js - Snowpack configuration
 └── src
     ├── App.fs - F# sample code
-    ├── App.fs.js - Compiled JS from F# file above App.fs
     └── App.fsproj - F# project
 ```

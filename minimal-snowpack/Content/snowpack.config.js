@@ -8,14 +8,14 @@ module.exports = {
   ],
   mount: {
     public: { url: '/' },
-    'src': { url: '/' }
+    'dist': { url: '/' }
   },
   plugins: [
     [
       '@snowpack/plugin-run-script',
       {
-        cmd: 'dotnet fable src',
-        watch: 'dotnet fable watch src'
+        cmd: 'dotnet fable src -o dist',
+        watch: 'dotnet fable watch src -o dist'
       },
     ]
   ],
