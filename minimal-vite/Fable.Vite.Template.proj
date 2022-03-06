@@ -20,9 +20,10 @@
     <ExcludeFromPackage>
         Content/node_modules/**/*;
         Content/.fable/**/*;
+        Content/dist/**/*;
         Content/packages/**/*;
         Content/paket-files/**/*;
-        Content/src/Web/public/App.js*;
+        Content/public/App.js;
         Content/src/App/bin/**/*;
         Content/src/App/obj/**/*;
     </ExcludeFromPackage>
