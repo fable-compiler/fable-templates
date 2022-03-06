@@ -1,0 +1,35 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <Description>Simple Fable App using Vite</Description>
+    <Authors>T. Nishimura</Authors>
+    <PackageProjectUrl>https://github.com/fable-compiler/fable-templates</PackageProjectUrl>
+    <PackageLicense>https://github.com/fable-compiler/fable-templates/blob/master/LICENSE</PackageLicense>
+    <RepositoryUrl>https://github.com/fable-compiler/fable-templates.git</RepositoryUrl>
+    <PackageTags>fable;template;fsharp;vite</PackageTags>
+    <NeutralLanguage>en-US</NeutralLanguage>
+    <PackageType>Template</PackageType>
+    <Version>1.0.0</Version>
+    <PackProjectInputFile>$(MSBuildProjectFullPath)</PackProjectInputFile>
+    <NoBuild>true</NoBuild>
+    <IncludeBuildOutput>false</IncludeBuildOutput>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
+    <NoDefaultExcludes>true</NoDefaultExcludes>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ExcludeFromPackage>
+        Content/node_modules/**/*;
+        Content/.fable/**/*;
+        Content/packages/**/*;
+        Content/paket-files/**/*;
+        Content/src/Web/public/App.js*;
+        Content/src/App/bin/**/*;
+        Content/src/App/obj/**/*;
+    </ExcludeFromPackage>
+</PropertyGroup>
+  <ItemGroup>
+    <Content Include="Content/**/*" Exclude="$(ExcludeFromPackage)" >
+        <PackagePath>Content\</PackagePath>
+    </Content>
+  </ItemGroup>
+</Project>
