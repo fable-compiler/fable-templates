@@ -1,0 +1,12 @@
+{
+  "private": true,
+  "scripts": {
+    "postinstall": "dotnet tool restore",
+    "start": "dotnet fable watch src -o public --run npx vite dev ",
+    "build": "dotnet fable src -o public && npx vite build"
+  },
+  "devDependencies": {
+    "vite": "^2.8.6"
+  },
+  "version": "1.0.0"
+}

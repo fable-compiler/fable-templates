@@ -1,0 +1,16 @@
+{
+    "author": "T. Nishimura",
+    "classifications": [
+        "Fable"
+    ],
+    "name": "Simple Fable App using Vite",
+    "tags": {
+        "language": "F#",
+        "type": "project"
+    },
+    "identity": "Fable.Template.Vite",
+    "groupIdentity": "Fable Vite",
+    "shortName": "fable-vite",
+    "sourceName": "FableViteTemplate",
+    "preferNameDirectory": true
+}
