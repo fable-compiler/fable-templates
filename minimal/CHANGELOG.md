@@ -6,6 +6,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.8.0 - 2022-11-11
+
+* PR #70: Upgrade webpack
+
 ## 3.7.0 - 2022-11-08
 
 * Update to Fable 3.7.20
