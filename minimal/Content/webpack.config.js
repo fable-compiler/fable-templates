@@ -16,7 +16,11 @@ module.exports = {
             directory: path.resolve(__dirname, "./public"),
             publicPath: "/",
         },
-        port: 8080
+        port: 8080,
+//#if( gitpod )
+        host: '0.0.0.0',
+        allowedHosts: ['localhost', '.gitpod.io']
+//#endif
     },
     module: {
     }
