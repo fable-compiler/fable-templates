@@ -6,6 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## Unreleased
 
+## 3.9.0 - 2021-12-12
+
+* Update gitpod configuration
+* PR #75:  Migrate webpack dev server config to v4 (by @gsuuon)
+* Add `global.json` to stay on .NET 6 as .NET 7 is causing problems
+
 ## 3.8.0 - 2022-11-11
 
 * PR #70: Upgrade webpack

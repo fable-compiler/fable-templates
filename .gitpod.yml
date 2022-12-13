@@ -1,5 +1,7 @@
 image:
   file: .docker/Dockerfile
+  # We don't use the official image on purpose because on their image 
+  # we can't control the installed version
 
 ports:
   - port: 8080
